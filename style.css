@@ -109,6 +109,10 @@ header img {
     flex: 0 1 34em; /* Keeps text in readable width */
 }
 
+.text-container a {
+    margin: .3em;
+}
+
 .text-container p {
     margin: .75em 0 1em 0;
     font-size: 1.1rem;
