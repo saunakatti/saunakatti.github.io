@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>saunakatti</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/saunakatti.png">
+    <!-- Load NF icons -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+    <!-- Load hamburger menu script -->
+    <script src="scripts/top-nav-menu.js"></script>
 </head>
-<!-- Load NF icons -->
- <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
 <body>
     <div class="page-content">  <!-- This is to allow separate padding for content and footer see style.css -->
         <header>
@@ -22,9 +25,12 @@
                         <li><a href="about.html">About</a></li>
                     </div>
                     <!-- Hamburger menu -->
-                     <a href="javascript:void(0);" class="icon" onclick="topNavClick()">
-                        <i class="nf-md-menu"></i>
-                     </a>
+                     <div class="hamburger">
+                        <a href="javascript:void(0);" class="icon" onclick="topNavClick()">
+                            <i class="nf-md-menu"></i>
+                        </a>
+                     </div>
+                    
             </div>
 
             <div class="flex-container">
@@ -53,9 +59,8 @@
             <li>&copy; 2026 Saunakatti</li>
             <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
             <a href="https://discordapp.com/users/1056943373379977357"> &nbsp; Discord</a>
+            <li>made with <i class="nf-fa-heart" style="color: var(--color-red);"></i> on <i class="nf-dev-linux"></i></li>
     </footer>
-    <!-- Load hamburger menu script -->
-    <script src="scripts/top-nav-menu.js"></script>
 
 </body>
 </html>

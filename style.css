@@ -42,6 +42,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-style: normal;
 }
 
 html {
@@ -59,14 +60,14 @@ body {
     background-color: var(--color-crust);
 }
 
-.page-content {    /* To allow separate padding for contents and footer */
+.page-content {    /* To allow separate colors for contents and footer */
     padding: 1em;
     background-color: var(--color-base); /* This so I can have empty space under
     footer on vertical tabs blend in with the footer */
 }
 
 .topNav {
-    margin: 1em auto 3em auto;
+    margin: 0em auto 0em auto;
     width: min(1000px, 100%);
     background-color: var(--color-mantle);
     display: flex;
@@ -76,7 +77,7 @@ body {
 
 .topNav #menuLinks {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     list-style-type: none;
     gap: 2em;
     margin-left: auto;
@@ -113,6 +114,7 @@ header, section {
 
 .flex-container {
     display: flex;
+    margin-top: 2em;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -121,10 +123,10 @@ header, section {
 
 header img {
     max-width: 100%;
-    max-height: fit-content;
+    max-height: 100%;
     border-radius: 0em;
     aspect-ratio: 1;
-    object-fit: scale-down;
+    object-fit: cover;
     object-position: center;  /* If cropped, how, dep on picture */
     border: 2px solid var(--color-green);
     
@@ -198,6 +200,7 @@ footer {
 
 footer li {
     padding-bottom: 0.2em;
+    padding-top: 0.2em;
 }
 
 footer a {
@@ -211,34 +214,33 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media(max-width: 988px) {  /* These will only apply to screens <999px */
-    header {
-        text-align: center;
-    }
-
-    header .text-container {
+@media(max-width: 988px) {  /* These will only apply to screens <999px, when the flex changes */
+    .text-container {
         padding-top: 0;
+        text-align: center;
     }
 }
 
 @media(max-width: 640px) {  /* For nav bar */
+
     .topNav #menuLinks {
         display: none;
+        margin-left: auto;
+        margin-right: -2em;
     }
 
     .topNav #navTitle {
-        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topNav .hamburger {
+        margin-left: auto;
+        display: flex;
     }
 
     .topNav a.icon {
         display: flex;
-        position: absolute;
-        right: 1em;
-        top: 4em;
-    }
-
-    .topNav a {
-        margin-right: 3em;
     }
 
     header {
