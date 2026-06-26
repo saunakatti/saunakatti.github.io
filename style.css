@@ -60,6 +60,25 @@ body {
     background-color: var(--color-crust);
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    table-layout: fixed;
+    width: min(1000px, 100%);
+    text-align: left;
+}
+
 .page-content {    /* To allow separate colors for contents and footer */
     padding: 1em;
     background-color: var(--color-base); /* This so I can have empty space under
@@ -77,7 +96,6 @@ body {
 
 .topNav #menuLinks {
     display: flex;
-    align-items: flex-end;
     list-style-type: none;
     gap: 2em;
     margin-left: auto;
@@ -103,13 +121,14 @@ body {
     text-decoration: underline;
 }
 
-header, section {
-    margin: 2em auto;
+header {
+    margin: 0 auto;
+    margin-top: 1em;
     width: min(75em, 100%);
     background-color: var(--color-mantle);
     padding: min(2em, 15%);
     border-radius: 0em;
-    border: 2px solid var(--color-lavender)
+    border: 2px solid var(--color-lavender);
 }
 
 .flex-container {
@@ -121,15 +140,13 @@ header, section {
     gap: 3em;
 }
 
-header img {
+img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 0em;
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;  /* If cropped, how, dep on picture */
-    border: 2px solid var(--color-green);
-    
 }
 
 .text-container {
@@ -161,6 +178,7 @@ header img {
     background-color: var(--color-surface1);
     border-color: var(--color-surface2);
     scale: 1.03;
+    text-decoration: none;
 }
 
 .secondary {   /* Currently unused and colors are scuffed */
@@ -171,8 +189,10 @@ header img {
 section {
     padding: 3em min(2em, 15%);
     background-color: var(--color-mantle);
-    border: 2px solid var(--color-teal);
-    text-align: center;
+    border: 2px solid;
+    text-align: left;
+    margin: 2em auto;
+    width: min(75em, 100%);
 }
 
 section img {
@@ -180,14 +200,36 @@ section img {
     border-radius: 0em;
     object-fit: cover;
     object-position: center;
-
-    border: 2px solid var(--color-green)
 }
 
 section p {
     margin-top: 1em;
-
 }
+
+/* || Systeminfo in about || */
+
+.systeminfo {
+    border-color: var(--color-maroon);
+    padding: 5em 0em;
+    text-align: center;
+}
+
+.systeminfo table {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(50em, 80%);
+    background-color: var(--color-base);
+}
+
+.systeminfo table, 
+.systeminfo td, 
+.systeminfo th {
+    border: 1px solid var(--color-surface0);
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+/* || Footer || */
 
 footer {
     width: 100%;
@@ -214,7 +256,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media(max-width: 988px) {  /* These will only apply to screens <999px, when the flex changes */
+/* || Small Devices || */
+
+@media(max-width: 1100px) {  /* These will only apply to screens <999px */
     .text-container {
         padding-top: 0;
         text-align: center;
@@ -226,7 +270,7 @@ footer a:hover {
     .topNav #menuLinks {
         display: none;
         margin-left: auto;
-        margin-right: -2em;
+        margin-right: auto;
     }
 
     .topNav #navTitle {
