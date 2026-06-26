@@ -13,7 +13,9 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 - Links to other accounts
 - Get the monospace font working (although not needed atm)
 - Picture gallery
-- (Prob done) Rework usage of icons by importing "https://www.nerdfonts.com/assets/css/webfont.css"
+- (Not Needed?) Rework usage of icons by importing "https://www.nerdfonts.com/assets/css/webfont.css"
+   - This would help when looking at
+    code without a Nerd Font
 <!-- gaming related stuff, smp?? -->
 
 
