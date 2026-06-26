@@ -6,34 +6,56 @@
     <title>saunakatti</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Load NF icons -->
+ <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Saunakatti</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <div class="flex-container">
-            <img height="300" width="300" src="assets/images/saunakatti.png">
-            <div class="text-container">
-                <h1>Hello and I hope you are having a good day or night!</h1>
-                <p>This is Saunakatti's personal site hosted on GitHub pages. As the site is a small learning project, it will change and have issues.</p>
-                <a href="https://github.com/saunakatti/saunakatti.github.io" class="cta-button"> &nbsp; See the repo for this site</a>
-                <a href="links.html" class="cta-button"> &nbsp; See my other links</a>
+    <div class="page-content">  <!-- This is to allow separate padding for content and footer see style.css -->
+        <header>
+            <!-- Top navigation -->
+            <div class="topNav">
+                    <li><a id="navTitle" href="index.html">Saunakatti</a></li>
+                    <div id="menuLinks">
+                        <li><a href="#test1">Test 1</a></li>
+                        <li><a href="#test2">Test 2</a></li>
+                        <li><a href="#test3">Test 3</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </div>
+                    <!-- Hamburger menu -->
+                     <a href="javascript:void(0);" class="icon" onclick="topNavClick()">
+                        <i class="nf-md-menu"></i>
+                     </a>
             </div>
-        </div>
-    </header>
 
-    <section>
-        <div class="flex-container">
-            <div class="text-container">
-                <h2>Looking for ideas</h2>
-                <p>If you have any ideas for this site, feel free to contact.</p>
+            <div class="flex-container">
+                <img height="300" width="300" src="assets/images/saunakatti.png">
+                <div class="text-container">
+                    <h1>Hello and I hope you are having a good day or night!</h1>
+                    <p>This is Saunakatti's personal site hosted on GitHub pages. As the site is a small learning project, it will change and have issues.</p>
+                    <a href="https://github.com/saunakatti/saunakatti.github.io" class="cta-button"> &nbsp; See the repo for this site</a>
+                    <a href="links.html" class="cta-button"> &nbsp; See my other links</a>
+                </div>
             </div>
-            <img src="assets/images/bee.png" height="200" width="200">
-        </div>
-    </section>
+        </header>
+
+        <section>
+            <div class="flex-container">
+                <div class="text-container">
+                    <h2>Looking for ideas</h2>
+                    <p>If you have any ideas for this site, feel free to contact.</p>
+                </div>
+                <img src="assets/images/bee.png" height="200" width="200">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+            <li>&copy; 2026 Saunakatti</li>
+            <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
+            <a href="https://discordapp.com/users/1056943373379977357"> &nbsp; Discord</a>
+    </footer>
+    <!-- Load hamburger menu script -->
+    <script src="scripts/top-nav-menu.js"></script>
+
 </body>
 </html>

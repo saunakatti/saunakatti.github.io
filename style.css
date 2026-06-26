@@ -5,6 +5,8 @@
    /* url("mycustomfont.woff") format("woff"), */
 }
 
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
 /* Catppuccin Mocha colors*/
 :root {
     --color-rosewater: #f5e0dc;
@@ -45,37 +47,58 @@
 html {
     font-family: NotoSansNF,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
 
 body {
-    padding: 1em;
-    background-color: var(--color-base);
+    padding: 0;
+    height: 100%;
+    background-color: var(--color-crust);
 }
 
-nav {
+.page-content {    /* To allow separate padding for contents and footer */
+    padding: 1em;
+    background-color: var(--color-base); /* This so I can have empty space under
+    footer on vertical tabs blend in with the footer */
+}
+
+.topNav {
     margin: 1em auto 3em auto;
     width: min(1000px, 100%);
+    background-color: var(--color-mantle);
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
 }
 
-nav ul {
+.topNav #menuLinks {
     display: flex;
     align-items: center;
     list-style-type: none;
     gap: 2em;
+    margin-left: auto;
 }
 
-nav li:first-child {
+.topNav #navTitle {
     margin-right: auto;
-    font-family: NotoSansNF,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--color-text);
+.topNav a.icon {
+    display: none;
 }
 
-nav a:hover {
+.topNav a {
+    text-decoration: none;
+    color: var(--color-text);
+    display: block;
+    padding: 0.5em 0.5em;
+}
+
+.topNav a:hover {
     text-decoration: underline;
 }
 
@@ -98,11 +121,13 @@ header, section {
 
 header img {
     max-width: 100%;
+    max-height: fit-content;
     border-radius: 0em;
-    object-fit: cover;
+    aspect-ratio: 1;
+    object-fit: scale-down;
     object-position: center;  /* If cropped, how, dep on picture */
-
-    border: 2px solid var(--color-green)
+    border: 2px solid var(--color-green);
+    
 }
 
 .text-container {
@@ -127,11 +152,13 @@ header img {
     border-radius: 0em;
     font-weight: 600;
     border: 2px solid var(--color-surface1);
+    transition: 100ms ease;
 }
 
 .cta-button:hover {
     background-color: var(--color-surface1);
     border-color: var(--color-surface2);
+    scale: 1.03;
 }
 
 .secondary {   /* Currently unused and colors are scuffed */
@@ -154,3 +181,74 @@ section img {
 
     border: 2px solid var(--color-green)
 }
+
+section p {
+    margin-top: 1em;
+
+}
+
+footer {
+    width: 100%;
+    background-color: var(--color-crust);
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid var(--color-mantle);
+    height: auto;
+}
+
+footer li {
+    padding-bottom: 0.2em;
+}
+
+footer a {
+    color: var(--color-text);
+    font-style: none;
+    text-decoration: none;
+    padding: 0.4em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 988px) {  /* These will only apply to screens <999px */
+    header {
+        text-align: center;
+    }
+
+    header .text-container {
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 640px) {  /* For nav bar */
+    .topNav #menuLinks {
+        display: none;
+    }
+
+    .topNav #navTitle {
+        display: block;
+    }
+
+    .topNav a.icon {
+        display: flex;
+        position: absolute;
+        right: 1em;
+        top: 4em;
+    }
+
+    .topNav a {
+        margin-right: 3em;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .cta-button {
+        margin-top: 0.5em;
+        width: 100%;
+    }
+} 
+
+

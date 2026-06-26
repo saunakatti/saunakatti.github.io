@@ -13,7 +13,7 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 - Links to other accounts
 - Get the monospace font working (although not needed atm)
 - Picture gallery
-- (Not Needed?) Rework usage of icons by importing "https://www.nerdfonts.com/assets/css/webfont.css"
+- (Prob done) Rework usage of icons by importing "https://www.nerdfonts.com/assets/css/webfont.css"
 <!-- gaming related stuff, smp?? -->
 
 
