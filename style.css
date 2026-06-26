@@ -258,14 +258,14 @@ footer a:hover {
 
 /* || Small Devices || */
 
-@media(max-width: 1100px) {  /* These will only apply to screens <999px */
+@media(max-width: 1100px) {  /* These will only apply to screens <1101px */
     .text-container {
         padding-top: 0;
         text-align: center;
     }
 }
 
-@media(max-width: 640px) {  /* For nav bar */
+@media(max-width: 640px) {  /* For turning nav bar into simple hamburger menu on mobile */
 
     .topNav #menuLinks {
         display: none;
