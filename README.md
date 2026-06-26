@@ -3,6 +3,9 @@
 My personal site for links and other stuff. Intended as a learning project for css, html etc.
 Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) for theming. The site also uses (or at least tries to use) [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) for cool icons. 
 
+> [!IMPORTANT]
+> Do not go over 1GB in repository size!
+
 ### [saunakatti.github.io](https://saunakatti.github.io/)
 
 ---
