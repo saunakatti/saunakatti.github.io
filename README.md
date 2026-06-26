@@ -5,6 +5,11 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 
 ### [saunakatti.github.io](https://saunakatti.github.io/)
 
+<img src="assets/images/preview1_desktop.png" alt="Desktop Prewiev 1" width="1000" height="510">
+<img src="assets/images/preview1_mobile.jpg" alt="Mobile Prewiev 1" width="300" height="650">
+
+
+
 ---
 
 ### List of ideas
@@ -32,9 +37,17 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
   - Remove pointless configuraton
   - Split into sections and add more comments
 
+- (Future) Add dark/light mode switch with latte flavour as light theme
+  - should be pretty easy by just adding a js script that changes color variables
+
 - (Future) Add picture gallery
 
+- (Future) Add more animations
+
 - (Future) Add blog with recent post(s) on homepage
+
+- (Future) Add no javascript mode for users not using javascript.
+  - idk if possible, might affect performance if checks if js enabled at startup?
 
 <!-- gaming related stuff, smp?? -->
 
