@@ -85,6 +85,8 @@ table {
     footer on vertical tabs blend in with the footer */
 }
 
+/* || Top navigation/header stuff || */
+
 .topNav {
     margin: 0em auto 0em auto;
     width: min(1000px, 100%);
@@ -94,7 +96,7 @@ table {
     overflow: hidden;
 }
 
-.topNav #menuLinks {
+.topNav .menuLinks {
     display: flex;
     list-style-type: none;
     gap: 2em;
@@ -129,6 +131,15 @@ header {
     padding: min(2em, 15%);
     border-radius: 0em;
     border: 2px solid var(--color-lavender);
+}
+
+/* Active page color in header */
+
+.menuLinks .activePage,
+.topNav .activePage {
+    color: var(--color-lavender);
+    font-weight: bold;
+    /* text-decoration: underline; */
 }
 
 .flex-container {
@@ -229,6 +240,43 @@ section p {
     padding: 0.5em;
 }
 
+/* Link list icon config */
+
+.link-container {
+    border: 2px solid var(--color-text);
+    background-color: var(--color-base);
+    width: (50em, 80%);
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.link-container .text-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.link-container #large-link-icon {
+    scale: 8;
+    margin: 4em;
+    padding: -4em;
+}
+
+.link-container #small-link-icon {
+    display: none;
+}
+
+.link-container .cta-button {
+    font-size: large;
+    margin-left: 0;
+}
+
 /* || Footer || */
 
 footer {
@@ -256,6 +304,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
+
 /* || Small Devices || */
 
 @media(max-width: 1100px) {  /* These will only apply to screens <1101px */
@@ -263,11 +313,15 @@ footer a:hover {
         padding-top: 0;
         text-align: center;
     }
+
+    .link-container .text-container {
+        text-align: left;
+    }
 }
 
 @media(max-width: 640px) {  /* For turning nav bar into simple hamburger menu on mobile */
 
-    .topNav #menuLinks {
+    .topNav .menuLinks {
         display: none;
         margin-left: auto;
         margin-right: auto;
@@ -295,6 +349,27 @@ footer a:hover {
         margin-top: 0.5em;
         width: 100%;
     }
-} 
+
+    /* Link page has interesting stuff with the icons, has to be here as well */
+
+    .link-container #large-link-icon {
+        display: none;
+    }
+
+    .link-container #small-link-icon {
+        display: initial;
+    }
+
+    .link-container .text-container {
+        padding: 0;
+    }
+}
+
+/* || Transitions between pages || */
+/* White flash on chromium? Does not yet work on firefox */
+
+@view-transition {
+    navigation: none;
+}
 
 

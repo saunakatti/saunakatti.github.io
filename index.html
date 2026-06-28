@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
     <!-- Load hamburger menu script -->
     <script src="scripts/top-nav-menu.js"></script>
+    <script src="scripts/dark-light-switch.js"></script>
+
 </head>
 <body>
     <div class="page-content">  <!-- This is to allow separate config for content and footer see style.css -->
         <header>
             <!-- Top navigation -->
             <div class="topNav">
-                <a id="navTitle" href="index.html">Saunakatti&nbsp; 🌱</a>
-                    <div id="menuLinks">
+                <a class="activePage" id="navTitle" href="index.html">Saunakatti&nbsp; 🌱</a>
+                    <div id="menuLinks" class="menuLinks">
                         <li><a  href="#test1">Test 1</a></li>
                         <li><a  href="#test2">Test 2</a></li>
                         <li><a  href="#test3">Test 3</a></li>
@@ -59,7 +61,7 @@
     </div>
 
     <footer>
-            <li>&copy; 2026 Saunakatti</li>
+            <li>&copy; 2026 Saunakatti &nbsp; &nbsp; &nbsp; <a href="javascript:void(0);" onclick="themeSwitchClick()">TEST</a></li>
             <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
             <a href="https://discordapp.com/users/1056943373379977357"> &nbsp; Discord</a>
             <li>made with <i class="nf-fa-heart" style="color: var(--color-red);"></i> on <i class="nf-dev-linux"></i></li>
