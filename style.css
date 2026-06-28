@@ -319,7 +319,7 @@ footer a:hover {
     }
 }
 
-@media(max-width: 640px) {  /* For turning nav bar into simple hamburger menu on mobile */
+@media(max-width: 640px) {  /* For mobile, hamb. menu, less padding etc. */
 
     .topNav .menuLinks {
         display: none;
@@ -363,7 +363,15 @@ footer a:hover {
     .link-container .text-container {
         padding: 0;
     }
-}
+
+    .link-container {    /* These two for fixing link padding issues on mobile */       
+        padding: 1em;
+    }               
+
+    #ProfileLinks {
+        padding: 0.5em;
+    }
+}    
 
 /* || Transitions between pages || */
 /* White flash on chromium? Does not yet work on firefox */
