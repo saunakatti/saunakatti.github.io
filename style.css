@@ -62,7 +62,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-blue);
 }
 
 a:hover {
@@ -71,6 +71,15 @@ a:hover {
 
 li {
     list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0em;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;  /* If cropped, how, dep on picture */
 }
 
 table {
@@ -151,15 +160,6 @@ header {
     gap: 3em;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0em;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: center;  /* If cropped, how, dep on picture */
-}
-
 .text-container {
     flex: 0 1 34em; /* Keeps text in readable width */
 }
@@ -196,6 +196,19 @@ img {
     background-color: #b4befecb;
     border: 2px solid var(--color-lavender);
 }
+
+.small-textbox {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text);
+    background-color: var(--color-base);
+    padding: .5em 1em;
+    border-radius: 0em;
+    font-weight: 600;
+    font-size: 3;
+    border: 2px solid var(--color-surface0);
+}
+
 
 section {
     padding: 3em min(2em, 15%);
@@ -272,7 +285,8 @@ section p {
     display: none;
 }
 
-.link-container .cta-button {
+.link-container .cta-button,
+.link-container .small-textbox {
     font-size: large;
     margin-left: 0;
 }
@@ -345,7 +359,8 @@ footer a:hover {
         margin-top: 0;
     }
 
-    .cta-button {
+    .cta-button,
+    .small-textbox {
         margin-top: 0.5em;
         width: 100%;
     }
