@@ -42,8 +42,12 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 - (Future) Add blog with recent post(s) on homepage
 
 - (Future) Add no javascript mode for users not using javascript.
-  - idk if possible, might affect performance if checks if js enabled at startup?
 
-<!-- gaming related stuff, smp?? -->
+<!-- gaming related stuff, smp??, fsmp blog? -->
+
+<!-- Could use Atabook to add a guestbook?>
+
+<!-- Make a nameplate 88 x 31>
+
 
 

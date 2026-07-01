@@ -13,138 +13,175 @@
 </head>
 <body>
     <div class="page-content">  <!-- This is to allow separate config for content and footer see style.css -->
-            <header>
+        <header id="header">
+            <!-- Top navigation -->
+            <div id="navigation-bar">
+                <a id="navTitle" href="index.html">Saunakatti&nbsp; 🌱</a>
+                    <div id="navbar-links">
+                        <li><a href="#test1">Test 1</a></li>
+                        <li><a href="#test2">Test 2</a></li>
+                        <li><a href="#test3">Test 3</a></li>
+                        <li><a class="activePage" href="links.html">Links</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </div>
 
-                <!-- Top navigation -->
-                <div class="topNav">
-                    <a id="navTitle" href="index.html">Saunakatti&nbsp; 🌱</a>
-                        <div id="menuLinks" class="menuLinks">
-                            <li><a href="#test1">Test 1</a></li>
-                            <li><a href="#test2">Test 2</a></li>
-                            <li><a href="#test3">Test 3</a></li>
-                            <li><a class="activePage" href="links.html">Links</a></li>
-                            <li><a href="about.html">About</a></li>
-                        </div>
+            </div>
 
-                        <!-- Hamburger menu -->
-                        <div class="hamburger">
-                            <a href="javascript:void(0);" class="icon" onclick="topNavClick()">
-                                <i class="nf-md-menu"></i>
-                            </a>
-                        </div>
-                </div>                
-            </header>
+            <!-- The menu that appears when hamburger clicked -->
+            <div class="flex-container" id="menu">  
+                <ol class="menu-column">
+                    <h3>Main Pages</h3>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="activePage" href="links.html">Links</a></li>
+                </ol>
 
-            <section style="border-color: var(--color-text);">
-                <div class="text-container">
-                    <a class="cta-button" href="#ProfileLinks" >Links to Profiles</a>
-                </div>
-            </section>
+                <!-- <ol class="menu-column">
+                    <h3>Empty</h3>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ol> -->
 
-            <section id="ProfileLinks" style="border-color: var(--color-mauve)">
-                <h1 style="padding: 1em;">Links to Profiles</h1>
+            </div>
 
-                <!-- Pinterest -->
+            <!-- Hamburger menu -->
                 
-                <div style="border-color: var(--color-red);" class="link-container">
+            <a href="javascript:void(0);" id="hamburger-container" onclick="topNavClick()">
+                <i class="nf-md-menu"></i>
+            </a>
+        
+        </header>
 
-                    <i id=large-link-icon style="color: var(--color-red);" class="nf-fa-pinterest"></i>
-                    
-                    <div class="text-container">
-                    
-                        <h2><i id="small-link-icon" style="color: var(--color-red);" class="nf-fa-pinterest">&nbsp; </i>Pinterest</h2>
+        <section style="border-color: var(--color-text);">
+            <div class="text-container">
+                <a class="cta-button" href="#ProfileLinks" >Links to Profiles</a>
+            </div>
+        </section>
 
-                        <p>
-                            My pinterest
-                        </p>
+        <section id="ProfileLinks" style="border-color: var(--color-mauve)">
+            <h1 style="padding: 1em;">Links to Profiles</h1>
 
-                        <a class="cta-button" href="https://pinterest.com/Saunakatti/_profile/">My profile</a>
-                        <a class="cta-button" href="https://pinterest.com/Saunakatti/the-porridge-collection/">The Porridge Collection</a>
+            <!-- Pinterest -->
+            
+            <div style="border-color: var(--color-red);" class="link-container">
 
-                    </div>
+                <i id=large-link-icon style="color: var(--color-red);" class="nf-fa-pinterest"></i>
+                
+                <div class="text-container">
+                
+                    <h2><i id="small-link-icon" style="color: var(--color-red);" class="nf-fa-pinterest">&nbsp; </i>Pinterest</h2>
+
+                    <p>
+                        My pinterest
+                    </p>
+
+                    <a class="cta-button" href="https://pinterest.com/Saunakatti/_profile/">My profile</a>
+                    <a class="cta-button" href="https://pinterest.com/Saunakatti/the-porridge-collection/">The Porridge Collection</a>
+
                 </div>
+            </div>
 
-                <!-- Fluxer -->
+            <!-- Fluxer -->
 
-                <div style="border-color: var(--color-pink);" class="link-container">
+            <div style="border-color: var(--color-pink);" class="link-container">
 
-                    <i id=large-link-icon style="color: var(--color-pink);" class="nf-md-approximately_equal"></i>
-                    
-                    <div class="text-container">
-                    
-                        <h2><i id="small-link-icon" style="color: var(--color-pink);" class="nf-md-approximately_equal">&nbsp; </i>Fluxer</h2>
+                <i id=large-link-icon style="color: var(--color-pink);" class="nf-md-approximately_equal"></i>
+                
+                <div class="text-container">
+                
+                    <h2><i id="small-link-icon" style="color: var(--color-pink);" class="nf-md-approximately_equal">&nbsp; </i>Fluxer</h2>
 
-                        <p>Since Discord seems like a privacy risk, here's my Fluxer account.<a href="https://fluxer.app/">Fluxer</a>is and open-source alternative to Discord, currently in public beta.</p>
+                    <p>Since Discord seems like a privacy risk, here's my Fluxer account.<a href="https://fluxer.app/">Fluxer</a>is and open-source alternative to Discord, currently in public beta.</p>
 
-                        <li style="margin-right: .3em;" class="small-textbox">saunakatti#5967</li>
-                        <!--  <a class="cta-button" href="https://fluxer.gg/Bqnl1VkW">Server (unused)</a> Link with 10 uses !!! -->
+                    <div class="small-textbox">saunakatti#5967</div>
+                    <!--  <a class="cta-button" href="https://fluxer.gg/Bqnl1VkW">Server (unused)</a> Link with 10 uses !!! -->
 
-                        <!-- <a class="cta-button" href="https://web.fluxer.app/users/saunakatti#5967">My profile</a> idk what kind of link it is -->
+                    <!-- <a class="cta-button" href="https://web.fluxer.app/users/saunakatti#5967">My profile</a> idk what kind of link it is -->
 
-                    </div>
-                </div>           
-
-                <!-- Discord -->
-
-                <div style="border-color: var(--color-sky);" class="link-container">
-
-                    <i id=large-link-icon style="color: var(--color-sky);" class="nf-fa-discord"></i>
-                    
-                    <div class="text-container">
-                    
-                        <h2><i id="small-link-icon" style="color: var(--color-sky);" class="nf-fa-discord">&nbsp; </i>Discord</h2>
-
-                        <p></p>
-
-                        <a class="cta-button" href="https://discordapp.com/users/1056943373379977357">My profile</a>
-                      <!--  <a class="cta-button" href="https://discord.gg/pAAmGeTxJ">Server (unused)</a> -->
-
-                    </div>
                 </div>
+            </div>           
 
-                <!-- Steam -->
+            <!-- Discord -->
 
-                <div style="border-color: var(--color-blue);" class="link-container">
+            <div style="border-color: var(--color-sky);" class="link-container">
 
-                    <i id=large-link-icon style="color: var(--color-blue);" class="nf-fa-steam"></i>
-                    
-                    <div class="text-container">
-                    
-                        <h2><i id="small-link-icon" style="color: var(--color-blue);" class="nf-fa-steam">&nbsp; </i>Steam</h2>
+                <i id=large-link-icon style="color: var(--color-sky);" class="nf-fa-discord"></i>
+                
+                <div class="text-container">
+                
+                    <h2><i id="small-link-icon" style="color: var(--color-sky);" class="nf-fa-discord">&nbsp; </i>Discord</h2>
 
-                        <p></p>
+                    <p></p>
 
-                        <a class="cta-button" href="https://steamcommunity.com/profiles/76561199516302720">My profile</a>
+                    <a class="cta-button" href="https://discordapp.com/users/1056943373379977357">My profile</a>
+                    <!--  <a class="cta-button" href="https://discord.gg/pAAmGeTxJ">Server (unused)</a> -->
 
-                    </div>
                 </div>
+            </div>
 
-                <!-- GitHub -->
+            <!-- Steam -->
 
-                <div style="border-color: var(--color-text);" class="link-container">
+            <div style="border-color: var(--color-blue);" class="link-container">
 
-                    <i id=large-link-icon style="color: var(--color-text);" class="nf-md-github"></i>
-                    
-                    <div class="text-container">
-                    
-                        <h2><i id="small-link-icon" style="color: var(--color-text);" class="nf-md-github">&nbsp; </i>GitHub</h2>
+                <i id=large-link-icon style="color: var(--color-blue);" class="nf-fa-steam"></i>
+                
+                <div class="text-container">
+                
+                    <h2><i id="small-link-icon" style="color: var(--color-blue);" class="nf-fa-steam">&nbsp; </i>Steam</h2>
 
-                        <p></p>
+                    <p></p>
 
-                        <a class="cta-button" href="https://github.com/saunakatti">My Account</a>
-                        <a class="cta-button" href="#projects-are-wip">My Projects</a>
+                    <a class="cta-button" href="https://steamcommunity.com/profiles/76561199516302720">My profile</a>
 
-                    </div>
                 </div>
+            </div>
 
-            </section>
+            <!-- GitHub -->
+
+            <div style="border-color: var(--color-text);" class="link-container">
+
+                <i id=large-link-icon style="color: var(--color-text);" class="nf-md-github"></i>
+                
+                <div class="text-container">
+                
+                    <h2><i id="small-link-icon" style="color: var(--color-text);" class="nf-md-github">&nbsp; </i>GitHub</h2>
+
+                    <p></p>
+
+                    <a class="cta-button" href="https://github.com/saunakatti">My Account</a>
+                    <a class="cta-button" href="#projects-are-wip">My Projects</a>
+
+                </div>
+            </div>
+
+            <!-- Bluesky -->
+
+            <div style="border-color: var(--color-sapphire);" class="link-container">
+
+                <i id=large-link-icon style="color: var(--color-sapphire);" class="nf-fae-butterfly"></i>
+                
+                <div class="text-container">
+                
+                    <h2><i id="small-link-icon" style="color: var(--color-sapphire);" class="nf-fae-butterfly">&nbsp; </i>Bluesky</h2>
+
+                    <p></p>
+
+                    <a class="cta-button" href="https://bsky.app/profile/saunakatti.bsky.social">My Profile</a>
+
+                </div>
+            </div>
+
+        </section>
     </div>
 
     <footer>
-            <li>&copy; 2026 Saunakatti</li>
-            <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
-            <a href="links.html"> &nbsp; Links</a>
-            <li>made with <i class="nf-fa-heart" style="color: var(--color-red);"></i> on <i class="nf-dev-linux"></i></li>
+        <li>&copy; 2026 Saunakatti</li>
+        <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
+        <a href="links.html"> &nbsp; Links</a>
+        <li>made with <i class="nf-fa-heart" style="color: var(--color-red);"></i> on <i class="nf-dev-linux"></i></li>
     </footer>
 
 </body>

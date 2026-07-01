@@ -1,8 +1,17 @@
 function topNavClick() {
-    var x = document.getElementById("menuLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    
+    var topNav = document.getElementById("navigation-bar");
+    if (topNav.style.display !== "none") {
+        topNav.style.display = "none";
     } else {
-        x.style.display = "block";
+        topNav.style.display = "flex";
     }
+
+    var menu = document.getElementById("menu")
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+    
 }

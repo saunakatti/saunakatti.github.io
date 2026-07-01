@@ -15,11 +15,11 @@
 </head>
 <body>
     <div class="page-content">  <!-- This is to allow separate config for content and footer see style.css -->
-        <header>
+        <header id="header">
             <!-- Top navigation -->
-            <div class="topNav">
+            <div id="navigation-bar">
                 <a class="activePage" id="navTitle" href="index.html">Saunakatti&nbsp; 🌱</a>
-                    <div id="menuLinks" class="menuLinks">
+                    <div id="navbar-links">
                         <li><a  href="#test1">Test 1</a></li>
                         <li><a  href="#test2">Test 2</a></li>
                         <li><a  href="#test3">Test 3</a></li>
@@ -27,13 +27,34 @@
                         <li><a  href="about.html">About</a></li>
                     </div>
 
-                    <!-- Hamburger menu -->
-                    <div class="hamburger">
-                        <a href="javascript:void(0);" class="icon" onclick="topNavClick()">
-                            <i class="nf-md-menu"></i>
-                        </a>
-                    </div>
             </div>
+
+            <!-- The menu that appears when hamburger clicked -->
+            <div class="flex-container" id="menu">  
+                <ol class="menu-column">
+                    <h3>Main Pages</h3>
+                    <li><a class="activePage" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ol>
+
+               <!-- <ol class="menu-column">
+                    <h3>Empty</h3>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ol> -->
+
+            </div>
+
+            <!-- Hamburger menu -->
+                
+            <a href="javascript:void(0);" id="hamburger-container" onclick="topNavClick()">
+                <i class="nf-md-menu"></i>
+            </a>
+
         </header>
        
 
@@ -43,8 +64,7 @@
                 <div class="text-container">
                     <h1>Hello and I hope you are having a good day or night!</h1>
                     <p>This is Saunakatti's personal site hosted on GitHub pages. As the site is a small learning project, it will change and have issues.</p>
-                    <a class="cta-button" href="https://github.com/saunakatti/saunakatti.github.io" > &nbsp; See the repo for this site</a>
-                    <a class="cta-button" href="links.html" > &nbsp; See my other links</a>
+                    <a class="cta-button" href="links.html" > &nbsp; Links</a>
                 </div>
             </div>
         </section>
@@ -61,7 +81,7 @@
     </div>
 
     <footer>
-            <li>&copy; 2026 Saunakatti &nbsp; &nbsp; &nbsp; <a href="javascript:void(0);" onclick="themeSwitchClick()">TEST</a></li>
+            <li>&copy; 2026 &nbsp; Saunakatti</li>
             <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
             <a href="links.html"> &nbsp; Links</a>
             <li>made with <i class="nf-fa-heart" style="color: var(--color-red);"></i> on <i class="nf-dev-linux"></i></li>

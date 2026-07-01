@@ -96,7 +96,7 @@ table {
 
 /* || Top navigation/header stuff || */
 
-.topNav {
+#navigation-bar {
     margin: 0em auto 0em auto;
     width: min(1000px, 100%);
     background-color: var(--color-mantle);
@@ -105,31 +105,66 @@ table {
     overflow: hidden;
 }
 
-.topNav .menuLinks {
+#navigation-bar #navbar-links {
     display: flex;
     list-style-type: none;
     gap: 2em;
     margin-left: auto;
+    margin-right: 2em;
 }
 
-.topNav #navTitle {
+#navigation-bar #navTitle {
     margin-right: auto;
     font-weight: bold;
 }
 
-.topNav a.icon {
-    display: none;
-}
-
-.topNav a {
+#navigation-bar a {
     text-decoration: none;
     color: var(--color-text);
     display: block;
     padding: 0.5em 0.5em;
 }
 
-.topNav a:hover {
+#navigation-bar a:hover {
     text-decoration: underline;
+}
+
+#menu {
+    color: var(--color-text);
+    display: none;
+    gap: 3em;
+    justify-content: left;
+    flex-flow: wrap;
+}
+
+#menu a {
+    color: var(--color-text)
+}
+
+#menu .menu-column {
+    line-height: 175%;
+}
+
+#hamburger-container {
+    display: flex;
+    color: var(--color-text);
+    align-items: flex-end;
+    height: fit-content;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0.5em;
+    margin-bottom: auto;
+}
+
+#hamburger-container i {
+    position: relative;
+    color: var(--color-text);
+    scale: 1.3;
+    margin-left: 0em;
+}
+
+#navigation-bar {
+    display: flex;
 }
 
 header {
@@ -140,12 +175,14 @@ header {
     padding: min(2em, 15%);
     border-radius: 0em;
     border: 2px solid var(--color-lavender);
+    align-items: center;
+    display: flex;
 }
 
 /* Active page color in header */
 
-.menuLinks .activePage,
-.topNav .activePage {
+#navigation-bar .activePage,
+#menu .activePage {
     color: var(--color-lavender);
     font-weight: bold;
     /* text-decoration: underline; */
@@ -335,28 +372,27 @@ footer a:hover {
 
 @media(max-width: 640px) {  /* For mobile, hamb. menu, less padding etc. */
 
-    .topNav .menuLinks {
+    #navigation-bar #navbar-links {
         display: none;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .topNav #navTitle {
+    #navigation-bar #navTitle {
         display: flex;
         justify-content: center;
     }
 
-    .topNav .hamburger {
-        margin-left: auto;
-        display: flex;
-    }
-
-    .topNav a.icon {
+    #navigation-bar a.icon {
         display: flex;
     }
 
     header {
         margin-top: 0;
+    }
+
+    #menu .menu-column {
+        width: 100%;
     }
 
     .cta-button,
