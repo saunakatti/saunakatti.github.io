@@ -3,23 +3,20 @@
 My personal site for links and other stuff. Intended as a learning project for css, html etc.
 Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) for theming. The site also uses (or at least tries to use) [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) for cool icons. 
 
+> [!Note]
+> GitHub pages means no backend.
+
 ### [saunakatti.github.io](https://saunakatti.github.io/)
 
 <img src="assets/images/preview1_desktop.png" alt="Desktop Prewiev 1" width="1000" height="510">
 <img src="assets/images/preview1_mobile.jpg" alt="Mobile Prewiev 1" width="300" height="650">
-
-
 
 ---
 
 ### List of ideas
 - Some small vague personal About and about the site
 
-~~ - Hardware info ~~ ✅ 
-
 - Links to other accounts
-
-- (? Might be useless and annoying for users) Add tooltips
 
 - Get the monospace font working (although not needed atm)
 
@@ -28,9 +25,7 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
    - This would help when looking at
     code without a Nerd Font
 
-- Display which page user is on in top bar/menu
-
-- (?) Reduce picture quality on some pictures
+- Take inspo from indie websites
 
 - Major cleanup at some point
   - Make IDs and Classes more understandable and remove unneeded ones
@@ -38,7 +33,7 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
   - Split into sections and add more comments
 
 - (Future) Add dark/light mode switch with latte flavour as light theme
-  - should be pretty easy by just adding a js script that changes color variables
+  - should be pretty easy by just adding a js script that changes color variables and saves them somewhere
 
 - (Future) Add picture gallery
 
