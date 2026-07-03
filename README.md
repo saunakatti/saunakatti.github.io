@@ -27,6 +27,10 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 
 - Take inspo from indie websites
 
+- Add blog with recent post(s) on homepage
+
+- Add library for read books to force me to read more
+
 - Major cleanup at some point
   - Make IDs and Classes more understandable and remove unneeded ones
   - Remove pointless configuraton
@@ -39,8 +43,6 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 
 - (Future) Add more animations
 
-- (Future) Add blog with recent post(s) on homepage
-
 - (Future) Add no javascript mode for users not using javascript.
 
 <!-- gaming related stuff, smp??, fsmp blog? -->
@@ -48,6 +50,10 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 <!-- Could use Atabook to add a guestbook?>
 
 <!-- Make a nameplate 88 x 31>
+
+<!-- Notebook section>
+
+<!-- New colour palette >
 
 
 
