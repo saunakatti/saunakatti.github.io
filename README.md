@@ -14,7 +14,7 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 ---
 
 ### List of ideas
-- Some small vague personal About and about the site
+- Some small vague personal About and about the site.
 
 - (Done partially, TODO: import file from repo, change old ones to class names)
   Rework usage of icons by importing "https://www.nerdfonts.com/assets/css/webfont.css"
