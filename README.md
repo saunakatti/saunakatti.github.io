@@ -16,10 +16,6 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 ### List of ideas
 - Some small vague personal About and about the site
 
-- Links to other accounts
-
-- Get the monospace font working (although not needed atm)
-
 - (Done partially, TODO: import file from repo, change old ones to class names)
   Rework usage of icons by importing "https://www.nerdfonts.com/assets/css/webfont.css"
    - This would help when looking at
@@ -29,19 +25,20 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 
 - Add blog with recent post(s) on homepage
 
-- Add library for read books to force me to read more
+- Make good codeblocks with prismjs
 
 - Major cleanup at some point
   - Make IDs and Classes more understandable and remove unneeded ones
   - Remove pointless configuraton
   - Split into sections and add more comments
 
-- (Future) Add dark/light mode switch with latte flavour as light theme
-  - should be pretty easy by just adding a js script that changes color variables and saves them somewhere
+- (Added, light theme might change) Add dark/light mode switch with latte flavour as light theme
 
 - (Future) Add picture gallery
 
 - (Future) Add more animations
+
+- (Future) Add library for read books to force me to read more
 
 - (Future) Add no javascript mode for users not using javascript.
 
@@ -49,7 +46,7 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 
 <!-- Could use Atabook to add a guestbook?>
 
-<!-- Make a nameplate 88 x 31>
+<!-- Make a button 88 x 31>
 
 <!-- Notebook section>
 

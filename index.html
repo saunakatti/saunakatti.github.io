@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
     <!-- Load hamburger menu script -->
     <script src="scripts/top-nav-menu.js"></script>
-    <script src="scripts/dark-light-switch.js"></script>
+    <script type="text/javascript" src="scripts/lightmode.js" defer></script>
 
 </head>
 <body>
@@ -22,7 +22,7 @@
                     <div id="navbar-links">
                         <li><a  href="#test1">Test 1</a></li>
                         <li><a  href="#test2">Test 2</a></li>
-                        <li><a  href="#test3">Test 3</a></li>
+                        <li><a  href="blog.html">Blog</a></li>
                         <li><a  href="links.html">Links</a></li>
                         <li><a  href="about.html">About</a></li>
                     </div>
@@ -36,6 +36,7 @@
                     <li><a class="activePage" href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="links.html">Links</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ol>
 
                <!-- <ol class="menu-column">
@@ -46,6 +47,11 @@
                     <li>&nbsp;</li>
                     <li>&nbsp;</li>
                 </ol> -->
+
+                <a id="theme-switch">   
+                    <i class="nf-oct-moon"></i>
+                    <i class="nf-oct-sun"></i>
+                </a>
 
             </div>
 
@@ -58,7 +64,7 @@
         </header>
        
 
-        <section>
+        <section style="border-color: var(--color-green);">
             <div class="flex-container">
                 <img height="300" width="300" src="assets/images/saunakatti.png" style="border: 2px solid var(--color-green);">
                 <div class="text-container">
@@ -66,6 +72,29 @@
                     <p>This is Saunakatti's personal site hosted on GitHub pages. As the site is a small learning project, it will change and have issues.</p>
                     <a class="cta-button" href="links.html" > &nbsp; Links</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Recent blog posts -->
+        <section id="recent-posts" style="border-color: var(--color-teal);">
+            <h1 style="padding: 1em;">Recent posts</h1>
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>Blog 1</h3>
+                    <p>This is a test entry. This is a test entry. This is a test entry.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Blog 2</h3>
+                    <p>This is a test entry. This is a test entry. This is a test entry.</p>
+                </div>
+
+                <div class="card"">
+                    <h3>Blog 3</h3>
+                    <p>This is a test entry. This is a test entry. This is a test entry.</p>
+                </div>
+
             </div>
         </section>
 
@@ -78,6 +107,7 @@
                 <img src="assets/images/bee.png" height="200" width="200" style="border: 2px solid var(--color-green);">
             </div>
         </section>
+
     </div>
 
     <footer>

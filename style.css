@@ -5,6 +5,11 @@
    /* url("mycustomfont.woff") format("woff"), */
 }
 
+@font-face {
+    font-family: "JetBrainsMonoNF";
+    src: url(assets/fonts/JetBrainsMonoNerdFont-Regular.ttf);
+}
+
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 /* Catppuccin Mocha colors*/
@@ -38,6 +43,37 @@
     --color-crust: #11111b;
 }
 
+/* Catppuccin Latte colors */
+.lightmode {
+    --color-rosewater: #dc8a78;
+    --color-flamingo: #dd7878;
+    --color-pink: #ea76cb;
+    --color-mauve: #8839ef;
+    --color-red: #d20f39;
+    --color-maroon: #e64553;
+    --color-peach: #fe640b;
+    --color-yellow: #df8e1d;
+    --color-green: #40a02b;
+    --color-teal: #179299;
+    --color-sky: #04a5e5;
+    --color-sapphire: #209fb5;
+    --color-blue: #1e66f5;
+    --color-lavender: #7287fd;   
+
+    --color-text: #4c4f69;
+    --color-subtext1: #5c5f77;
+    --color-subtext0: #6c6f85;
+    --color-overlay2: #7c7f93;
+    --color-overlay1: #8c8fa1;
+    --color-overlay0: #9ca0b0;
+    --color-surface2: #acb0be;
+    --color-surface1: #bcc0cc;
+    --color-surface0: #ccd0da;
+    --color-base: #eff1f5;
+    --color-mantle: #e6e9ef;
+    --color-crust: #dce0e8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -47,7 +83,6 @@
 
 html {
     font-family: NotoSansNF,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color-text);
     margin: 0;
     padding: 0;
     height: 100%;
@@ -58,6 +93,7 @@ body {
     padding: 0;
     height: 100%;
     background-color: var(--color-crust);
+    color: var(--color-text);
 }
 
 a {
@@ -86,6 +122,10 @@ table {
     table-layout: fixed;
     width: min(1000px, 100%);
     text-align: left;
+}
+
+code {
+    font-family: JetBrainsMonoNF;
 }
 
 .page-content {    /* To allow separate colors for contents and footer */
@@ -143,6 +183,7 @@ table {
 
 #menu .menu-column {
     line-height: 175%;
+    margin-top: -2em;
 }
 
 #hamburger-container {
@@ -177,6 +218,36 @@ header {
     border: 2px solid var(--color-lavender);
     align-items: center;
     display: flex;
+}
+
+/* theme switcher */
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10em;
+    right: 2.1em;
+}
+
+#theme-switch i {
+    scale: 1.2;
+}
+
+#theme-switch i:first-child {
+    display: none;
+}
+
+.lightmode #theme-switch i:last-child {
+    display: none;
+}
+
+.lightmode #theme-switch i:first-child {
+    display: block;
 }
 
 /* Active page color in header */
@@ -246,11 +317,10 @@ header {
     border: 2px solid var(--color-surface0);
 }
 
-
 section {
     padding: 3em min(2em, 15%);
     background-color: var(--color-mantle);
-    border: 2px solid;
+    border: 2px solid var(--color-surface2);
     text-align: left;
     margin: 2em auto;
     width: min(75em, 100%);
@@ -328,6 +398,27 @@ section p {
     margin-left: 0;
 }
 
+/* || Recent posts section || */
+
+#recent-posts {
+    padding: 2em;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.card {
+    padding: 2em;
+    background-color: var(--color-base);
+    border: 2px solid var(--color-surface0);
+    max-width: 300px;
+}
+
 /* || Footer || */
 
 footer {
@@ -367,6 +458,17 @@ footer a:hover {
 
     .link-container .text-container {
         text-align: left;
+    }
+}
+
+@media(max-width: 800px) {  /* Settings for recent post sections in index.html */
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
     }
 }
 
