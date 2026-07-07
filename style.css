@@ -1,13 +1,16 @@
+/*@import "assets/fonts/jetbrainsmono-nerd-font.css";
+@import "assets/fonts/notosans-nerd-font.css"; */
+
 @font-face {
-    font-family: "NotoSansNF";
-   src: url("assets/fonts/NotoSansNerdFont-Regular.ttf") format("truetype");
-   /* url("mycustomfont.woff2") format("woff2"), */
-   /* url("mycustomfont.woff") format("woff"), */
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('assets/fonts/jetbrainsmono-nf.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal
 }
 
 @font-face {
-    font-family: "JetBrainsMonoNF";
-    src: url(assets/fonts/JetBrainsMonoNerdFont-Regular.ttf);
+    font-family: 'NotoSans Nerd Font';
+    src: url('assets/fonts/notosans-nf.woff2') format('woff2');
 }
 
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
@@ -82,7 +85,6 @@
 }
 
 html {
-    font-family: NotoSansNF,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -90,6 +92,7 @@ html {
 
 
 body {
+    font-family: 'NotoSans Nerd Font';
     padding: 0;
     height: 100%;
     background-color: var(--color-crust);
@@ -202,6 +205,7 @@ code {
     color: var(--color-text);
     scale: 1.3;
     margin-left: 0em;
+    anchor-name: --hamburger-icon;
 }
 
 #navigation-bar {
@@ -229,9 +233,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position-anchor: --hamburger-icon;
     position: absolute;
-    top: 10em;
-    right: 2.1em;
+    position-area: center;
+    top: 6em;
 }
 
 #theme-switch i {
@@ -445,6 +450,51 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* || Blog page || */
+
+.blog-container {
+    width: min(75em, 100%);
+    margin: 0em auto;
+    gap: 1em;
+    display: grid;
+    grid-template-areas:
+    "side-section main-blog"
+    "side-section mini-blog";
+    grid-template-columns: 1fr 3fr;
+}
+
+.blog-container section.side-section {
+    grid-area: side-section;
+}
+
+.blog-container section.main-blog {
+    grid-area: main-blog;
+}
+
+.blog-container section.main-blog iframe {
+    width: min(75em, 100%);
+    height: 500px;
+}
+
+.blog-entry h1,
+.blog-entry h2,
+.blog-entry h3 {
+    margin-bottom: 0.5em;
+}
+
+.blog-entry .blog-header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.blog-entry p {
+    padding-bottom: 1em;
+}
+
+.blog-entry hr {
+    color: var(--color-surface1);
 }
 
 

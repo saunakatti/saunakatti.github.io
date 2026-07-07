@@ -1,0 +1,9 @@
+/* jetbrainsmono-nf */
+@font-face {
+	font-family: "JetBrainsMono Nerd Font";
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("JetBrainsMono NF Regular"), local("JetBrainsMonoNF-Regular"), url(jetbrainsmono-nf.woff2) format("woff2");
+}
+

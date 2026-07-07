@@ -1,0 +1,9 @@
+/* notosans-nf */
+@font-face {
+	font-family: "NotoSans Nerd Font";
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("NotoSans NF Reg"), local("NotoSansNF-Reg"), url(notosans-nf.woff2) format("woff2");
+}
+
