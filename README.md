@@ -25,6 +25,8 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 
 - Add blog with recent post(s) on homepage
 
+- fix fonts
+
 - Make good codeblocks with prismjs
 
 - Major cleanup at some point
@@ -49,8 +51,5 @@ Uses Mocha pallette of [Catppuccin](https://github.com/catppuccin/catppuccin) fo
 <!-- Make a button 88 x 31>
 
 <!-- Notebook section>
-
-<!-- New colour palette >
-
 
 
