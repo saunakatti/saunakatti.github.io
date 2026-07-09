@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>links</title>
+    <title>saunakatti ❀ blog</title>
     <link rel="stylesheet" href="style.css">    
     <link rel="icon" href="assets/images/bee-icon.png">
+    <!-- Prismjs theme -->
+    <link id="prismjs-theme" href="/assets/prismjs-themes/mocha.css" rel="stylesheet" />
     <!-- Load NF icons -->
     <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
     <!-- Load hamburger menu script -->
@@ -19,8 +21,7 @@
             <div id="navigation-bar">
                 <a id="navTitle" href="index.html">Saunakatti&nbsp; 🌱</a>
                     <div id="navbar-links">
-                        <li><a href="#test1">Test 1</a></li>
-                        <li><a href="#test2">Test 2</a></li>
+                        <li><a href="https://saunakatti.atabook.org/">Guestbook</a></li>
                         <li><a class="activePage" href="blog.html">Blog</a></li>
                         <li><a href="links.html">Links</a></li>
                         <li><a href="about.html">About</a></li>
@@ -38,6 +39,12 @@
                     <li><a class="activePage" href="blog.html">Blog</a></li>
                 </ol>
 
+                <ol class="menu-column">
+                    <h3>Misc</h3>
+                    <li><a href="https://saunakatti.atabook.org/">Guestbook</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                </ol>
+
                 <!-- <ol class="menu-column">
                     <h3>Empty</h3>
                     <li>&nbsp;</li>
@@ -48,8 +55,8 @@
                 </ol> -->
 
                 <a id="theme-switch">   
-                    <i class="nf-oct-moon"></i>
-                    <i class="nf-oct-sun"></i>
+                    <span class="nf-oct-moon"></span>
+                    <span class="nf-oct-sun"></span>
                 </a>
 
             </div>
@@ -57,27 +64,23 @@
             <!-- Hamburger menu -->
                 
             <a href="javascript:void(0);" id="hamburger-container" onclick="topNavClick()">
-                <i class="nf-md-menu"></i>
+                <span class="nf-md-menu"></span>
             </a>
 
         </header>
 
-        <div class="blog-container">
+        <div class="grid-content">
 
-            <section class="main-blog">
-                <iframe id="iframe" name="latest-post-iframe" frameborder="0" src="blog/blog-home.html"></iframe>
+            <section class="main-section" style="border-color: var(--color-blue);">
+                <iframe id="iframe" name="latest-post-iframe" frameborder="0" src="blog/2026/post1-welcome.html"></iframe>
                 <!-- iframes with the id "iframe" change theme, see scripts/lightmode.js -->
             </section>
 
-            <section class="side-section">
+            <section class="side-section" style="border-color: var(--color-mauve);">    
                 <h2>All posts</h2>
                 <ol>
-                    <li></li>
+                    <li><a href="blog/2026/post1-welcome.html" target="latest-post-iframe">Post 1 – Welcome!</a></li>                                                           <!-- Remember to set target to iframe -->
                 </ol>
-            </section>
-
-            <section class="mini-blog">
-                <h2>Miniblog</h2>
             </section>
 
         </div>
@@ -89,8 +92,10 @@
         <li>&copy; 2026 Saunakatti</li>
         <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
         <a href="links.html"> &nbsp; Links</a>
-        <li>made with <i class="nf-fa-heart" style="color: var(--color-red);"></i> on <i class="nf-dev-linux"></i></li>
+        <li>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span> on <span class="nf-dev-linux"></span></li>
     </footer>
+
+    <script src="/scripts/prism.js"></script>
 
 </body>
 </html>

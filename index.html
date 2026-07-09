@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>saunakatti</title>
+    <title>saunakatti ❀ home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/images/bee-icon.png">
+    <!-- Prismjs theme -->
+    <link id="prismjs-theme" href="/assets/prismjs-themes/mocha.css" rel="stylesheet" />
     <!-- Load NF icons -->
     <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
     <!-- Load hamburger menu script -->
@@ -20,8 +22,7 @@
             <div id="navigation-bar">
                 <a class="activePage" id="navTitle" href="index.html">Saunakatti&nbsp; 🌱</a>
                     <div id="navbar-links">
-                        <li><a  href="#test1">Test 1</a></li>
-                        <li><a  href="#test2">Test 2</a></li>
+                        <li><a  href="https://saunakatti.atabook.org/">Guestbook</a></li>
                         <li><a  href="blog.html">Blog</a></li>
                         <li><a  href="links.html">Links</a></li>
                         <li><a  href="about.html">About</a></li>
@@ -39,6 +40,12 @@
                     <li><a href="blog.html">Blog</a></li>
                 </ol>
 
+                <ol class="menu-column">
+                    <h3>Misc</h3>
+                    <li><a href="https://saunakatti.atabook.org/">Guestbook</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                </ol>
+
                <!-- <ol class="menu-column">
                     <h3>Empty</h3>
                     <li>&nbsp;</li>
@@ -49,8 +56,8 @@
                 </ol> -->
 
                 <a id="theme-switch">   
-                    <i class="nf-oct-moon"></i>
-                    <i class="nf-oct-sun"></i>
+                    <span class="nf-oct-moon"></span>
+                    <span class="nf-oct-sun"></span>
                 </a>
 
             </div>
@@ -58,12 +65,11 @@
             <!-- Hamburger menu -->
                 
             <a href="javascript:void(0);" id="hamburger-container" onclick="topNavClick()">
-                <i class="nf-md-menu"></i>
+                <span class="nf-md-menu"></span>
             </a>
 
         </header>
        
-
         <section style="border-color: var(--color-green);">
             <div class="flex-container">
                 <img height="300" width="300" src="assets/images/saunakatti.png" style="border: 2px solid var(--color-green);">
@@ -71,42 +77,71 @@
                     <h1>Hello and I hope you are having a good day or night!</h1>
                     <p>This is Saunakatti's personal site hosted on GitHub pages. As the site is a small learning project, it will change and have issues.</p>
                     <a class="cta-button" href="links.html" > &nbsp; Links</a>
+                    <a class="cta-button" href="blog.html"><span class="nf-md-book_multiple_outline"></span> &nbsp; Blog</a>
                 </div>
             </div>
         </section>
 
-        <!-- Recent blog posts -->
-        <section id="recent-posts" style="border-color: var(--color-teal);">
-            <h1 style="padding: 1em;">Recent posts</h1>
-            <div class="card-container">
+        <div class="grid-content">
+            <div class="main-section">
 
-                <div class="card">
-                    <h3>Blog 1</h3>
-                    <p>This is a test entry. This is a test entry. This is a test entry.</p>
-                </div>
+                <!-- Recent blog posts -->
+                <section id="recent-posts" style="border-color: var(--color-teal);">
+                    <h2 style="padding: 1em;">Recent posts</h2>
+                    <div class="card-container">
 
-                <div class="card">
-                    <h3>Blog 2</h3>
-                    <p>This is a test entry. This is a test entry. This is a test entry.</p>
-                </div>
+                        <div class="card">
+                            <h3><a href="blog/2026/post1-welcome.html">Post 1 – Welcome!</a></h3>
+                            <p>Welcome to my corner of the web. This is the first blog post and shows as the default one.</p>
+                        </div>
 
-                <div class="card"">
-                    <h3>Blog 3</h3>
-                    <p>This is a test entry. This is a test entry. This is a test entry.</p>
-                </div>
+                        <div class="card">
+                            <h3>Post 2</h3>
+                            <p></p>
+                        </div>
+
+                        <div class="card"">
+                            <h3>Post 3</h3>
+                            <p></p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section>
+                    <div class="flex-container">
+                        <div class="text-container">
+                            <h2>Looking for ideas</h2>
+                            <p>If you have any ideas for this site, feel free to suggest them on GitHub.</p>
+                        </div>
+                        <img src="assets/images/bee.png" height="200" width="200" style="border: 2px solid var(--color-green);">
+                    </div>
+                </section>
 
             </div>
-        </section>
 
-        <section>
-            <div class="flex-container">
-                <div class="text-container">
-                    <h2>Looking for ideas</h2>
-                    <p>If you have any ideas for this site, feel free to contact.</p>
-                </div>
-                <img src="assets/images/bee.png" height="200" width="200" style="border: 2px solid var(--color-green);">
+            <div class="side-section">
+
+                <section class="site-updates" style="border-color: var(--color-blue);">
+                    <h2 style="text-align: center;">Site updates</h2>
+                    <hr>
+                    <h3>At a good point</h3>
+                    <li>❀ &nbsp; Site is at a point that it's fairly nice to use </li>
+                    <li>❀ &nbsp; You can report bugs and give suggestions <a href="https://github.com/saunakatti/saunakatti.github.io/issues">here</a></li>
+                    <li>❀ &nbsp; Feel free to sign the Guestbook </li>
+                    <hr>
+                </section>
+
+                <section class="microblog" style="border-color: var(--color-mauve);">
+                    <h2 style="text-align: center;">Microblog</h2>
+                    <p>
+                       
+                    </p>
+                </section>
+
             </div>
-        </section>
+
+        </div>
 
     </div>
 
@@ -114,7 +149,7 @@
             <li>&copy; 2026 &nbsp; Saunakatti</li>
             <a href="https://github.com/saunakatti"> &nbsp; GitHub</a>
             <a href="links.html"> &nbsp; Links</a>
-            <li>made with <i class="nf-fa-heart" style="color: var(--color-red);"></i> on <i class="nf-dev-linux"></i></li>
+            <li>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span> on <span class="nf-dev-linux"></span></li>
     </footer>
 
 </body>
