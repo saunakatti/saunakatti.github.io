@@ -13,38 +13,39 @@
     <script type="text/javascript" src="scripts/lightmode.js" defer></script>
 
 </head>
-<body style="padding: 2em; background-color: var(--color-base);">
-    <section style="margin-right: auto; margin-left: auto; border-color: var(--color-lavender); background-color: var(--color-mantle);">
-
+<body style="padding: 2em; background-color: var(--color-base); text-align: left;">
         <h1 style="font-size: 5em;">404</h1>
-        
         <h2 style="padding-bottom: 0.2em;">Seems like this page does not exist</h2>
-        <h3 style="padding-bottom: 1em;"><a href="index.html">Home</a></h3>
+        <h2 style="padding-bottom: 1em;"><a href="index.html"><span class="nf-md-home"></span> Home</a></h2>
         <div style="display: flex; flex-direction: column; gap: 1em; flex-wrap: wrap;">
             <p>Maybe the page is under construction</p>
             <p>Maybe the link is wrong</p>
             <p>Maybe it's something else</p>
             <p>❀ Saunakatti ❀</p>
         </div>
-         <img id="sleeping-pusheen" src="assets/images/pusheen-sleep-cat.png" alt="Pusheen cat sleeps">
-    </section>
+       <img id="spinning-tux" src="assets/images/spinning-tux-sd.gif" alt="Spinning Tux" width="300" height="300">
 </body>
 
 <style>
+    body {
+        font-family: 'JetBrainsMono Nerd Font';
+    }
+
     p {
         font-size: large;
     }
 
-    img#sleeping-pusheen {
-        scale: 0.5;
+    img#spinning-tux {
+        scale: 1;
+        margin-top: 1em;
+        margin-right: 1em;
         float: right;
-        margin-top: -26em;
     }    
 
-    @media(max-width: 850px) {
-        img#sleeping-pusheen {
-            float: none;
-            margin-top: -2em;
+    @media(max-width: 600px) {
+        img#spinning-tux {
+            margin-top: 0em;
+            scale: 0.5;
         }
     }
 </style>
