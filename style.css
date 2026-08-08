@@ -562,13 +562,13 @@ footer a:hover {
 }
 
 .microblog {
-    height: 62.8%;
+    height: 35rem;
     overflow: auto;
     min-width: 0;
 }
 
 .site-updates {
-    height: 30%;
+    height: 20rem;
     overflow: auto;
     min-width: 0;
 }
