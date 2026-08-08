@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,16 +14,20 @@
 
 </head>
 <body style="padding: 2em; background-color: var(--color-base); text-align: left;">
-        <h1 style="font-size: 5em;">404</h1>
-        <h2 style="padding-bottom: 0.2em;">Seems like this page does not exist</h2>
-        <h2 style="padding-bottom: 1em;"><a href="index.html"><span class="nf-md-home"></span> Home</a></h2>
-        <div style="display: flex; flex-direction: column; gap: 1em; flex-wrap: wrap;">
-            <p>Maybe the page is under construction</p>
-            <p>Maybe the link is wrong</p>
-            <p>Maybe it's something else</p>
-            <p>❀ Saunakatti ❀</p>
+    <div class="flex-container">
+        <div>
+            <h1 style="font-size: 5em;">404</h1>
+            <h2 style="padding-bottom: 0.2em;">Seems like this page does not exist</h2>
+            <h2 style="padding-bottom: 1em;"><a href="index.html"><span class="nf-md-home"></span> Home</a></h2>
+            <div style="display: flex; flex-direction: column; gap: 1em; flex-wrap: wrap;">
+                <p>Maybe the page is under construction</p>
+                <p>Maybe the link is wrong</p>
+                <p>Maybe it's something else</p>
+                <p>❀ Saunakatti ❀</p>
+            </div>
         </div>
-       <img id="spinning-tux" src="assets/images/spinning-tux-sd.gif" alt="Spinning Tux" width="300" height="300">
+        <img id="spinning-tux" height="300" width="300" src="assets/images/spinning-tux-sd.gif" alt="Spinning Tux the Penguin">
+    </div>  
 </body>
 
 <style>
@@ -37,15 +41,14 @@
 
     img#spinning-tux {
         scale: 1;
-        margin-top: 1em;
-        margin-right: 1em;
-        float: right;
+        margin-top: 0em;
+        padding-right: 5em;
     }    
 
     @media(max-width: 600px) {
         img#spinning-tux {
+            scale: 1;
             margin-top: 0em;
-            scale: 0.5;
         }
     }
 </style>
