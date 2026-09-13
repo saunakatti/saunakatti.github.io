@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2048"
+   height="1024"
+   viewBox="0 0 541.86666 270.93333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="capricorns_galaxy_map.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#4a4a4a"
+     inkscape:document-units="px"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="1405.0212"
+     inkscape:cy="784.88853"
+     inkscape:window-width="1896"
+     inkscape:window-height="1024"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1"
+     showgrid="false">
+    <inkscape:grid
+       id="grid44"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch99">
+      <stop
+         style="stop-color:#ab57ff;stop-opacity:1;"
+         offset="0"
+         id="stop99" />
+    </linearGradient>
+    <rect
+       x="1096.4375"
+       y="557.8125"
+       width="20.8125"
+       height="5.1875"
+       id="rect56" />
+    <linearGradient
+       id="swatch56">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop56" />
+    </linearGradient>
+    <linearGradient
+       id="swatch55">
+      <stop
+         style="stop-color:#8af2ff;stop-opacity:1;"
+         offset="0"
+         id="stop55" />
+    </linearGradient>
+    <linearGradient
+       id="swatch54"
+       inkscape:swatch="solid"
+       inkscape:label="purple"
+       gradientTransform="matrix(0.57827949,0,0,0.57827949,111.97089,58.198354)">
+      <stop
+         style="stop-color:#ab57ff;stop-opacity:1;"
+         offset="0"
+         id="stop54" />
+    </linearGradient>
+    <linearGradient
+       id="swatch53"
+       inkscape:swatch="solid"
+       inkscape:label="purplebg"
+       gradientTransform="scale(0.26458333)">
+      <stop
+         style="stop-color:#9137ff;stop-opacity:0.08938539;"
+         offset="0"
+         id="stop53" />
+    </linearGradient>
+    <linearGradient
+       id="swatch52"
+       inkscape:swatch="solid"
+       inkscape:label="blue">
+      <stop
+         style="stop-color:#90f1fe;stop-opacity:1;"
+         offset="0"
+         id="stop52" />
+    </linearGradient>
+    <linearGradient
+       id="swatch51"
+       inkscape:swatch="solid"
+       inkscape:label="bluebg"
+       gradientTransform="scale(0.01852198)">
+      <stop
+         style="stop-color:#274c50;stop-opacity:0.32256003;"
+         offset="0"
+         id="stop51" />
+    </linearGradient>
+    <rect
+       x="1088.7536"
+       y="560.68066"
+       width="16.526387"
+       height="2.9967057"
+       id="rect48" />
+    <rect
+       x="931.26502"
+       y="520.89412"
+       width="38.183797"
+       height="5.7065893"
+       id="rect47" />
+    <rect
+       x="929.33485"
+       y="494.37526"
+       width="67.639868"
+       height="37.260671"
+       id="rect46" />
+    <rect
+       x="973.6623"
+       y="454.78717"
+       width="103.58634"
+       height="40.582546"
+       id="rect44" />
+    <rect
+       x="25.160459"
+       y="130.54955"
+       width="332.78268"
+       height="55.068175"
+       id="rect42" />
+    <rect
+       x="1737.9706"
+       y="966.54142"
+       width="297.65298"
+       height="46.048388"
+       id="rect41" />
+    <rect
+       x="38.927503"
+       y="26.584636"
+       width="396.2235"
+       height="136.17354"
+       id="rect4" />
+    <rect
+       x="87.349519"
+       y="62.663785"
+       width="375.98271"
+       height="51.27037"
+       id="rect2" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch51"
+       id="linearGradient51"
+       x1="274.81775"
+       y1="144.77486"
+       x2="300.69699"
+       y2="144.77486"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient52"
+       x1="274.81775"
+       y1="144.77486"
+       x2="300.69699"
+       y2="144.77486"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch53"
+       id="linearGradient53"
+       x1="239.50937"
+       y1="134.64519"
+       x2="303.46988"
+       y2="134.64519"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch54"
+       id="linearGradient54"
+       x1="239.50937"
+       y1="134.64519"
+       x2="303.46989"
+       y2="134.64519"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient71"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.11004911,0,0,0.11004911,140.7913,115.81183)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient72"
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,199.01773,97.966442)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient85"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,199.01773,97.966442)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient88"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.34474,114.37225)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient89"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.36813,114.40148)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient91"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,199.01773,97.966442)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient93"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,199.01773,97.966442)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient96"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.34474,114.37225)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient99"
+       x1="295.90851"
+       y1="146.84364"
+       x2="296.10785"
+       y2="146.84364"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.103694,0,0,1.103694,-30.717021,-15.204073)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient101"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.28273,114.32678)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient103"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,198.21583,97.600734)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient112"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,230.35267,113.99827)" />
+  </defs>
+  <rect
+     style="fill:#120c1a;fill-opacity:1;stroke:none;stroke-width:0.770001;stroke-opacity:1;paint-order:markers fill stroke"
+     id="background"
+     width="541.86664"
+     height="270.93332"
+     x="1.0908203e-05"
+     y="5.4541015e-06"
+     ry="7.3436623e-18"
+     inkscape:label="background"
+     sodipodi:insensitive="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="lockedElems"
+     inkscape:label="lockedElems"
+     sodipodi:insensitive="true">
+    <g
+       id="galaxyBorder"
+       inkscape:label="galaxyBorder">
+      <ellipse
+         style="fill:none;fill-opacity:1;stroke:#dcb9ff;stroke-width:0.305;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path1"
+         cx="270.93332"
+         cy="135.46666"
+         rx="238.88231"
+         ry="113.19507"
+         inkscape:label="galaxyBorder"
+         sodipodi:insensitive="true" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="outerInfo"
+     inkscape:label="outerInfo">
+    <g
+       id="galaxyInfo"
+       inkscape:label="galaxyInfo">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.25869934,0,0,0.25152626,-5.0404083,-3.1132904)"
+         id="t13"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.8934px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4);shape-padding:0.686633;display:inline;fill:#eadef7;fill-opacity:1;stroke:none;stroke-width:0.556672;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         inkscape:label="galaxyInfo"><tspan
+           x="39.615234"
+           y="46.710232"
+           id="tspan17"><tspan
+   style="stroke:#dcb9ff"
+   id="tspan16">Capricorn's Galaxy   </tspan>SA(s)c
+</tspan><tspan
+           x="39.615234"
+           y="74.092972"
+           id="tspan18">Lynx Cluster
+</tspan><tspan
+           x="39.615234"
+           y="101.47571"
+           id="tspan19">(Lynx Foundry // 20.16.25.53.8.4)</tspan></text>
+    </g>
+    <g
+       id="credit"
+       inkscape:label="credit">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,49.111357,7.4106651)"
+         id="t14"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect41);display:inline;fill:#3d2950;fill-opacity:1;stroke:#dcb9ff;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         inkscape:label="credit"><tspan
+           x="1737.9707"
+           y="983.19975"
+           id="tspan21"><tspan
+             style="stroke:none"
+             id="tspan20">Onni Veranen</tspan></tspan></text>
+    </g>
+    <g
+       id="note1"
+       inkscape:label="note1">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,-1.7763158,220.26316)"
+         id="t15"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect42);display:inline;fill:#332147;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         inkscape:label="note1"><tspan
+           x="25.160156"
+           y="147.20757"
+           id="tspan22">Note: The Lynx cluster has nothing to do </tspan><tspan
+           x="25.160156"
+           y="170.67419"
+           id="tspan23">with the non-fictional Lynx constellation.</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="sections"
+     inkscape:label="sections"
+     inkscape:highlight-color="#de0e0c">
+    <g
+       id="greatNebula"
+       inkscape:label="greatNebula">
+      <path
+         style="fill:url(#linearGradient53);stroke:url(#linearGradient54);stroke-width:0.142;stroke-dasharray:none;paint-order:markers fill stroke"
+         d="m 246.88634,121.60405 17.7847,-4.72247 12.78948,0.71052 9.31936,7.06216 12.47728,3.32298 4.13758,9.86486 -3.27247,11.37212 -13.06965,3.19367 -14.92105,-2.48684 -11.71998,-7.89153 -14.63784,-0.17177 -6.17923,-10.7047 z"
+         id="path46"
+         sodipodi:nodetypes="ccccccccccccc" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,-0.02220395,2.3980263)"
+         id="text47"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect47);shape-padding:0.0839204;display:inline;fill:#9137ff;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
+           x="931.34961"
+           y="525.1432"
+           id="tspan24">The Great Nebula </tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="subSections"
+     inkscape:label="subSections"
+     inkscape:highlight-color="#ff8809">
+    <g
+       id="valConjunct"
+       inkscape:label="valConjunct">
+      <path
+         style="fill:url(#linearGradient51);stroke:url(#linearGradient52);stroke-width:0.05;stroke-dasharray:none;paint-order:markers fill stroke"
+         d="m 288.79612,150.85099 7.00246,-1.50725 3.26572,-3.42272 1.60146,-4.80437 -5.84062,-2.29228 -5.18117,-0.12561 -5.28593,1.19572 -6.04989,1.8502 -3.45412,6.87683 5.76226,1.47547 3.88867,0.69949 z"
+         id="path48"
+         sodipodi:nodetypes="cccccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.629337px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#8af2ff;fill-opacity:1;stroke:none;stroke-width:0.0297325;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="303.30685"
+         y="76.456619"
+         id="text51"
+         transform="rotate(14.191577)"><tspan
+           sodipodi:role="line"
+           id="tspan51"
+           style="stroke-width:0.0297326"
+           x="303.30685"
+           y="76.456619">The Val Conjunct</tspan></text>
+    </g>
+    <g
+       id="nexus"
+       inkscape:label="nexus">
+      <path
+         style="fill:url(#swatch53);fill-opacity:1;stroke:#ab57ff;stroke-width:0.0499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="m 267.11584,131.00884 4.81754,-0.79513 3.60145,1.49671 0.42095,2.75956 2.3386,1.44994 -0.74835,2.57246 -3.50789,1.44994 -3.69502,-2.43215 h -2.61924 l -1.40316,-2.19829 -2.19829,-1.73057 -0.14032,-1.96443 z"
+         id="path112" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.612011px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);fill-opacity:1;stroke:none;stroke-width:0.0289139;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="267.76633"
+         y="137.35834"
+         id="text112"><tspan
+           sodipodi:role="line"
+           id="tspan112"
+           style="fill:url(#swatch54);stroke:none;stroke-width:0.028914"
+           x="267.76633"
+           y="137.35834">The Nexus</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="subSubSections"
+     inkscape:label="subSubSections"
+     inkscape:highlight-color="#f3d321">
+    <g
+       id="atalVal"
+       inkscape:label="atalVal">
+      <path
+         style="fill:url(#swatch51);fill-opacity:1;stroke:url(#swatch52);stroke-width:0.0499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="m 289.25573,149.78724 2.77298,-0.12477 3.48886,-0.83435 1.78525,-1.83603 -0.67183,-1.43819 -1.81197,-0.89531 -2.52059,-0.22916 -1.40304,2.47313 -2.4247,1.28417 z"
+         id="path54"
+         sodipodi:nodetypes="cccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.440195px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient71);fill-opacity:1;stroke:none;stroke-width:0.0207966;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="261.93475"
+         y="177.45309"
+         id="text57"
+         transform="matrix(1.0538771,-0.06810619,0.07603636,0.94396346,0,0)"><tspan
+           sodipodi:role="line"
+           id="tspan57"
+           style="fill:url(#linearGradient71);stroke-width:0.0207967"
+           x="261.93475"
+           y="177.45309">Atal'val</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="objects"
+     inkscape:label="objects"
+     inkscape:highlight-color="#21f3f0">
+    <g
+       id="capricornEmitter"
+       inkscape:label="capricornEmitter">
+      <circle
+         style="fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.0398293;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path44"
+         cx="270.66687"
+         cy="134.28984"
+         r="0.51069069" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.06650991,0,0,0.06650991,203.33879,101.29411)"
+         id="text44"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect44);shape-padding:6.13765;display:inline;fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
+           x="979.79883"
+           y="470.29438"
+           id="tspan26"><tspan
+             style="baseline-shift:baseline"
+             id="tspan25">The Capricorn </tspan></tspan><tspan
+           x="979.79883"
+           y="483.49439"
+           id="tspan30"><tspan
+             style="baseline-shift:baseline"
+             id="tspan27">Emmiter (E</tspan><tspan
+             style="font-size:65%;baseline-shift:sub"
+             id="tspan28">0</tspan><tspan
+             style="baseline-shift:baseline"
+             id="tspan29">)</tspan></tspan></text>
+    </g>
+    <g
+       id="ethu"
+       inkscape:label="ethu"
+       transform="translate(0.01653646,0.00826823)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient89);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.79169"
+         y="146.75047"
+         id="text72"><tspan
+           sodipodi:role="line"
+           id="tspan72"
+           style="fill:url(#linearGradient89);stroke-width:0.0110269"
+           x="295.79169"
+           y="146.75047">Ethu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient72);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="othu"
+       inkscape:label="othu"
+       transform="translate(-3.1202793,-1.3581261)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient88);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.76831"
+         y="146.72124"
+         id="text83"><tspan
+           sodipodi:role="line"
+           id="tspan83"
+           style="fill:url(#linearGradient88);stroke-width:0.0110269"
+           x="295.76831"
+           y="146.72124">Othu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient85);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle83"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="athu"
+       inkscape:label="athu"
+       transform="translate(-4.5589512,1.8251421)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient96);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.76831"
+         y="146.72124"
+         id="text88"><tspan
+           sodipodi:role="line"
+           id="tspan88"
+           style="fill:url(#linearGradient96);stroke-width:0.0110269"
+           x="295.76831"
+           y="146.72124">Athu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient91);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle88"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="tophu"
+       inkscape:label="tophu"
+       transform="translate(-2.5332351,0.44434784)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient101);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.7063"
+         y="146.67577"
+         id="text91"><tspan
+           sodipodi:role="line"
+           id="tspan91"
+           style="fill:url(#linearGradient101);stroke-width:0.0110269"
+           x="295.7063"
+           y="146.67577">Tophu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient93);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle91"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+      <circle
+         style="fill:none;stroke:url(#linearGradient99);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="circle98"
+         cx="295.98547"
+         cy="146.86639"
+         r="0.097716853" />
+    </g>
+    <g
+       id="ajankajo"
+       inkscape:label="ajankajo"
+       transform="translate(-21.84598,-9.9438035)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient112);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="294.77625"
+         y="146.34726"
+         id="text101"><tspan
+           sodipodi:role="line"
+           id="tspan101"
+           style="fill:url(#linearGradient112);stroke-width:0.0110269"
+           x="294.77625"
+           y="146.34726">Ajankajo</tspan></text>
+      <circle
+         style="fill:url(#linearGradient103);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle101"
+         cx="295.18353"
+         cy="146.50067"
+         r="0.065798551" />
+    </g>
+  </g>
+</svg>

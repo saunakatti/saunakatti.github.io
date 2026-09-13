@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>"Galaxies" Wiki // home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <!-- Load NF icons -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+    <!-- Leaflet -->
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+</head>
+<body>
+<div class="pageContent">
+    <section style="line-height: 2.4em;">
+        <h1>Capricorn's Encyclopedia &nbsp; <q style="font-size: 20px;">Knowledge shatters violence</q></h1>
+        <h2></h2>
+        <h3>Capricorn's Knowledge Fund & Capricorn's Great Union</h3>
+    </section>
+    <div class="wikiContainer">
+        <!-- Map -->
+        <div class="mapContainer"><div id="map"></div></div>        <!-- TODO: Make a grid with with 1/(2|3) where 1=map 2=db entry and 3 is index etc.-->
+
+        <!-- wiki stuff -->
+        <div id="wikiText">
+            <div id="wikiPlaceholder">
+                <h2>Capricorn's Database</h2>
+                <p> Select a system or region to fetch information.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- Map -->
+<script src="map.js"></script>
+<!-- Wiki database -->
+<script src="wikiData.js"></script>
+</html>

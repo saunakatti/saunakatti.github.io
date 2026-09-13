@@ -1,0 +1,165 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('assets/fonts/jetbrainsmono-nf.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'NotoSans Nerd Font';
+    src: url('assets/fonts/notosans-nf.woff2') format('woff2');
+}
+
+/* Catppuccin Mocha colors*/
+:root {
+    --color-rosewater: #f5e0dc;
+    --color-flamingo: #f2cdcd;
+    --color-pink: #f5c2e7;
+    --color-mauve: #cba6f7;
+    --color-red: #f38ba8;
+    --color-maroon: #eba0ac;
+    --color-peach: #fab387;
+    --color-yellow: #f9e2af;
+    --color-green: #a6e3a1;
+    --color-teal: #94e2d5;
+    --color-sky: #89dceb;
+    --color-sapphire: #74c7ec;
+    --color-blue: #89b4fa;
+    --color-lavender: #b4befe;    /* My fav :) */
+
+    --color-text: #cdd6f4;
+    --color-subtext1: #bac2de;
+    --color-subtext0: #a6adc8;
+    --color-overlay2: #9399b2;
+    --color-overlay1: #7f849c;
+    --color-overlay0: #6c7086;
+    --color-surface2: #585b70;
+    --color-surface1: #45475a;
+    --color-surface0: #313244;
+    --color-base: #1e1e2e;
+    --color-mantle: #181825;
+    --color-crust: #11111b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body {
+    font-family: 'NotoSans Nerd Font';
+    padding: 0;
+    height: 100%;
+    background-color: var(--color-crust);
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+section {
+    background-color: var(--color-mantle);
+    height: fit-content;
+    width: auto;
+    border: var(--color-surface1) 2px solid;
+    padding: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.pageContent {
+    margin: 1em auto 1em auto;
+    width: min(1500px, 100%);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* || Page content -footer */
+.wikiContainer {
+    height: 100vh;
+}
+
+.mapContainer {
+    padding: 0em;
+    background: var(--color-mantle);
+    border: var(--color-surface1) 2px solid;
+    margin: 1em 0 1em 0;
+}
+
+#map {
+    height: 50vh;
+}
+
+#wikiText {
+    height: 50vh;
+    padding: 1em;
+    background: var(--color-mantle);
+    overflow-y: auto;
+    border: var(--color-surface1) 2px solid;
+}
+
+/* || Leaflet config */
+
+/* Allow mouse clicks SVG overlay layer */
+.leaflet-svg-src,
+.leaflet-image-layer {
+    pointer-events: auto !important;
+}
+
+/* Ensure grouped targets trigger the click */
+g[id] {
+    pointer-events: auto !important;
+    cursor: pointer;
+}
+
+.leaflet-container {
+    background: #120c1a !important;
+}
+
+/* Controls */
+
+.leaflet-bar {
+    border: 2px solid var(--color-surface1) !important;
+    border-radius: 0px !important;
+    overflow: hidden;
+}
+
+.leaflet-bar a, 
+.leaflet-bar a:hover {
+    background-color: var(--color-base) !important;
+    color: var(--color-overlay0) !important;   
+    border-bottom: 1px solid var(--color-surface2) !important; 
+    transition: all 0.2s ease;
+}
+
+.leaflet-bar a:hover {
+    background-color: var(--color-base) !important; 
+    color: var(--color-text) !important;           
+}
+
+.leaflet-bar a:last-child {
+    border-bottom: none !important;
+}
+
+.leaflet-bar a.leaflet-disabled {
+    background-color: var(--color-mantle) !important;
+    color: var(--color-surface1) !important;
+    cursor: not-allowed;
+}
+
