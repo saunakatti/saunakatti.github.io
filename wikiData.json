@@ -1,18 +1,54 @@
 {
-    "great_nebula": {
-        "title": "Capricorn's Great Nebula",
-        "aliases": "The Great Nebula",
-        "type": "Nebula",
-        "location": "Central Galaxy",
-        "dangerLevel": "High",
-        "description": [
-            "A large nebula in the centre of Capricorn's Galaxy", 
-            "thought to be caused by the Nexus.",
-            "Travel to the nebula is extremely dangerous due to its high activity, making it",
-            "a perfect place for hiding all kinds of interesting regions like the Val Conjunct."
+    "regions": {
+        "great_nebula": {
+            "title": "Capricorn's Great Nebula",
+            "aliases": "The Great Nebula",
+            "type": "Nebula",
+            "description": [
+                "A large nebula in the centre of Capricorn's Galaxy", 
+                "thought to be caused by the Nexus.",
+                "Travel to the nebula is extremely dangerous due to its high activity, making it",
+                "a perfect place for hiding all kinds of interesting regions like the Val Conjunct."
 
-        ],
-        "entryPath": "wiki/regions/great_nebula.md"
-        
+            ],
+            "entryPath": "wiki/regions/great_nebula.md"   
+        },
+        "nexus": {
+            "title": "The Nexus",
+            "aliases": "n/a",
+            "type": "Nebula",
+            "description": [
+                "An area of extreme cosmic activity in the eye of The Great Nebula.",
+                "Traversing here is thought to be impossible. Hides the Ajankajo System."
+            ],
+            "entryPath": "wiki/regions/nexus.md"
+        }
+    },
+    "systems": {
+        "ajankajo": {
+            "title": "Ajankajo",
+            "aliases": "n/a",
+            "type": "System",
+            "description": [
+                "A mysterious system hidden in the Nexus.",
+                "Travel to here can be deemed impossible due to extreme",
+                "cosmic activity caused by the Emitter."
+            ],
+            "entryPath": "wiki/systems/ajankajo.md"
+        }
+    },
+    "factions": {
+        "capricorns_great_union": {
+            "title": "Capricorn's Great Union",
+            "aliases": "The Great Union, Capricorn's Union",
+            "type": "Union",
+            "description": [
+                "The most powerfull union in the galaxy.",
+                "The union is made of lots of smaller independent factions.",
+                "Tophu acts as the unions administrative capital system."
+            ],
+            "entryPath": "wiki/factions/capricorns_great_union.md"
+        }
     }
+    
 }

@@ -20,22 +20,54 @@
 </head>
 <body>
 <div class="pageContent">
-    <section style="line-height: 2.4em;">
-        <h1>Capricorn's Encyclopedia</h1>
-    </section>
     <div class="wikiContainer">
         <!-- Map -->
         <div class="mapContainer"><div id="map"></div></div>        <!-- TODO: Make a grid with with 1/(2|3) where 1=map 2=db entry and 3 is index etc.-->
 
-        <!-- wiki stuff -->
-        <div id="wikiText">
-            <div id="wikiPlaceholder">
-                <h2>Capricorn Database</h2>
-                <p> Select a system or region to fetch information.</p>
+        <!-- Wiki panel -->
+        <div id="wikiPanel">
+            <!-- Navigation tabs -->
+            <div class="wikiTabs">
+                <button class="tabBtn active" onclick="switchTab('mapTab')">Selection</button>
+                <button class="tabBtn" onclick="switchTab('directoryTab')">Directory</button>
+                <button class="tabBtn" onclick="switchTab('guideTab')">Usage Guide</button>
             </div>
+
+            <!-- tab 1: description panel (map and dir selections) -->
+            <div id="mapTab" class="tabContent active">
+                <div id="wikiText">
+                    <h2>Capricorn's Encyclopedia</h2>
+                    <hr>
+                    <p>Select an object or region on the map or select one from the directory.</p>
+                </div>
+            </div>
+
+            <!-- tab 2: categorized directory (all entries) -->
+            <div id="directoryTab" class="tabContent" style="display: none;">
+                <div id="directoryList"></div>
+            </div>
+
+            <!-- tab 3: usage guide -->
+            <div id="guideTab" class="tabContent" style="display: none;">
+                <div>
+                <h2>Encyclopedia Usage Guide</h2>
+                <hr>
+                <ul>
+                    <li><strong>Map Navigation:</strong> Click on any region or object on the map to open a short summary.</li>
+                    <li><strong>Directory:</strong> Use the Directory tab to browse entries not found on the map, like Factions, Events and Beings.</li>
+                    <li><strong>Full Entries:</strong> Click "Read <span class="nf-fa-arrow_right"></span>" to read in-depth entries.</li>
+                </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
+<footer>
+    <t>&copy; 2026 Onni Veranen &nbsp; </t>
+    <a href="https://github.com/saunakatti"> &nbsp;GitHub</a>
+    <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
+</footer>
 </body>
 <!-- Map -->
 <script src="map.js"></script>

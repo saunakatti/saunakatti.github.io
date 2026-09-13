@@ -60,7 +60,7 @@ body {
     font-family: 'NotoSans Nerd Font';
     padding: 0;
     height: 100%;
-    background-color: var(--color-crust);
+    background-color: var(--color-mantle);
     color: var(--color-text);
 }
 
@@ -74,12 +74,11 @@ a:hover {
 }
 
 section {
-    background-color: var(--color-mantle);
+    background-color: var(--color-crust);
     height: fit-content;
     width: auto;
     border: var(--color-surface1) 2px solid;
     padding: 1em;
-    width: min(75em, 100%);
 }
 
 hr {
@@ -92,49 +91,60 @@ button {
     display: inline-block;
     text-decoration: none;
     color: var(--color-text);
-    background-color: var(--color-surface0);
-    padding: .5em 1em;
+    background-color: var(--color-crust);
+    padding: 0.5em 1em;
     border-radius: 0em;
-    margin: 0.2em;
+    margin: 1em 1em 1em 0em;
     font-weight: 600;
-    border: 2px solid var(--color-surface1);
+    border: 2px solid var(--color-surface0);
     transition: 100ms ease;
 }
 
 button:hover {
-    background-color: var(--color-surface1);
-    border-color: var(--color-surface2);
-    scale: 1.03;
+    background-color: var(--color-surface0);
+    border-color: var(--color-surface1);
     text-decoration: none;
 }
 
 .pageContent {
-    margin: 1em auto 1em auto;
+    margin: auto auto auto auto;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
-    width: min(75em, 100%);
+    width: auto;
 }
 
 /* || Page content -footer */
 .wikiContainer {
-    height: 100vh;
     display: grid;
     grid-template-areas: 
-    "map-container map-container"
-    "infocard something";
-    grid-template-rows: 30em auto;
-    grid-template-columns: 40em auto;
+    "map-container infocard"
+    ;
+    grid-template-rows: 80vh 20vh;
+    grid-template-columns: 70vw auto;
     gap: 1em;
+    margin-top: 1em;
+}
+
+#wikiPanel {
+    height: fit-content;
+    max-height: 100%;
+    grid-area: infocard;
+}
+
+.entryBody {
+    width: min(50em, 100%);
+    align-self: center;
+    margin: auto;
 }
 
 .mapContainer {
     padding: 0em;
-    background: var(--color-mantle);
+    background: var(--color-crust);
     border: var(--color-surface1) 2px solid;
-    margin: 1em 0 1em 0;
     grid-area: map-container;
+    height: 100%;
 }
 
 .mapContainer #map {
@@ -142,18 +152,50 @@ button:hover {
     width: 100%;
 }
 
-#wikiText {
-    height: 50vh;
+.tabContent {
+    max-height: 100%;
     padding: 1em;
-    background: var(--color-mantle);
+    background: var(--color-crust);
     overflow-y: auto;
     border: var(--color-surface1) 2px solid;
-    grid-area: infocard;
+}
+
+.tabContent div {
+    padding-left: 1em;
+    line-height: 2em;
+}
+
+#directoryList li {
+    font-size: small;
 }
 
 #entryContainer {
-    width: min(50em, 100%);
     margin: 1em auto 1em auto;
+}
+
+/* Tab thing styling */
+.tabBtn {
+    margin-top: 0em;
+}
+
+.tabBtn.active {
+    text-decoration: underline;
+}
+
+/* || Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--color-crust);
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid var(--color-mantle);
+    height: auto;
+    margin-top: 2em;
+}
+
+footer a {
+    color: var(--color-text);
 }
 
 /* || Leaflet config */
@@ -205,3 +247,26 @@ g[id] {
     cursor: not-allowed;
 }
 
+/* || Smaller devices */
+@media(max-width: 1499px) {
+
+.wikiContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+#wikiPanel {
+    height: 50vh;
+}
+
+#wikiText, #directoryTab {height: 45vh;}
+
+.mapContainer {
+    width: min(200vw, 100%);
+    height: 50vh;
+}
+
+}
