@@ -1,0 +1,18 @@
+{
+    "great_nebula": {
+        "title": "Capricorn's Great Nebula",
+        "aliases": "The Great Nebula",
+        "type": "Nebula",
+        "location": "Central Galaxy",
+        "dangerLevel": "High",
+        "description": [
+            "A large nebula in the centre of Capricorn's Galaxy", 
+            "thought to be caused by the Nexus.",
+            "Travel to the nebula is extremely dangerous due to its high activity, making it",
+            "a perfect place for hiding all kinds of interesting regions like the Val Conjunct."
+
+        ],
+        "entryPath": "wiki/regions/great_nebula.md"
+        
+    }
+}

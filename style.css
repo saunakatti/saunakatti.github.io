@@ -69,30 +69,64 @@ a {
     color: var(--color-blue);
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 section {
     background-color: var(--color-mantle);
     height: fit-content;
     width: auto;
     border: var(--color-surface1) 2px solid;
     padding: 1em;
+    width: min(75em, 100%);
 }
 
-a:hover {
-    text-decoration: underline;
+hr {
+    color: var(--color-surface1);
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text);
+    background-color: var(--color-surface0);
+    padding: .5em 1em;
+    border-radius: 0em;
+    margin: 0.2em;
+    font-weight: 600;
+    border: 2px solid var(--color-surface1);
+    transition: 100ms ease;
+}
+
+button:hover {
+    background-color: var(--color-surface1);
+    border-color: var(--color-surface2);
+    scale: 1.03;
+    text-decoration: none;
 }
 
 .pageContent {
     margin: 1em auto 1em auto;
-    width: min(1500px, 100%);
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
+    width: min(75em, 100%);
 }
 
 /* || Page content -footer */
 .wikiContainer {
     height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "map-container map-container"
+    "infocard something";
+    grid-template-rows: 30em auto;
+    grid-template-columns: 40em auto;
+    gap: 1em;
 }
 
 .mapContainer {
@@ -100,10 +134,12 @@ a:hover {
     background: var(--color-mantle);
     border: var(--color-surface1) 2px solid;
     margin: 1em 0 1em 0;
+    grid-area: map-container;
 }
 
-#map {
-    height: 50vh;
+.mapContainer #map {
+    height: 100%;
+    width: 100%;
 }
 
 #wikiText {
@@ -112,6 +148,12 @@ a:hover {
     background: var(--color-mantle);
     overflow-y: auto;
     border: var(--color-surface1) 2px solid;
+    grid-area: infocard;
+}
+
+#entryContainer {
+    width: min(50em, 100%);
+    margin: 1em auto 1em auto;
 }
 
 /* || Leaflet config */

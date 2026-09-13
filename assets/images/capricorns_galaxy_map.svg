@@ -32,7 +32,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1"
+     inkscape:current-layer="sections"
      showgrid="false">
     <inkscape:grid
        id="grid44"
@@ -294,8 +294,8 @@
      inkscape:label="lockedElems"
      sodipodi:insensitive="true">
     <g
-       id="galaxyBorder"
-       inkscape:label="galaxyBorder">
+       id="galaxy_border"
+       inkscape:label="galaxy_border">
       <ellipse
          style="fill:none;fill-opacity:1;stroke:#dcb9ff;stroke-width:0.305;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
          id="path1"
@@ -312,8 +312,8 @@
      id="outerInfo"
      inkscape:label="outerInfo">
     <g
-       id="galaxyInfo"
-       inkscape:label="galaxyInfo">
+       id="galaxy_info"
+       inkscape:label="galaxy_info">
       <text
          xml:space="preserve"
          transform="matrix(0.25869934,0,0,0.25152626,-5.0404083,-3.1132904)"
@@ -322,17 +322,17 @@
          inkscape:label="galaxyInfo"><tspan
            x="39.615234"
            y="46.710232"
-           id="tspan17"><tspan
+           id="tspan2"><tspan
    style="stroke:#dcb9ff"
-   id="tspan16">Capricorn's Galaxy   </tspan>SA(s)c
+   id="tspan1">Capricorn's Galaxy   </tspan>SA(s)c
 </tspan><tspan
            x="39.615234"
            y="74.092972"
-           id="tspan18">Lynx Cluster
+           id="tspan3">Lynx Cluster
 </tspan><tspan
            x="39.615234"
            y="101.47571"
-           id="tspan19">(Lynx Foundry // 20.16.25.53.8.4)</tspan></text>
+           id="tspan4">(Lynx Foundry // 20.16.25.53.8.4)</tspan></text>
     </g>
     <g
        id="credit"
@@ -345,9 +345,9 @@
          inkscape:label="credit"><tspan
            x="1737.9707"
            y="983.19975"
-           id="tspan21"><tspan
+           id="tspan6"><tspan
              style="stroke:none"
-             id="tspan20">Onni Veranen</tspan></tspan></text>
+             id="tspan5">Onni Veranen</tspan></tspan></text>
     </g>
     <g
        id="note1"
@@ -360,10 +360,10 @@
          inkscape:label="note1"><tspan
            x="25.160156"
            y="147.20757"
-           id="tspan22">Note: The Lynx cluster has nothing to do </tspan><tspan
+           id="tspan7">Note: The Lynx cluster has nothing to do </tspan><tspan
            x="25.160156"
            y="170.67419"
-           id="tspan23">with the non-fictional Lynx constellation.</tspan></text>
+           id="tspan8">with the non-fictional Lynx constellation.</tspan></text>
     </g>
   </g>
   <g
@@ -372,8 +372,8 @@
      inkscape:label="sections"
      inkscape:highlight-color="#de0e0c">
     <g
-       id="greatNebula"
-       inkscape:label="greatNebula">
+       id="great_nebula"
+       inkscape:label="great_nebula">
       <path
          style="fill:url(#linearGradient53);stroke:url(#linearGradient54);stroke-width:0.142;stroke-dasharray:none;paint-order:markers fill stroke"
          d="m 246.88634,121.60405 17.7847,-4.72247 12.78948,0.71052 9.31936,7.06216 12.47728,3.32298 4.13758,9.86486 -3.27247,11.37212 -13.06965,3.19367 -14.92105,-2.48684 -11.71998,-7.89153 -14.63784,-0.17177 -6.17923,-10.7047 z"
@@ -386,7 +386,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect47);shape-padding:0.0839204;display:inline;fill:#9137ff;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
            x="931.34961"
            y="525.1432"
-           id="tspan24">The Great Nebula </tspan></text>
+           id="tspan9">The Great Nebula </tspan></text>
     </g>
   </g>
   <g
@@ -395,8 +395,8 @@
      inkscape:label="subSections"
      inkscape:highlight-color="#ff8809">
     <g
-       id="valConjunct"
-       inkscape:label="valConjunct">
+       id="val_conjunct"
+       inkscape:label="val_conjunct">
       <path
          style="fill:url(#linearGradient51);stroke:url(#linearGradient52);stroke-width:0.05;stroke-dasharray:none;paint-order:markers fill stroke"
          d="m 288.79612,150.85099 7.00246,-1.50725 3.26572,-3.42272 1.60146,-4.80437 -5.84062,-2.29228 -5.18117,-0.12561 -5.28593,1.19572 -6.04989,1.8502 -3.45412,6.87683 5.76226,1.47547 3.88867,0.69949 z"
@@ -441,8 +441,8 @@
      inkscape:label="subSubSections"
      inkscape:highlight-color="#f3d321">
     <g
-       id="atalVal"
-       inkscape:label="atalVal">
+       id="atalval"
+       inkscape:label="atalval">
       <path
          style="fill:url(#swatch51);fill-opacity:1;stroke:url(#swatch52);stroke-width:0.0499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
          d="m 289.25573,149.78724 2.77298,-0.12477 3.48886,-0.83435 1.78525,-1.83603 -0.67183,-1.43819 -1.81197,-0.89531 -2.52059,-0.22916 -1.40304,2.47313 -2.4247,1.28417 z"
@@ -468,8 +468,8 @@
      inkscape:label="objects"
      inkscape:highlight-color="#21f3f0">
     <g
-       id="capricornEmitter"
-       inkscape:label="capricornEmitter">
+       id="capricorn_emitter"
+       inkscape:label="capricorn_emitter">
       <circle
          style="fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.0398293;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
          id="path44"
@@ -483,18 +483,18 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect44);shape-padding:6.13765;display:inline;fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
            x="979.79883"
            y="470.29438"
-           id="tspan26"><tspan
+           id="tspan11"><tspan
              style="baseline-shift:baseline"
-             id="tspan25">The Capricorn </tspan></tspan><tspan
+             id="tspan10">The Capricorn </tspan></tspan><tspan
            x="979.79883"
            y="483.49439"
-           id="tspan30"><tspan
+           id="tspan15"><tspan
              style="baseline-shift:baseline"
-             id="tspan27">Emmiter (E</tspan><tspan
+             id="tspan12">Emmiter (E</tspan><tspan
              style="font-size:65%;baseline-shift:sub"
-             id="tspan28">0</tspan><tspan
+             id="tspan13">0</tspan><tspan
              style="baseline-shift:baseline"
-             id="tspan29">)</tspan></tspan></text>
+             id="tspan14">)</tspan></tspan></text>
     </g>
     <g
        id="ethu"
