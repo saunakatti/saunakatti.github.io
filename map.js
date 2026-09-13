@@ -10,7 +10,13 @@ function capitalizeFirstLetter(val) {
 // Display wiki entry in wikiPanel
 function displayWikiEntry(id) {
     switchTab('mapTab');
+
     const wikiContainer = document.getElementById('wikiText');
+
+    // Reset animation
+    wikiContainer.style.animation = 'none';
+    wikiContainer.offsetHeight; // Trigger browser reflow
+    wikiContainer.style.animation = 'fadeIn 0.25s ease-in-out';
 
     fetch('wikiData.json')
         .then (response => {
@@ -27,29 +33,70 @@ function displayWikiEntry(id) {
             }
 
             if (entry) {
+                // format aliases
+                let formattedAliases = 'None';
+                if (entry.aliases) {
+                    formattedAliases = Array.isArray(entry.aliases)
+                        ? entry.aliases.join(', ')
+                        : entry.aliases;
+                }
 
-                const descriptionHtml = Array.isArray(entry.description)
-                ? entry.description.map(paragraph => `<p>${paragraph}</p>`).join('')
-                : `<p>${entry.description}</p>`;
+                // render attributes if present
+                let attributesHtml = ''
+                if (entry.attributes) {
+                    attributesHtml = `
+                    <hr>
+                    <div class="attributeBox">
+                        <strong>Attributes:</strong>
+                        <div class="attributeGrid">
+                    `;
+
+                    for (const [key, value] of Object.entries(entry.attributes)) {
+                        attributesHtml += `
+                        <div class="attributeBlock">
+                            <span class="attrKey">${key}:</span>
+                            <span class="attrVal" data-val="${value}">${value}</span>
+                        </div>
+                        `;
+                    }
+                    attributesHtml += `
+                        </div>
+                    </div>
+                    `;
+                }
 
                 wikiContainer.innerHTML = `
                 <h2><span class="nf-fae-planet"></span> &nbsp; ${entry.title}</h2>
                 <hr>
-                <p><strong> &nbsp; Aliases: &nbsp; </strong> ${entry.aliases}</p>
-                <p><strong> &nbsp; Type: &nbsp; </strong> ${entry.type}</p>
+
+                <div class="entryMeta">
+                    <div class="metaRow">
+                        <span class="metaLabel">Type:</span>
+                        <span class="metaValue">${entry.type}</span>
+                    </div>
+                    <div class="metaRow">
+                        <span class="metaLabel">Aliases:</span>
+                        <span class="metaValue">${formattedAliases}</span>
+                    </div>
+                </div>
+                
+                ${attributesHtml}
                 <hr>
                 <div class="description-content">
-                    ${descriptionHtml}
+                    <p>${entry.description || ''}</p>
                 </div>
                 <hr>
-                <a href="entry.html?file=${encodeURIComponent(entry.entryPath)}" id="wikiLink" data-path="${entry.entryPath}">Read &nbsp; <span class="nf-fa-arrow_right"></span></a>
+                <a href="entry.html?file=${encodeURIComponent(entry.entryPath)}" id="wikiLink" data-path="${entry.entryPath}">
+                    Read &nbsp; <span class="nf-fa-arrow_right"></span>
+                </a>
                 `;
 
             } else {
                 wikiContainer.innerHTML = `
-                <h2>Unknown Location</h2>
+                <h2><span class="nf-oct-question"></span>&nbsp; Unknown Location</h2>
                 <hr>
-                <p>No database entries found for this location. Do not worry, an entry might be on the way.</p>
+                <p>No database entry found for ID: &nbsp; <code style="font-size: 1rem;">${id}</code></p>
+                <p>Do not worry, an entry might be on the way.</p>
                 `;
             }
         })
@@ -77,7 +124,8 @@ function switchTab(tabId) {
 
 // Load directory
 function loadDirectory() {
-    const container = document.getElementById('directoryList')
+    const container = document.getElementById('directoryList');
+    if (!container) return;
 
     fetch('wikiData.json')
         .then(response => response.json())
@@ -89,8 +137,20 @@ function loadDirectory() {
 
                 for (const [key, entry] of Object.entries(entries)) {
                     const entryUrl = `entry.html?file=${encodeURIComponent(entry.entryPath)}`;
+
+                    // format attributes into search string
+                    let attributeString = '';
+                    if (entry.attributes) {
+                        attributeString = Object.entries(entry.attributes)
+                            .map(([k, v]) => `${k} ${v}`)
+                            .join(' ');
+                    }
+
+                    // combine all text into a single search target
+                    const searchableText = `${entry.title} ${entry.aliases || ''} ${entry.type} ${attributeString} ${entry.description || ''}`.toLowerCase();
+
                     html += `
-                    <li class="directoryItem">
+                    <li class="directoryItem" data-search="${searchableText}">
                         <a href="#" onclick="event.preventDefault(); displayWikiEntry('${key}')">
                         <strong>${entry.title}</strong>
                         </a>
@@ -105,6 +165,30 @@ function loadDirectory() {
             container.innerHTML = html;
         })
         .catch(err => console.error("Error loading directory:", err));
+}
+
+// Live search filter
+function filterDirectory() {
+    const query = document.getElementById('directorySearch').value.toLowerCase().trim();
+    const items = document.querySelectorAll('.directoryItem');
+
+    items.forEach(item => {
+        const searchTarget = item.getAttribute('data-search') || '';
+        if (searchTarget.includes(query)) {
+            item.style.display = '';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    // hide empty categories
+    document.querySelectorAll('#directoryList ul').forEach(ul => {
+        const hasVisible = Array.from(ul.children).some(li => li.style.display !== 'none');
+        const header = ul.previousElementSibling;
+        if (header && header.classList.contains('categoryHeader')) {
+            header.style.display = hasVisible ? '' : 'none';
+        }
+    });
 }
 
 
