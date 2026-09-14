@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'JetBrainsMono Nerd Font';
-    src: url('assets/fonts/jetbrainsmono-nf.woff2') format('woff2');
+    src: url('../assets/fonts/jetbrainsmono-nf.woff2') format('woff2');
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotoSans Nerd Font';
-    src: url('assets/fonts/notosans-nf.woff2') format('woff2');
+    src: url('../assets/fonts/notosans-nf.woff2') format('woff2');
 }
 
 /* Catppuccin Mocha colors*/
@@ -87,7 +87,8 @@ hr {
     margin-top: 0.5em;
 }
 
-button {
+button,
+.button {
     display: inline-block;
     text-decoration: none;
     color: var(--color-text);
@@ -100,12 +101,20 @@ button {
     transition: 100ms ease;
 }
 
-button:hover {
+button:hover,
+.button:hover {
     background-color: var(--color-surface0);
     border-color: var(--color-surface1);
     text-decoration: none;
 }
 
+
+.button,
+.button:hover {
+    font-size: smaller;
+}
+
+/* Page content (w/out footer) */
 .pageContent {
     margin: auto auto 10em auto;
     padding-top: 1em;

@@ -1,11 +1,10 @@
-// ------------------
-// Global functions
-// ------------------
+// ======================
+// WORLDBUILDING SCRIPTS
+// ======================
 
-// Function for capitalicing 1. letter
-function capitalizeFirstLetter(val) {
-    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
-}
+// ------------------
+// Wiki functions
+// ------------------
 
 // Display wiki entry in wikiPanel
 function displayWikiEntry(id) {
@@ -18,7 +17,7 @@ function displayWikiEntry(id) {
     wikiContainer.offsetHeight; // Trigger browser reflow
     wikiContainer.style.animation = 'fadeIn 0.25s ease-in-out';
 
-    fetch('wikiData.json')
+    fetch('../data/wikiData.json')
         .then (response => {
             if (!response.ok) throw new Error("Failed fetching database");
             return response.json();
@@ -106,28 +105,12 @@ function displayWikiEntry(id) {
         })
 }
 
-// Switch tab
-function switchTab(tabId) {
-    document.querySelectorAll('.tabContent').forEach(el => el.style.display = 'none');
-    document.querySelectorAll('.tabBtn').forEach(el => el.classList.remove('active'));
-
-    document.getElementById(tabId).style.display = 'block';
-
-    const activeBtn = Array.from(document.querySelectorAll('.tabBtn'))
-        .find(btn => btn.getAttribute('onclick').includes(tabId));
-    if (activeBtn) activeBtn.classList.add('active');
-
-    if (tabId === 'directoryTab') {
-        loadDirectory();
-    }
-}
-
 // Load directory
 function loadDirectory() {
     const container = document.getElementById('directoryList');
     if (!container) return;
 
-    fetch('wikiData.json')
+    fetch('../data/wikiData.json')
         .then(response => response.json())
         .then(data => {
             let html = '';
@@ -167,31 +150,6 @@ function loadDirectory() {
         .catch(err => console.error("Error loading directory:", err));
 }
 
-// Live search filter
-function filterDirectory() {
-    const query = document.getElementById('directorySearch').value.toLowerCase().trim();
-    const items = document.querySelectorAll('.directoryItem');
-
-    items.forEach(item => {
-        const searchTarget = item.getAttribute('data-search') || '';
-        if (searchTarget.includes(query)) {
-            item.style.display = '';
-        } else {
-            item.style.display = 'none';
-        }
-    });
-
-    // hide empty categories
-    document.querySelectorAll('#directoryList ul').forEach(ul => {
-        const hasVisible = Array.from(ul.children).some(li => li.style.display !== 'none');
-        const header = ul.previousElementSibling;
-        if (header && header.classList.contains('categoryHeader')) {
-            header.style.display = hasVisible ? '' : 'none';
-        }
-    });
-}
-
-
 // ----------------------------
 //  svg fetch and leaflet init
 // ----------------------------
@@ -206,8 +164,8 @@ var map = L.map('map', {
 
 var bounds = [[0,0], [1000, 2000]];
 
-// Load map
-fetch('assets/images/capricorns_galaxy_map.svg')
+// Load map and detect input on svg objects
+fetch('../worldbuilding/assets/capricorns_galaxy_map.svg')
     .then(response => response.text())
     .then(svgText => {
         var parser = new DOMParser();

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>saunakatti ✦ worldbuilding</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/bee-icon-256.png">
+    <!-- Load NF icons -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+    <!-- Leaflet -->
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="wikiContainer">
+        <!-- Map -->
+        <div class="mapContainer"><div id="map"></div></div>        <!-- TODO: Make a grid with with 1/(2|3) where 1=map 2=db entry and 3 is index etc.-->
+
+        <!-- Wiki panel -->
+        <div id="wikiPanel">
+            <!-- Navigation tabs -->
+            <div class="wikiTabs">
+                <button class="tabBtn active" onclick="switchTab('mapTab')">Selection</button>
+                <button class="tabBtn" onclick="switchTab('directoryTab')">Directory</button>
+                <button class="tabBtn" onclick="switchTab('guideTab')">Usage Guide</button>
+                <a href="index.html" class="button" style="margin-top: 0;">Home</a>
+            </div>
+
+            <!-- tab 1: description panel (map and dir selections) -->
+            <div id="mapTab" class="tabContent active">
+                <div id="wikiText">
+                    <h2><span class="nf-md-book_multiple"></span> &nbsp; Capricorn's Encyclopedia</h2>
+                    <hr>
+                    <p>Select an object or region on the map or select one from the directory. See "Usage Guide" for more information.</p>
+                </div>
+            </div>
+
+            <!-- tab 2: categorized directory (all entries) -->
+            <div id="directoryTab" class="tabContent" style="display: none;">
+                <input 
+                type="text"
+                id="directorySearch"
+                placeholder="Search titles, tags, attributes or descriptions..."
+                onkeyup="filterDirectory()"
+                />
+                <div id="directoryList"></div>
+            </div>
+
+            <!-- tab 3: usage guide -->
+            <div id="guideTab" class="tabContent" style="display: none;">
+                <div>
+                <h2>Encyclopedia Usage Guide</h2>
+                <hr>
+                <ul>
+                    <li><strong>Map Navigation:</strong> Click on any region or object on the map to open a short summary.</li>
+                    <li><strong>Directory:</strong> Use the "Directory" tab to browse and search all entries, also ones not on the map like Factions, Events and Beings.</li>
+                    <li><strong>Full Entries:</strong> Click "Read <span class="nf-fa-arrow_right"></span>" to read in-depth entries linked to eachother.</li>
+                </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <t>&copy; 2026 Onni Veranen &nbsp; </t>
+    <a href="https://github.com/saunakatti"> &nbsp;GitHub</a>
+    <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
+</footer>
+</body>
+<script src="scripts/main.js"></script>
+<!-- Map -->
+<script src="scripts/map.js"></script>
+</html>

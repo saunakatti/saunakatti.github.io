@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capricorn's Encyclopedia // entry</title>
-    <link rel="stylesheet" href="style.css">
+    <title>saunakatti ❀ entry reader</title>
+    <link rel="icon" href="assets/images/bee-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/entry.js"></script>
     <!-- Marked.js parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="pageContent">
-        <p><a href="index.html"><span class="nf-fa-arrow_left"></span>&nbsp; Back to Map</a></p>
-        <main id="entryContainer">
-            <p>Loading entry...</p>
-        </main>
-    </div>
+        <!-- dynamic back link -->
+         <nav class="entryNav">
+            <a id="backLink" href="index.html"><span class="nf-fa-arrow_left"></span>&nbsp; Back</a>
+         </nav>
 
-    <script src="entry.js"></script>
+         <main class="entryContainer">
+            <!-- Dynamic category header -->
+            <div id="entryHeader"></div>
+
+            <!-- markdown body -->
+            <article id="entryBody">Loading content...</article>
+         </main>
+    </div>
 </body>
 </html>
