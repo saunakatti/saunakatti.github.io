@@ -1,5 +1,5 @@
 // ======================
-// Entry readed script
+// Entry renderer script
 // ======================
 
 // Data header & Entry rendering
@@ -49,24 +49,131 @@ document.addEventListener('DOMContentLoaded', () => {
 // ...
 
 // Render BLOG metadata
-function fetchBlogMeta(filePath, content) {
+function fetchBlogMeta(filePath, container) {
     fetch('../data/blogData.json')
         .then(res => res.json())
         .then(data => {
             const post = data.posts.find(p => p.filePath === filePath);
             if (!post) return;
 
+            // render header
             container.innerHTML = `
+            <div class="blogMetaHeader">
+                <div class="metaDetails">
+                    <span class="postDate"><span class="nf-md-calendar"></span>&nbsp; ${post.date} at ${post.time}</span>
+                    <span class="postLang lang-${post.language.toLowerCase()}">${post.language}</span>
+                </div>
+                <hr>
+                <div class="blogTags">
+                    <strong>Tags:</strong>
+                    ${post.tags.map(t => `<span class="blogTag">${t}</span>`).join('')}
+                </div>
+            </div>
+            `;
+        });
+}
+
+// Render WB ENTRY metadata
+function fetchWikiMeta(filePath, container) {
+    fetch('../data/wikiData.json')
+        .then(res => res.json())
+        .then(data => {
+            let entry = null;
+
+            // search categories for the right meta
+            for (const category in data) {
+                for (const id in data[category]) {
+                    if (data[category][id].entryPath === filePath) {
+                        entry = data[category][id];
+                        break;
+                    }
+                }
+            }
+            if (!entry) return;
+
+            // set up attr variable
+            //let attributesHtml = '';
+            //if (entry.attributes) {
+            //    attributesHtml = `<div class="attributeGrid>"` +
+            //        Object.entries(entry.attributes)
+            //            .map(([k, v]) => `<div class="attributeBlock"><span class="attrVal">${k}:</span> ${v}</div>`)
+            //            .join('') +
+            //        `</div>`;
+            //}
+
+            // render attributes if present
+                let attributesHtml = ''
+                if (entry.attributes) {
+                    attributesHtml = `
+                    <hr>
+                    <div class="attributeBox">
+                        <strong>Attributes:</strong>
+                        <div class="attributeGrid">
+                    `;
+
+                    for (const [key, value] of Object.entries(entry.attributes)) {
+                        attributesHtml += `
+                        <div class="attributeBlock">
+                            <span class="attrKey">${key}:</span>
+                            <span class="attrVal" data-val="${value}">${value}</span>
+                        </div>
+                        `;
+                    }
+                    attributesHtml += `
+                        </div>
+                    </div>
+                    `;
+                }
+
+            // format aliases
+            let formattedAliases = 'None';
+                if (entry.aliases) {
+                    formattedAliases = Array.isArray(entry.aliases)
+                        ? entry.aliases.join(', ')
+                        : entry.aliases;
+                }
+        
+            // render header
+            container.innerHTML = `
+                <div class="wikiMetaHeader">
+                        <div class="metaRow">
+                            <span class="metaLabel">Type:</span>
+                            <span class="metaValue">${entry.type}</span>
+                        </div>
+                        <div class="metaRow">
+                            <span class="metaLabel">Aliases:</span>
+                            <span class="metaValue">${formattedAliases}</span>
+                        </div>
+                    ${attributesHtml}
+                </div>
             `;
         })
 }
 
-// Render WB ENTRY metadata
-function fetchWikiMeta(filePath, content) {
+// Fetch md file and convert to HTML using marked.js
+function fetchMarkdownContent(filePath) {
 
+    fetch(filePath)
+    .then(res => {
+        if (!res.ok) throw new Error(`File not found (${res.status})`);
+        return res.text();
+    })
+    .then(markdownText => {
+        const htmlContent = parseMarkdown(markdownText, filePath)
+
+        if (htmlContent === undefined) {
+            throw new Error("parseMarkdown returned undefined.")
+        }
+
+        document.getElementById('entryBody').innerHTML = htmlContent
+
+        // Generate toc here when WIP
+    })
+    .catch (err => {
+        console.error("Md fetch error:", err);
+        document.getElementById('entryBody').innerHTML = `<p>Error loading entry: ${err.message}</p>`
+    });
 }
-
-// Fetch md file and convert to HTML
 
 // Sidebar (hidden by default)
 // ---------------------------

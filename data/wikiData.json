@@ -9,7 +9,7 @@
                 "Location": "Central Galaxy"
             },
             "description": "A large nebula in the centre of Capricorn's Galaxy thought to be caused by the Nexus. Travel to the nebula is extremely dangerous due to its high activity, making it a perfect place for hiding all kinds of interesting regions like the Val Conjunct.",
-            "entryPath": "wiki/regions/great_nebula.md"   
+            "entryPath": "worldbuilding/wiki/regions/great_nebula.md"   
         },
         "nexus": {
             "title": "The Nexus",
@@ -20,7 +20,7 @@
                 "Location": "Capricorn's Great Nebula"
             },
             "description": "An area of extreme cosmic activity in the eye of The Great Nebula. Traversing here is thought to be impossible. Hides the Ajankajo System.",
-            "entryPath": "wiki/regions/nexus.md"
+            "entryPath": "worldbuilding/wiki/regions/nexus.md"
         },
         "val_conjunct": {
             "title": "The Val Conjunct",
@@ -32,7 +32,7 @@
                 "Control": "Capricorn's Great Union"
             },
             "description": "A region under the supervision of Capricorn's Great Union. The region holds many mythical places, the best example being Atal'val. Travel to the region is very difficult, caused by the Great Nebula.",
-            "entryPath": "wiki/regions/val_conjunct.md"
+            "entryPath": "worldbuilding/wiki/regions/val_conjunct.md"
         }
     },
     "systems": {
@@ -46,7 +46,7 @@
                 "Control": "Unknown"
             },
             "description": "A mysterious system hidden in the Nexus. Travel to here can be deemed impossible due to extreme cosmic activity caused by the Emitter.",
-            "entryPath": "wiki/systems/ajankajo.md"
+            "entryPath": "worldbuilding/wiki/systems/ajankajo.md"
         }
     },
     "factions": {
@@ -60,7 +60,7 @@
                 "Capital": "Tophu"
             },
             "description": "The most powerful union in the galaxy. The union is made of lots of smaller independent factions. Tophu acts as the unions administrative capital system.",
-            "entryPath": "wiki/factions/capricorns_great_union.md"
+            "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md"
         }
     }
     

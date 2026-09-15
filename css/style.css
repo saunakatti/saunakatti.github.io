@@ -60,7 +60,7 @@ body {
     font-family: 'NotoSans Nerd Font';
     padding: 0;
     height: 100%;
-    background-color: var(--color-mantle);
+    background-color: var(--color-crust);
     color: var(--color-text);
 }
 
@@ -82,9 +82,20 @@ section {
 }
 
 hr {
-    color: var(--color-surface1);
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    border: none;
+    border-top: 1px solid var(--color-surface1);
+    margin: 1em 0;
+    width: 100%;
+}
+
+.hr2 {
+    color: var(--color-overlay0);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    height: .2em;
+    background-color: var(--color-overlay0);
+    border-style: solid;
+    border-width: 2px;
 }
 
 button,
@@ -116,12 +127,19 @@ button:hover,
 
 /* Page content (w/out footer) */
 .pageContent {
-    margin: auto auto 10em auto;
+    margin: auto auto;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
+    height: 100%;
     width: auto;
+    background-color: var(--color-mantle);
+}
+
+.readableWidth {
+    width: min(50em, 100%);
+    margin: auto auto;
 }
 
 .wikiContainer {
@@ -225,14 +243,37 @@ button:hover,
     animation: fadeIn 0.3s ease-in-out;
 }
 
-#wikiText hr {
-    border: none;
-    border-top: 1px solid var(--color-surface1);
-    margin: 1em 0;
-    width: 100%;
+/* || Entry header */
+.blogMetaHeader, .wikiMetaHeader {
+    margin-bottom: 2em;
+    padding: 2em;
+    border: var(--color-surface1) 2px solid;
+    background-color: var(--color-crust);
 }
 
-/* Entry metadata grid */
+.metaDetails {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1rem;
+    color: var(--color-text);
+    margin: .5em 0;
+    margin-bottom: 1em;
+}
+
+.entryNav a {
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.entryNav a:hover {
+    text-decoration: underline;
+}
+
+/* || Entry metadata grid */
 .entryMeta {
     display: flex;
     flex-direction: column;
@@ -257,12 +298,12 @@ button:hover,
     color: var(--color-text)
 }
 
-/* Attribute grid and blocks */
-.attributeBox {
+/* Attribute and tag grid and blocks */
+.attributeBox, .blogTags {
     margin: 1em 0;
 }
 
-.attributeBox strong {
+.attributeBox strong, .blogTags strong {
     display: block;
     margin-bottom: 8px;
     font-size: 1rem;
@@ -276,7 +317,7 @@ button:hover,
     gap: 8px;
 }
 
-.attributeBlock {
+.attributeBlock, .blogTag, .postLang, .postDate {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -315,6 +356,17 @@ button:hover,
 .attrVal[data-val="Low"] {
     color: var(--color-green);
     font-weight: bold;
+}
+
+/* Lang tags */
+.postLang.postLang.lang-finnish, .postLang.lang-finnish::before {
+    color: var(--color-blue);
+    content: "🇫🇮";
+}
+
+.postLang.lang-english, .postLang.lang-english::before  {
+    color: var(--color-red);
+    content: "🇬🇧";
 }
 
 /* || Footer */
