@@ -19,7 +19,7 @@
         crossorigin=""></script>
 </head>
 <body>
-<div class="pageContent">
+<div class="page-wrapper">
     <div class="wikiContainer">
         <!-- Map -->
         <div class="mapContainer"><div id="map"></div></div>        <!-- TODO: Make a grid with with 1/(2|3) where 1=map 2=db entry and 3 is index etc.-->
@@ -51,7 +51,7 @@
                 placeholder="Search titles, tags, attributes or descriptions..."
                 onkeyup="filterDirectory()"
                 />
-                <div id="directoryList"></div>
+                <div id="directoryList" class="directoryList"></div>
             </div>
 
             <!-- tab 3: usage guide -->

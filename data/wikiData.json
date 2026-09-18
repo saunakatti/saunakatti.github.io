@@ -33,6 +33,17 @@
             },
             "description": "A region under the supervision of Capricorn's Great Union. The region holds many mythical places, the best example being Atal'val. Travel to the region is very difficult, caused by the Great Nebula.",
             "entryPath": "worldbuilding/wiki/regions/val_conjunct.md"
+        },
+        "capricorns_galaxy": {
+            "title": "Capricorn's Galaxy",
+            "aliases": ["The Galaxy"],
+            "type": "Galaxy",
+            "attributes": {
+                "Location": "The Lynx Cluster",
+                "Emitter Activity": "High"
+            },
+            "description": "A galaxy with highly developed civilisations and an active Emitter. Many proficient in Äen'e. In the Lynx Cluster.",
+            "entryPath": "worldbuilding/wiki/regions/capricorns_galaxy.md"
         }
     },
     "systems": {
@@ -62,6 +73,31 @@
             "description": "The most powerful union in the galaxy. The union is made of lots of smaller independent factions. Tophu acts as the unions administrative capital system.",
             "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md"
         }
+    },
+    "unrelated": {
+        "welcome": {
+            "title": "Welcome",
+            "aliases": "",
+            "type": "Unrelated",
+            "attributes": {},
+            "description": "Welcome to the Ääri.",
+            "entryPath": "worldbuilding/wiki/other/welcome.md"
+        },
+        "authors": {
+            "title": "Authors",
+            "aliases": "",
+            "type": "Unrelated",
+            "attributes": {},
+            "description": "Authors of the Ääri Project.",
+            "entryPath": "worldbuilding/wiki/other/authors.md"
+        },
+        "style_and_syntax": {
+            "title": "Style and Syntax",
+            "aliases": "",
+            "type": "Unrelated",
+            "attributes": {},
+            "description": "Style and syntax for the project.",
+            "entryPath": "worldbuilding/wiki/other/style_and_syntax.md"
+        }
     }
-    
 }

@@ -7,6 +7,9 @@ function capitalizeFirstLetter(val) {
     return String(val).charAt(0).toUpperCase() + String(val).slice(1);
 }
 
+// Register marked-alert once at startup
+marked.use(markedAlert());
+
 // markdown parser (marked.js)
 function parseMarkdown(markdownText, filePath) {
     // Convert Markdown to HTML
@@ -32,6 +35,9 @@ function parseMarkdown(markdownText, filePath) {
             // Route through universal reader
             link.href = `entry.html?file=${encodeURIComponent(targetPath)}`;
         }
+        else if (href.startsWith('#')) {
+            link.href = href;
+        }
         // leave absolute and .html paths alone (handled by browser)
         else if (href.startsWith('/') || href.endsWith('.html')) {
         }
@@ -46,25 +52,36 @@ function parseMarkdown(markdownText, filePath) {
 }
 
 // Live search filter
-function filterDirectory() {
-    const query = document.getElementById('directorySearch').value.toLowerCase().trim();
-    const items = document.querySelectorAll('.directoryItem');
+function filterDirectory(inputId, listId) {
+    const input = document.getElementById(inputId);
+    const list = document.getElementById(listId);
 
+    if (!input || !list) return;
+
+    const query = input.value.toLowerCase().trim();
+    
+    if (!list) return;
+
+    const items = list.querySelectorAll('.directoryItem');
     items.forEach(item => {
-        const searchTarget = item.getAttribute('data-search') || '';
+        const searchTarget = item.getAttribute('data-search') || item.textContent.toLowerCase();
         if (searchTarget.includes(query)) {
             item.style.display = '';
         } else {
             item.style.display = 'none';
         }
-    });
-
+    })
+    
     // hide empty categories
-    document.querySelectorAll('#directoryList ul').forEach(ul => {
-        const hasVisible = Array.from(ul.children).some(li => li.style.display !== 'none');
-        const header = ul.previousElementSibling;
-        if (header && header.classList.contains('categoryHeader')) {
-            header.style.display = hasVisible ? '' : 'none';
+    const categoryGroups = list.querySelectorAll('.categoryGroup');
+    categoryGroups.forEach(group => {
+        const categoryItems = Array.from(group.querySelectorAll('.directoryItem'));
+        const hasVisibleItems = categoryItems.some(item => item.style.display !== 'none');
+
+        if (!hasVisibleItems && query !== '') {
+            group.style.display = 'none';
+        } else {
+            group.style.display = '';
         }
     });
 }

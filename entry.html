@@ -6,27 +6,63 @@
     <title>saunakatti ❀ entry reader</title>
     <link rel="icon" href="assets/images/bee-icon-256.png">
     <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/main.js"></script>
-    <script src="scripts/entry.js"></script>
     <!-- Marked.js parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Official Marked Alert Extension -->
+    <script src="https://cdn.jsdelivr.net/npm/marked-alert/dist/index.umd.min.js"></script>
+    <!-- scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/entry.js"></script>
 </head>
 <body>
-    <div class="pageContent">
-        <div class="readableWidth">
-            <!-- dynamic back link -->
+    <div class="page-wrapper">
+
+        <aside id="entrySidebar" class="sidebar closed">
+        <button class="closeBtn" onclick="toggleSidebar()"><span class="nf-fa-close"></span></button>
+
+        <!-- TOC -->
+            <div class="sidebarSection">
+            <h3>Table of Contents</h3>
+            <ul id=tocList></ul>
+            </div>
+            
+
+            <!-- Dir search (knows context) -->
+            <div class="sidebarSection">
+            <h3 id="sidebarDirectoryTitle">Directory</h3>
+            <input
+                type="text"
+                id="directorySearch"
+                placeholder="Search entries..."
+                onkeyup="filterDirectory('directorySearch', 'sidebarList')"
+            >
+            <div id="sidebarList" class="directoryList"></div>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <!-- Top control bar -->
             <nav class="entryNav">
-                <a id="backLink" href="index.html"><span class="nf-fa-arrow_left"></span>&nbsp; Back</a>
+                <a id="backLink" class="button" href="index.html"><span class="nf-fa-arrow_left"></span>&nbsp; Back</a>
+                <div class="navControls">
+                    <button class="toggleBtn" onclick="toggleSidebar()"><span class="nf-cod-menu"></span>&nbsp; Sidebar</button>
+                    <button class="toggleBtn" onclick="toggleHeader()"><span class="nf-fa-tags"></span>&nbsp; Tags</button>
+                </div>
             </nav>
 
             <main class="entryContainer">
                 <!-- Dynamic category header -->
-                <div id="entryHeader"></div>
+                <div id="entryHeader" class="headerHidden"></div>
 
                 <!-- markdown body -->
                 <article id="entryBody">Loading content...</article>
             </main>
         </div>
     </div>
+    <footer>
+    <t>&copy; 2026 Onni Veranen &nbsp; </t>
+    <a href="https://github.com/saunakatti"> &nbsp;GitHub</a>
+    <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
+    </footer>
 </body>
 </html>
