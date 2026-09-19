@@ -5,7 +5,7 @@ by the main author. Anyways, the project would've never begun
 without these people.
 
 Thanks to everyone who has helped with the project and given ideas,
-including the Internet and the people making awesome
+including the people of the Internet and the developers making awesome
 tools for creation.
 
 > [!TIP]
