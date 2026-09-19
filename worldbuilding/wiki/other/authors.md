@@ -9,7 +9,7 @@ including the people of the Internet and the developers making awesome
 tools for creation.
 
 > [!TIP]
-> If an entry has some other author that the main author they will be credited
+> If an entry has some other author than the main author they will be credited
 > at the bottom of the entry.
 
 > [!IMPORTANT]
