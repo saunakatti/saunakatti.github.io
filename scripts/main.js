@@ -88,16 +88,51 @@ function filterDirectory(inputId, listId) {
 
 // Switch tab
 function switchTab(tabId) {
-    document.querySelectorAll('.tabContent').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.tabContent').forEach(el => {
+        el.style.display = 'none';
+        el.classList.remove('active');
+    });
+
     document.querySelectorAll('.tabBtn').forEach(el => el.classList.remove('active'));
 
-    document.getElementById(tabId).style.display = 'block';
+    const targetContent = document.getElementById(tabId);
+    if (targetContent) {
+        targetContent.style.display = 'block';
+        targetContent.classList.add('active'); // <-- Adds .active to tabContent
+    }
 
     const activeBtn = Array.from(document.querySelectorAll('.tabBtn'))
-        .find(btn => btn.getAttribute('onclick').includes(tabId));
+    .find(btn => btn.getAttribute('onclick')?.includes(tabId));
+
     if (activeBtn) activeBtn.classList.add('active');
 
     if (tabId === 'directoryTab') {
         loadDirectory();
     }
+
+    // Force Leaflet map to redraw and recalculate its container size
+    if (window.map) {
+        setTimeout(() => {
+            window.map.invalidateSize();
+        }, 100);
+    }
+}
+
+// Simple date + time formatter
+function formatDate(dateString, includeTime = false) {
+    const dateObj = new Date(dateString);
+    if (isNaN(dateObj)) return '';
+
+    const options = {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric'
+    };
+
+    if (includeTime) {
+        options.hour = '2-digit';
+        options.minute = '2-digit';
+    }
+
+    return dateObj.toLocaleString(undefined, options);
 }

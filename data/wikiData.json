@@ -58,6 +58,18 @@
             },
             "description": "A mysterious system hidden in the Nexus. Travel to here can be deemed impossible due to extreme cosmic activity caused by the Emitter.",
             "entryPath": "worldbuilding/wiki/systems/ajankajo.md"
+        },
+        "tophu": {
+            "title": "Tophu",
+            "aliases": "",
+            "type": "System",
+            "attributes": {
+                "Danger Level": "High",
+                "Location": "Atal'val",
+                "Control": "Capricorn's Great Union"
+            },
+            "description": "Capital system of Atal'val. Administrative capital of Capricorn's Great Union. Houses the biggest ecumonopolis of the Val Conjunct.",
+            "entryPath": "worldbuilding/wiki/systems/tophu.md"
         }
     },
     "factions": {

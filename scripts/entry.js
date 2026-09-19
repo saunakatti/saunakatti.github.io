@@ -63,11 +63,13 @@ function fetchBlogMeta(filePath, container) {
             const post = data.posts.find(p => p.filePath === filePath);
             if (!post) return;
 
+            const postDate = formatDate(post.pubDate, true)
+
             // render header
             container.innerHTML = `
             <div class="blogMetaHeader">
                 <div class="metaDetails">
-                    <span class="postDate"><span class="nf-md-calendar"></span>&nbsp;${post.date} at ${post.time}</span>
+                    <span class="postDate"><span class="nf-md-calendar"></span>&nbsp;${postDate}</span>
                     <span class="postAuthor"><span class="nf-fa-user_pen"></span>&nbsp;${post.author}</span>
                     <span class="postLang lang-${post.language.toLowerCase()}">${post.language}</span>
                 </div>
@@ -251,10 +253,15 @@ function populateSidebarDirectory(isBlog) {
             .then(res => res.json())
             .then(data => {
                 container.innerHTML = data.posts.map(post => {
-                    const searchableText = `${post.title} ${post.language} ${post.author} ${post.date} ${post.time} ${(post.tags || []).join(' ')}`.toLowerCase();
+                    const postDate = formatDate(post.pubDate, true)
+                    const postDateN = formatDate(post.pubDate)
+                    const searchableText = `${post.title} ${post.language} ${post.author} ${postDate} ${(post.tags || []).join(' ')}`.toLowerCase();
                     return `
                     <li class="directoryItem" data-search="${searchableText}">
-                        <a href="entry.html?file=${encodeURIComponent(post.filePath)}">${post.title}</a>
+                        <a href="entry.html?file=${encodeURIComponent(post.filePath)}">
+                            <strong>${post.title}</strong>
+                        </a>
+                        - ${postDateN}
                     `
                 }).join('');
             });

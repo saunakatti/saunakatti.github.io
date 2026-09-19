@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Capricorn's Encyclopedia Updates</title>
+        <link>https://saunakatti.github.io/worldbuilding.html</link>
+        <description>Recent additions and modifications to the encyclopedia entries.</description>
+        <language>en-us</language>
+    </channel>
+
+    <item>
+        <title>Added: Tophu System</title>
+        <link>https://saunakatti.github.io/entry.html?file=worldbuilding/wiki/systems/tophu.md</link>
+        <description>New system entry.</description>
+        <pubDate>Sat, 19 Sep 2026 19:00:00 GMT</pubDate>
+        <guid>https://saunakatti.github.io/entry.html?file=worldbuilding/wiki/systems/tophu.md</guid>
+    </item>
+
+</rss>

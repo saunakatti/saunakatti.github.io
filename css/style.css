@@ -133,6 +133,7 @@ button,
     font-weight: 600;
     border: 2px solid var(--color-surface0);
     transition: 100ms ease;
+    cursor: pointer;
 }
 
 button:hover,
@@ -162,71 +163,53 @@ button:hover,
     margin: auto auto;
 }
 
+/* ===============
+Page header stuffs
+=============== */
+
 /* ====================
 Worldbuilding wiki page
 ==================== */
-.wikiContainer {
-    display: grid;
-    grid-template-areas: 
-    "map-container infocard"
-    ;
-    grid-template-rows: 80vh auto;
-    grid-template-columns: 70vw auto;
+.worldbuilding-layout {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
     gap: 1em;
-    margin-top: 1em;
+    width: 100%;
 }
 
-#wikiPanel {
-    height: fit-content;
-    max-height: 100%;
-    grid-area: infocard;
+.wiki-column {
+    flex: 1 1 30%;
+    min-width: 0;
+    overflow: visible;
 }
 
-#entryBody {
-    width: min(50em, 100%);
-    align-self: center;
-    margin: auto;
-    margin-bottom: 5em;
-}
-
-#entryBody h1 {font-size: 2.0rem;}
-#entryBody h2 {font-size: 1.6rem;}
-#entryBody h3 {font-size: 1.2rem;}
-#entryBody h4 {font-size: 1rem;}
-
-
-#entryBody p {
-    margin-bottom: .7em;
-    font-size: 1.1rem;
-}
-
-#entryBody h1, 
-#entryBody h2, 
-#entryBody h3 {
-    margin-bottom: .5em;
-    margin-top: 1.5em;
-}
-
-
-.mapContainer {
+.map-column {
     padding: 0em;
     background: var(--color-mantle);
     border: var(--color-surface0) 2px solid;
-    grid-area: map-container;
-    height: 100%;
+    height: 40em;
+    flex: 1 1 70%;
+    flex-shrink: 0;
 }
 
-.mapContainer #map {
-    height: 100%;
+#map {
+    height: 100% !important;
     width: 100%;
 }
 
 .tabContent {
-    max-height: 100%;
+    display: none;
+    height: auto !important;
+    max-height: none !important;
     padding: 2.5em;
     background: var(--color-mantle);
-    overflow-y: auto;
+    overflow: visible;
     border: var(--color-surface0) 2px solid;
+}
+
+.tabContent.active {
+    display: block;
 }
 
 #entryContainer {
@@ -287,6 +270,40 @@ Worldbuilding wiki page
     animation: fadeIn 0.3s ease-in-out;
 }
 
+/* || Updates tab */
+.rss-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.rss-item {
+    background: var(--color-base);
+    border: 2px solid var(--color-surface0);
+    padding: 1em;
+    margin-left: 0;
+}
+
+.rss-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.rss-date {
+    font-size: 0.9rem;
+    color: var(--color-subtext0);
+}
+
+.rss-desc {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    margin-top: 0.3em;
+}
+
+
+
 /* ====================
 Md entry rendering page
 ==================== */
@@ -305,6 +322,31 @@ Md entry rendering page
     color: var(--color-text);
     margin: .5em 0;
     margin-bottom: 1em;
+}
+
+#entryBody {
+    width: min(50em, 100%);
+    align-self: center;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+#entryBody h1 {font-size: 2.0rem;}
+#entryBody h2 {font-size: 1.6rem;}
+#entryBody h3 {font-size: 1.2rem;}
+#entryBody h4 {font-size: 1rem;}
+
+
+#entryBody p {
+    margin-bottom: .7em;
+    font-size: 1.1rem;
+}
+
+#entryBody h1, 
+#entryBody h2, 
+#entryBody h3 {
+    margin-bottom: .5em;
+    margin-top: 1.5em;
 }
 
 .entryNav {
@@ -404,11 +446,12 @@ Md entry rendering page
     background: transparent;
     border: none;
     display: block;
+    cursor: pointer;
 }
 
 .closeBtn:hover {
-    background: none;
-    text-decoration: underline;
+    background: var(--color-surface0);
+    text-decoration: none;
 }
 
 .sidebarSection {
@@ -548,10 +591,12 @@ footer {
     width: 100%;
     background-color: var(--color-crust);
     padding: 1.5em;
+    margin-top: auto;
     text-align: center;
     height: auto;
     position: relative;
     z-index: 200;
+    flex-shrink: 0;
 }
 
 footer a {
@@ -612,23 +657,20 @@ g[id] {
 /* ==========
 Accessibility
 ========== */
-@media(max-width: 1499px) {
+@media(max-width: 1400px) {
 
-    .wikiContainer {
-        display: flex;
+    .worldbuilding-layout {
         flex-direction: column;
-        height: 100vh;
-        gap: 1em;
-        margin-top: 1em;
     }
 
-    #wikiPanel {
-        height: 50vh;
+    .wiki-column,
+    .map-column {
+        flex: 1 1 100%;
+        width: 100%;
     }
 
-    .mapContainer {
-        width: min(200vw, 100%);
-        height: 50vh;
+    #map {
+        height: 30em !important;
     }
 
 }
