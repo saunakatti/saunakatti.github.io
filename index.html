@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
@@ -9,15 +9,115 @@
     <link rel="icon" href="assets/images/bee-icon-256.png">
     <!-- Load NF icons -->
     <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
-</header>
+</head>
 <body>
 <div class="page-wrapper">
-    
+
+    <header class="site-header" id="siteHeader">
+        <div class="header-main">
+            <div class="header-title">
+                <img src="assets/images/saunakatti.jpg" alt="profile picture" height="42px" style="border: 2px solid var(--color-green);">
+                <div>
+                    <h3 class="site-title">Saunakatti 🌱</h3>
+                    <p class="site-tagline">For random stuff</p>
+                </div>
+            </div>
+            <div class="header-links">
+                <h4><a href="">Links</a></h4>
+                <h4><a href="blog.html">Blog</a></h4>
+                <h4><a href="https://saunakatti.atabook.org/" target="_blank" rel="noopener noreferrer">Guestbook</a></h4>
+                <h4><a href="worldbuilding.html">Worldbuilding</a></h4>
+            </div>
+
+            <button id="headerToggle" class="toggleBtn" aria-expanded="false" onclick="toggleHeader()">
+                <span class="nf-md-menu"></span>
+            </button>
+        </div>
+
+        <div class="header-expanded">
+            <div class="header-expanded-content">
+                <div class="expanded-layout">
+                    <div class="link-columns">
+                        <div class="link-group">
+                            <h3>Main Pages</h3>
+                            <ul>
+                                <li><a href="index.html" class="active-page">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="worldbuilding.html">Worldbuilding</a></li>
+                                <li><a href="links.html">Links</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h3>Misc</h3>
+                            <ul>
+                                <li><a href="https://saunakatti.atabook.org/" target="_blank" rel="noopener noreferrer">Guestbook</a></li>
+                                <li><a href="">Documentation</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="/worldbuilding/">Worldbuilding Archive</a></li>
+                                <li><a href="/blog/">Recent Notes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-about">
+                        <h3>About the Site</h3>
+                        <p>Personal site for random stuff (v2). Made for fun.</p>
+                        <p>You should read <a href="entry.html?file=blog/2026/post1-welcome.md">Welcome</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="grid-row">
+        <div class="home-section home-section-wide">
+            <div>
+                <h1>Hello!&nbsp; :)</h1>
+                <h3>Some kind of thing here</h3>
+                <p>This is ....</p>
+            </div>
+        </div>
+        <div class="home-section">
+            <div>
+                <h2>Options</h2>
+                <p>Change theme</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="home-section">
+            <h2>Updates</h2>
+            <p>Insert rss feed here</p>
+        </div>
+        <div class="home-section">
+            <h2>Links</h2>
+            <p>some links</p>
+        </div>
+        <div class="home-section" style="flex-direction: row; border-color: var(--color-yellow);">
+            <img src="assets/images/bee-icon-256.png" alt="bee" height="200px" width="200px" style="margin-right: 2em;">
+            <div>
+                <h2>Bee</h2>
+                <p>Bees are important. They are the key.</p>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
 <footer>
     <t>&copy; 2026 Onni Veranen &nbsp; </t>
     <a href="https://github.com/saunakatti"> &nbsp;GitHub</a>
     <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
 </footer>
+<script src="scripts/main.js"></script>
 </body>
 </html>

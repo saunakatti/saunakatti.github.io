@@ -136,3 +136,14 @@ function formatDate(dateString, includeTime = false) {
 
     return dateObj.toLocaleString(undefined, options);
 }
+
+// Toggle header
+function toggleHeader() {
+    const header = document.getElementById('siteHeader')
+    const button = document.getElementById('headerToggle')
+
+    const isExpanded = header.classList.toggle('is-expanded')
+
+    button.setAttribute('aria-expanded', isExpanded);
+    button.innerHTML = isExpanded ? '<span class="nf-fa-close"></span>' : '<span class="nf-md-menu"></span>';
+}

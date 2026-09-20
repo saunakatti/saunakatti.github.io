@@ -15,4 +15,9 @@ fun in general. (And to update the look and, for example, the blog system)
 >
 > Note: AI has nothing to do with the world building project. It's completely human-made stuff.
 
-
+> [!WARNING]
+> Unlike my old page, which was somewhat friendly to users not using JavaScript,
+> this one isn't. (Mainly because of the Markdown features.)
+> Further info and workarounds will be added in the future.
+> I have no reason to try anything malicious but you really shouldn't trust someone
+> if you don't feel like it.
