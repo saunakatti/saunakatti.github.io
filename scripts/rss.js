@@ -51,8 +51,8 @@ async function renderRssFeed(feedUrl, containerId, maxItems = 5) {
 // Init all feeds when the page loads
 document.addEventListener("DOMContentLoaded", () => {
     // Encyclopedia updates
-    renderRssFeed('../rss/wiki-feed.xml', 'rssContainer', 5)
+    renderRssFeed('../rss/wiki-feed.xml', 'wikiRssContainer', 5);
 
     // Page updates
-    // renderRssFeed('../rss/page-feed.xml, 'pageUpdatesContainer', 5);
+    renderRssFeed('../rss/rss.xml', 'siteRssContainer', 5);
 })

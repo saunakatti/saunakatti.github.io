@@ -126,7 +126,7 @@ button,
     display: inline-block;
     text-decoration: none;
     color: var(--color-text);
-    background-color: var(--color-mantle);
+    background-color: var(--color-base);
     padding: 0.5em 1em;
     border-radius: 0em;
     margin: 1em 1em 1em 0em;
@@ -143,10 +143,19 @@ button:hover,
     text-decoration: none;
 }
 
-
 .button,
 .button:hover {
     font-size: smaller;
+}
+
+.text-box {
+    display: inline-block;
+    font-size: smaller;
+    padding: 0.5em 1em;
+    margin: 1em 1em 1em 0em;
+    font-weight: 600;
+    background: var(--color-base);
+    border: 2px dashed var(--color-surface0);
 }
 
 /* */
@@ -192,6 +201,10 @@ Page header stuffs
     opacity: 1;
     visibility: visible;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.site-title a {
+    color: var(--color-text);
 }
 
 .header-links a {
@@ -280,9 +293,10 @@ Page header stuffs
 Homepage
 =============== */
 
-.grid-row {
+.home-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto auto;
     gap: 1em;
     margin-top: 1.5em;
 }
@@ -297,8 +311,136 @@ Homepage
     flex-wrap: wrap;
 }
 
-.home-section-wide {
-    grid-column: span 2;
+.home-section h1,
+.home-section h2,
+.home-section h3,
+.home-section h4 {
+    margin-bottom: 0.2em;
+}
+
+/* Setup for dif sections */
+
+.home-intro {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.home-links {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.home-updates {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.home-options {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+/* =======
+Links page
+======= */
+.link-page-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.link-section {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-mantle);
+    border: solid 2px var(--color-surface0);
+    padding: 1.5em;
+    width: auto;
+    flex-wrap: nowrap;
+}
+
+.link-section-icon {
+    color: var(--color-text);
+    scale: 5;
+    display: inline-block;
+    padding-left: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.link-section-icon-heading {
+    display: none;
+}
+
+.link-section-text {
+    width: max(20em, 50%);
+    margin-left: auto;
+    margin-right: 0em;
+}
+
+/* Link specific settings */
+
+
+/* Pinterest */
+.link-section.pinterest {
+    border-color: var(--color-red);
+}
+
+.link-section.pinterest .link-section-icon,
+.link-section.pinterest .link-section-icon-heading {
+    color: var(--color-red);
+}
+
+/* Fluxer */
+.link-section.fluxer {
+    border-color: var(--color-pink);
+}
+
+.link-section.fluxer .link-section-icon,
+.link-section.fluxer .link-section-icon-heading {
+    color: var(--color-pink);
+}
+
+/* Discord */
+.link-section.discord {
+    border-color: var(--color-mauve);
+}
+
+.link-section.discord .link-section-icon,
+.link-section.discord .link-section-icon-heading {
+    color: var(--color-mauve);
+}
+
+/* Steam */
+.link-section.steam {
+    border-color: var(--color-blue);
+}
+
+.link-section.steam .link-section-icon,
+.link-section.steam .link-section-icon-heading {
+    color: var(--color-blue);
+}
+
+/* GitHub */
+.link-section.github {
+    border-color: var(--color-text);
+}
+
+.link-section.github .link-section-icon,
+.link-section.github .link-section-icon-heading {
+    color: var(--color-text);
+}
+
+/* Bluesky */
+.link-section.bluesky {
+    border-color: var(--color-sky);
+}
+
+.link-section.bluesky .link-section-icon,
+.link-section.bluesky .link-section-icon-heading {
+    color: var(--color-sky);
 }
 
 /* ====================
@@ -357,10 +499,15 @@ Worldbuilding wiki page
 /* Tab thing styling */
 .tabBtn {
     margin-top: 0em;
+    background-color: var(--color-mantle);
 }
 
 .tabBtn.active {
     text-decoration: underline;
+}
+
+.wikiTabs a {
+    background-color: var(--color-mantle);
 }
 
 /* || Directory tab */
@@ -404,7 +551,10 @@ Worldbuilding wiki page
     animation: fadeIn 0.3s ease-in-out;
 }
 
-/* || Updates tab */
+/* ====================
+RSS feed stuff
+==================== */
+
 .rss-list {
     list-style: none;
     padding: 0;
@@ -416,6 +566,7 @@ Worldbuilding wiki page
     border: 2px solid var(--color-surface0);
     padding: 1em;
     margin-left: 0;
+    margin-bottom: 1em;
 }
 
 .rss-item-header {
@@ -436,7 +587,9 @@ Worldbuilding wiki page
     margin-top: 0.3em;
 }
 
-
+.rss-link {
+    color: var(--color-peach);
+}
 
 /* ====================
 Md entry rendering page
@@ -465,7 +618,7 @@ Md entry rendering page
     margin-bottom: 5em;
 }
 
-#entryBody h1 {font-size: 2.0rem;}
+#entryBody h1 {font-size: 2.2rem;}
 #entryBody h2 {font-size: 1.6rem;}
 #entryBody h3 {font-size: 1.2rem;}
 #entryBody h4 {font-size: 1rem;}
@@ -481,6 +634,12 @@ Md entry rendering page
 #entryBody h3 {
     margin-bottom: .5em;
     margin-top: 1.5em;
+}
+
+#entryBody img {
+    width: min(50em, 100%);
+    border: solid 2px var(--color-surface0);
+    margin: 2em 0 0 0;
 }
 
 .entryNav {
@@ -791,6 +950,23 @@ g[id] {
 /* ==========
 Accessibility
 ========== */
+@media(max-width: 1600px) {
+    
+    .link-section-icon {
+        display: none;
+    }
+
+    .link-section-icon-heading {
+        display: inline;
+        margin-right: 0.5em;
+    }
+
+    .link-section-text {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
 @media(max-width: 1400px) {
 
     .worldbuilding-layout {
@@ -817,6 +993,16 @@ Accessibility
     .header-about {
         display: none;
     }
+
+    .home-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-page-grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 700px) {
@@ -830,8 +1016,12 @@ Accessibility
         gap: 2em;
     }
 
-    .home-section-wide {
-        grid-column: span 1;
+    .link-section * {
+        width: 100%;
+    }
+
+    .link-section a {
+        margin-bottom: 0em;
     }
 }
 

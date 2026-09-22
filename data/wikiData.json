@@ -46,6 +46,7 @@
             "entryPath": "worldbuilding/wiki/regions/capricorns_galaxy.md"
         }
     },
+
     "systems": {
         "ajankajo": {
             "title": "Ajankajo",
@@ -72,6 +73,7 @@
             "entryPath": "worldbuilding/wiki/systems/tophu.md"
         }
     },
+
     "factions": {
         "capricorns_great_union": {
             "title": "Capricorn's Great Union",
@@ -86,6 +88,41 @@
             "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md"
         }
     },
+
+    "beings": {
+        "tellusians": {
+            "title": "The Tellusians",
+            "aliases": "",
+            "type": "Species",
+            "attributes": {
+                "Originated": "Unknown",
+                "Location": "No specific locations",
+                "Knowledge on Äen'e": "Extreme"
+            },
+            "description": "A mysterious humanoid species from far after Capricorn's Galaxy existed."
+        }
+    },
+
+    "universe": {
+        "aari": {
+            "title": "Ääri",
+            "aliases": ["The Endless", "Everything"],
+            "type": "Theory",
+            "attributes": {},
+            "description": "Another part of a great mystery behind the Universe.",
+            "entryPath": "worldbuilding/wiki/universe/aari.md"
+        },
+
+        "aene": {
+            "title": "Äen'e",
+            "aliases": ["Forces", "Magic"],
+            "type": "Knowledge",
+            "attributes": {},
+            "description": "The physical manifestation of Ääri.",
+            "entryPath": "worldbuilding/wiki/universe/aene.md"
+        }
+    },
+
     "unrelated": {
         "welcome": {
             "title": "Welcome",

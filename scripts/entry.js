@@ -252,17 +252,40 @@ function populateSidebarDirectory(isBlog) {
         fetch('../data/blogData.json')
             .then(res => res.json())
             .then(data => {
-                container.innerHTML = data.posts.map(post => {
-                    const postDate = formatDate(post.pubDate, true)
-                    const postDateN = formatDate(post.pubDate)
-                    const searchableText = `${post.title} ${post.language} ${post.author} ${postDate} ${(post.tags || []).join(' ')}`.toLowerCase();
+                
+                const postsByYear = data.posts.reduce((acc, post) => {
+                    const year = new Date(post.pubDate).getFullYear() || 'Other';
+                    if (!acc[year]) acc[year] = [];
+                    acc[year].push(post);
+                    return acc;
+                }, {});
+
+                const sortedYears = Object.keys(postsByYear).sort((a, b) => b - a);
+
+                container.innerHTML = sortedYears.map(year => {
+                    const postItems = postsByYear[year].map(post => {
+                        const postDate = formatDate(post.pubDate, true);
+                        const postDateN = formatDate(post.pubDate);
+                        const searchableText = `${post.title} ${post.language} ${post.author} ${postDate} ${(post.tags || []).join(' ')}`.toLowerCase();
+
+                        return `
+                            <li class="directoryItem" data-search="${searchableText}">
+                                <a href="entry.html?file=${encodeURIComponent(post.filePath)}">
+                                    <strong>${post.title}</strong>
+                                </a>
+                                - ${postDateN}
+                            </li>
+                        `;
+                    }).join('');
+
                     return `
-                    <li class="directoryItem" data-search="${searchableText}">
-                        <a href="entry.html?file=${encodeURIComponent(post.filePath)}">
-                            <strong>${post.title}</strong>
-                        </a>
-                        - ${postDateN}
-                    `
+                        <li class="directoryYearGroup">
+                            <h4 class="directoryYearTitle">${year}</h4>
+                            <ul class="directoryYearList">
+                                ${postItems}
+                            </ul>
+                        </li>
+                    `;
                 }).join('');
             });
 
