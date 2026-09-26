@@ -172,8 +172,8 @@ async function fetchMarkdownContent(filePath) {
 
         const markdownText = await response.text();
 
-        // 1. Convert Markdown to HTML (using your parser, e.g., marked)
-        entryBody.innerHTML = marked.parse(markdownText);
+        // 1. Convert Markdown to HTML (using own parser function with marked and some link handling)
+        entryBody.innerHTML = parseMarkdown(markdownText, filePath);
 
         // 2. Trigger Prism to highlight code blocks in entryBody
         if (typeof Prism !== 'undefined') {
