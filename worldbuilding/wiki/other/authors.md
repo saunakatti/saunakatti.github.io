@@ -20,7 +20,7 @@ tools for creation.
 
 ### Main Author
 
-Onni V.  
+Onni / Saunakatti  
 [Website](https://saunakatti.github.io/)
 
 ### Authors

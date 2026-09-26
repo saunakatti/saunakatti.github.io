@@ -8,50 +8,58 @@
 // For loading content to entry.html, it's important that this happens in the right order (at least some of it I think)
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const filePath = urlParams.get('file');
-
-    if (!filePath) {
-        document.getElementById('entryBody').innerHTML = '<p>No entry specified.<p>';
-        return;
-    }
-
-    const backLink = document.getElementById('backLink');
+    const filePath = urlParams.get('file') || '';
     const headerContainer = document.getElementById('entryHeader');
 
-    // detect type of entry
-    const isBlog = filePath.startsWith('blog/')
-    const isWorldbuilding = filePath.startsWith('worldbuilding/');
+    if (!filePath || !headerContainer) return;
 
-    // adjust back link accordingly
-    if (isBlog) {
-        backLink.href = 'blog.html';
-        backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Blog';
-    } else if (isWorldbuilding) {
-        backLink.href = 'worldbuilding.html';
-        backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Worldbuilding';
-    } else {
-        backLink.href = 'index.html'
-        backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Home'
+    // Route classifications
+    const isBlog = filePath.startsWith('blog/');
+    const isWiki = filePath.startsWith('worldbuilding/');
+    const isDocs = filePath.startsWith('docs/');
+
+    // Dynamic Back-Link update
+    const backLink = document.getElementById('backLink');
+    if (backLink) {
+        if (isBlog) {
+            backLink.href = 'blog.html';
+            backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Blog';
+        } else if (isWiki) {
+            backLink.href = 'worldbuilding.html';
+            backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Worldbuilding';
+        } else if (isDocs) {
+            backLink.href = 'docs.html';
+            backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Documentation';
+        }
     }
 
-    // fetch metadata according to type
+    // Populate directory sidebar based on section
     if (isBlog) {
-        fetchBlogMeta(filePath, headerContainer); 
-    } else if (isWorldbuilding) {
+        populateSidebarDirectory('blog');
+        fetchBlogMeta(filePath, headerContainer);
+    }
+    else if (isWiki) {
+        populateSidebarDirectory('worldbuilding');
         fetchWikiMeta(filePath, headerContainer);
+    } 
+    else populateSidebarDirectory('docs');
+
+    // Fetch and render the content file
+    if (filePath) {
+        fetchMarkdownContent(filePath);
     }
 
-    // fetch and render md content
-    fetchMarkdownContent(filePath);
+    if (document.getElementById('blogPreviews')) {
+        loadBlogPreviews();
+    }
 
-    // populate sidebar dir
-    populateSidebarDirectory(isBlog)
 });
 
-// toggle data header section
-function toggleHeader() {
+function toggleEntryHeader() {
     const header = document.getElementById('entryHeader');
-    if (header) header.classList.toggle('headerHidden');
+    if (!header) return; // Prevents the null error if the element isn't rendered yet
+    
+    header.classList.toggle('headerHidden');
 }
 
 
@@ -60,25 +68,28 @@ function fetchBlogMeta(filePath, container) {
     fetch('../data/blogData.json')
         .then(res => res.json())
         .then(data => {
-            const post = data.posts.find(p => p.filePath === filePath);
+            // Flatten nested year/category objects to search for the post
+            const posts = Object.values(data).flatMap(category => Object.values(category));
+            const post = posts.find(p => p.entryPath === filePath);
             if (!post) return;
 
-            const postDate = formatDate(post.pubDate, true)
+            const postDate = typeof formatDate === 'function' ? formatDate(post.pubDate || post.date, true) : (post.pubDate || post.date || '');
 
-            // render header
             container.innerHTML = `
-            <div class="blogMetaHeader">
-                <div class="metaDetails">
-                    <span class="postDate"><span class="nf-md-calendar"></span>&nbsp;${postDate}</span>
-                    <span class="postAuthor"><span class="nf-fa-user_pen"></span>&nbsp;${post.author}</span>
-                    <span class="postLang lang-${post.language.toLowerCase()}">${post.language}</span>
+                <div class="blogMetaHeader">
+                    <div class="metaDetails">
+                        <span class="postDate"><span class="nf-md-calendar"></span>&nbsp;${postDate}</span>
+                        ${post.author ? `<span class="postAuthor"><span class="nf-fa-user_pen"></span>&nbsp;${post.author}</span>` : ''}
+                        ${post.language ? `<span class="postLang lang-${post.language.toLowerCase()}">${post.language}</span>` : ''}
+                    </div>
+                    <hr>
+                    <strong>Tags: </strong>
+                    ${post.tags ? `
+                        <div class="blogTags">
+                            ${post.tags.map(t => `<span class="blogTag">${t}</span>`).join('')}
+                        </div>
+                    ` : ''}
                 </div>
-                <hr>
-                <div class="blogTags">
-                    <strong>Tags:</strong>
-                    ${post.tags.map(t => `<span class="blogTag">${t}</span>`).join('')}
-                </div>
-            </div>
             `;
         });
 }
@@ -101,23 +112,13 @@ function fetchWikiMeta(filePath, container) {
             }
             if (!entry) return;
 
-            // set up attr variable
-            //let attributesHtml = '';
-            //if (entry.attributes) {
-            //    attributesHtml = `<div class="attributeGrid>"` +
-            //        Object.entries(entry.attributes)
-            //            .map(([k, v]) => `<div class="attributeBlock"><span class="attrVal">${k}:</span> ${v}</div>`)
-            //            .join('') +
-            //        `</div>`;
-            //}
-
             // render attributes if present
                 let attributesHtml = ''
                 if (entry.attributes) {
                     attributesHtml = `
                     <hr>
+                    <strong>Attributes:</strong>
                     <div class="attributeBox">
-                        <strong>Attributes:</strong>
                         <div class="attributeGrid">
                     `;
 
@@ -146,14 +147,14 @@ function fetchWikiMeta(filePath, container) {
             // render header
             container.innerHTML = `
                 <div class="wikiMetaHeader">
-                        <div class="metaRow">
-                            <span class="metaLabel">Type:</span>
-                            <span class="metaValue">${entry.type}</span>
-                        </div>
-                        <div class="metaRow">
-                            <span class="metaLabel">Aliases:</span>
-                            <span class="metaValue">${formattedAliases}</span>
-                        </div>
+                    <div class="metaRow">
+                        <span class="metaLabel">Type:</span>
+                        <span class="metaValue">${entry.type || 'N/A'}</span>
+                    </div>
+                    <div class="metaRow">
+                        <span class="metaLabel">Aliases:</span>
+                        <span class="metaValue">${formattedAliases}</span>
+                    </div>
                     ${attributesHtml}
                 </div>
             `;
@@ -161,29 +162,30 @@ function fetchWikiMeta(filePath, container) {
 }
 
 // Fetch md file and convert to HTML using marked.js
-function fetchMarkdownContent(filePath) {
+async function fetchMarkdownContent(filePath) {
+    const entryBody = document.getElementById('entryBody');
+    if (!entryBody) return;
 
-    fetch(filePath)
-    .then(res => {
-        if (!res.ok) throw new Error(`File not found (${res.status})`);
-        return res.text();
-    })
-    .then(markdownText => {
-        const htmlContent = parseMarkdown(markdownText, filePath)
+    try {
+        const response = await fetch(`${filePath}`);
+        if (!response.ok) throw new Error('File not found');
 
-        if (htmlContent === undefined) {
-            throw new Error("parseMarkdown returned undefined.")
+        const markdownText = await response.text();
+
+        // 1. Convert Markdown to HTML (using your parser, e.g., marked)
+        entryBody.innerHTML = marked.parse(markdownText);
+
+        // 2. Trigger Prism to highlight code blocks in entryBody
+        if (typeof Prism !== 'undefined') {
+            Prism.highlightAllUnder(entryBody);
         }
 
-        document.getElementById('entryBody').innerHTML = htmlContent
-
-        // Generate toc
         generateToc();
-    })
-    .catch (err => {
-        console.error("Md fetch error:", err);
-        document.getElementById('entryBody').innerHTML = `<h3><strong>Error loading entry: ${err.message}</strong></h3>`
-    });
+
+    } catch (err) {
+        console.error('Error loading entry content:', err);
+        entryBody.innerHTML = '<p>Error loading entry content.</p>';
+    }
 }
 
 // Sidebar (hidden by default)
@@ -240,103 +242,5 @@ function generateToc() {
         }
     })
 }
-
-// populate sidebar with blog or wb links only + setup search targets (we can use global filterDirectory() for searching
-function populateSidebarDirectory(isBlog) {
-    const dirTitle = document.getElementById('sidebarDirectoryTitle');
-    const container = document.getElementById('sidebarList');
-    if (!container) return;
-
-    if (isBlog) {
-        if (dirTitle) dirTitle.textContent = "All Blog Posts";
-        fetch('../data/blogData.json')
-            .then(res => res.json())
-            .then(data => {
-                
-                const postsByYear = data.posts.reduce((acc, post) => {
-                    const year = new Date(post.pubDate).getFullYear() || 'Other';
-                    if (!acc[year]) acc[year] = [];
-                    acc[year].push(post);
-                    return acc;
-                }, {});
-
-                const sortedYears = Object.keys(postsByYear).sort((a, b) => b - a);
-
-                container.innerHTML = sortedYears.map(year => {
-                    const postItems = postsByYear[year].map(post => {
-                        const postDate = formatDate(post.pubDate, true);
-                        const postDateN = formatDate(post.pubDate);
-                        const searchableText = `${post.title} ${post.language} ${post.author} ${postDate} ${(post.tags || []).join(' ')}`.toLowerCase();
-
-                        return `
-                            <li class="directoryItem" data-search="${searchableText}">
-                                <a href="entry.html?file=${encodeURIComponent(post.filePath)}">
-                                    <strong>${post.title}</strong>
-                                </a>
-                                - ${postDateN}
-                            </li>
-                        `;
-                    }).join('');
-
-                    return `
-                        <li class="directoryYearGroup">
-                            <h4 class="directoryYearTitle">${year}</h4>
-                            <ul class="directoryYearList">
-                                ${postItems}
-                            </ul>
-                        </li>
-                    `;
-                }).join('');
-            });
-
-    } else {
-        // Almost re-utilized from map.js 
-        if (dirTitle) dirTitle.textContent = "Worldbuilding Entries";    
-        
-        fetch('../data/wikiData.json')
-            .then(res => res.json())
-            .then(data => {
-                let html = '';
-
-                for (const [category, entries] of Object.entries(data)) {
-                    html += `<li class="categoryGroup">
-                        <h4 class="categoryHeader">${capitalizeFirstLetter(category)}</h4>
-                        <ul>`;
-
-                    for (const [key, entry] of Object.entries(entries)) {
-                        const entryUrl = `entry.html?file=${encodeURIComponent(entry.entryPath)}`;
-
-                        let attributeString = '';
-                        if (entry.attributes) {
-                            attributeString = Object.entries(entry.attributes)
-                                .map(([k, v]) => `${k} ${v}`)
-                                .join(' ');
-                        }
-
-                        const aliasesString = Array.isArray(entry.aliases) 
-                            ? entry.aliases.join(' ') 
-                            : (entry.aliases || '');
-
-                        const searchableText = `${entry.title} ${aliasesString} ${entry.type} ${attributeString} ${entry.description || ''}`.toLowerCase();
-
-                        // Simplified link
-                        html += `
-                            <li class="directoryItem" data-search="${searchableText}">
-                                <a href="${entryUrl}">
-                                    <strong>${entry.title}</strong>
-                                </a>
-                                <small>(${entry.type})</small>
-                            </li>`;
-                    }
-
-                    html += `</ul></li>`;
-                }
-
-                container.innerHTML = html;
-            })
-            .catch(err => console.error("Error loading directory:", err));
-    }
-}
-
 
 

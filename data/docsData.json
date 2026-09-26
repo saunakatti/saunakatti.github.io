@@ -1,0 +1,9 @@
+{
+  "guides": {
+    "markdown_syntax": {
+      "title": "Markdown Syntax",
+      "description": "Guide for writing markdown files.",
+      "entryPath": "docs/markdown_syntax.md"
+    }
+  }
+}

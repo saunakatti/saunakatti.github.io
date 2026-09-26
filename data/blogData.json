@@ -1,13 +1,13 @@
 {
-    "posts": [
-        {
-            "id": "post1-welcome",
+    "2026": {
+        "post1-welcome": {
             "title": "Welcome",
-            "author": "Onni",
+            "author": "Onni / Saunakatti",
             "pubDate": "2026-09-14T00:00:00Z",
             "language": "English",
             "tags": ["Website"],
-            "filePath": "blog/2026/post1-welcome.md"
+            "summary": "Welcome to my personal website!",
+            "entryPath": "blog/2026/post1-welcome.md"
         }
-    ]
+    }
 }

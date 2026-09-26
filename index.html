@@ -26,7 +26,6 @@
                 <h4><a href="links.html">Links</a></h4>
                 <h4><a href="blog.html">Blog</a></h4>
                 <h4><a href="https://saunakatti.atabook.org/" target="_blank" rel="noopener noreferrer">Guestbook</a></h4>
-                <h4><a href="worldbuilding.html">Worldbuilding</a></h4>
             </div>
 
             <button id="headerToggle" class="toggleBtn" aria-expanded="false" onclick="toggleHeader()">
@@ -59,16 +58,32 @@
                         <div class="link-group">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="/worldbuilding/">Worldbuilding Archive</a></li>
-                                <li><a href="/blog/">Recent Notes</a></li>
+                                <li><a href="">Report Bugs</a></li>
+                                <li><a href="./rss/rss.xml">Follow Updates</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="header-about">
-                        <h3>About the Site</h3>
-                        <p>Personal site for random stuff (v2). Made for fun.</p>
-                        <p>You should read <a href="entry.html?file=blog/2026/post1-welcome.md">Welcome</a></p>
+                    <div class="header-settings">
+                        <div class="setting-item">
+                            <label for="themeSelect">Theme:</label>
+                            <select id="themeSelect" aria-label="Select Color Theme">
+                                <option value="catppuccin-mocha">Catppuccin Mocha</option>
+                                <option value="catppuccin-frappe">Catppuccin Frappé</option>
+                                <option value="catppuccin-latte">Catppuccin Latte</option>
+                                <option value="saunakatti">Saunakatti</option>
+                                <option value="legacy-light">Legacy Light</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-item">
+                            <label for="fontSelect">Font:</label>
+                            <select id="fontSelect">
+                                <option value="notosans">Noto Sans</option>
+                                <option value="jetbrainsmono">JetBrainsMono</option>
+                                <option value="opendyslexic">OpenDyslexic</option>
+                            </select>
+                        </div>
                     </div>
 
                 </div>
@@ -109,7 +124,7 @@
     </div>
 </div>
 <footer>
-    <t>&copy; 2026 Onni V. &nbsp; </t>
+    <t>&copy; 2026 Onni / Saunakatti &nbsp; </t>
     <a href="https://github.com/saunakatti"> &nbsp;GitHub</a>
     <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
 </footer>

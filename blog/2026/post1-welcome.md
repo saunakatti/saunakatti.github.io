@@ -10,11 +10,54 @@ archived on my [GitHub]() by the time this new one goes out.
 
 The main feature of this new website is the page you are on right now, the entry page.
 It displays blog posts and other entries written in [Markdown](https://en.wikipedia.org/wiki/Markdown). This makes writing posts
-and entries really easy compared to the old website. The downside of this is its dependency
-on JavaScript, which some users might prefer not to use. I'll add another way to interact with
-the content without JavaScript later but it's not on the top of the priority list.
+and entries really easy compared to the old website.
 
-## Old Website's Welcome Post
+If you don't like this beautiful entry page, you can always use your browsers reader view instead.
+You might need to refresh the page for it to appear.
+
+## Options
+
+The site options can be found in the site header when expanded. If your browser keeps cookies
+over sessions the options should stay the same any time you visit this site. 
+
+### Themes
+
+The website has five different themes:
+
+- Three of [Catppuccin's](https://catppuccin.com/) pastel colour palettes.
+  - Mocha (dark)
+  - Frappé (medium)
+  - Latte (light)  
+
+- Saunakatti theme.
+  - A more personalised and experimental theme with a background image.
+
+- Legacy Light from my old website.
+  - light brown, sandy colours, combined with the colours from Catppuccin Frappé. 
+
+### Fonts
+
+The website has three font choices, all [Nerd Fonts](https://www.nerdfonts.com/):
+
+- Noto Sans Nerd Font
+  - A basic sans-serif font.
+
+- JetBrainsMono Nerd Font
+  - A monospace font, used in codeblocks.
+
+- OpenDyslexic Nerd Font
+  - _"Designed specifically to alleviate reading errors caused by dyslexia."_
+
+## Extras
+
+### JavaScript
+
+The downside of the entry feature is its dependency
+on JavaScript, which some users might prefer not to use. I'll add another way to interact with
+the content without JavaScript later but it's not on the top of the priority list. The theme and font switchers use
+JavaScript.
+
+### Old Website's Welcome Post
 
 This is the blog home. It's the default post that shows up when you open this page.
 You can see other posts by clicking on one in the "All posts" menu next to or under

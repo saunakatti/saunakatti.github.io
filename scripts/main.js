@@ -1,4 +1,79 @@
 // ======================
+// THEME SWITCHER AND FONT SWITCHER
+// ======================
+
+// Theme keys
+const THEMES = ["catppuccin-mocha", "catppuccin-frappe", "catppuccin-latte", "legacy-light", "saunakatti"];
+
+// apply codeblock theme
+function applyPrismTheme(themeName) {
+    const prismLink = document.getElementById('prismTheme');
+    if (prismLink) {
+        // Points to your prism theme files directory
+        prismLink.href = `../css/prism/${themeName}.css`;
+    }
+}
+
+// Apply on startup
+function initTheme() {
+    const savedTheme = localStorage.getItem('site-theme') || 'catppuccin-mocha';
+    const validTheme = THEMES.includes(savedTheme) ? savedTheme : 'catppuccin-mocha';
+
+    document.documentElement.setAttribute('data-theme', validTheme);
+    applyPrismTheme(validTheme)
+}
+
+// run
+initTheme();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const themeSelect = document.getElementById('themeSelect');
+ 
+    if (themeSelect) {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || "catppuccin-mocha";
+        themeSelect.value = currentTheme;
+
+        themeSelect.addEventListener('change', (e) => {
+            const selectedTheme = e.target.value;
+            document.documentElement.setAttribute('data-theme', selectedTheme);
+            localStorage.setItem('site-theme', selectedTheme);
+
+            // Swap the Prism stylesheet on theme change
+            applyPrismTheme(selectedTheme);
+        })
+    }
+});
+
+const FONTS = ["notosans", "jetbrainsmono", "opendyslexic"];
+
+// Apply on startup
+function initFont() {
+    const savedFont = localStorage.getItem('site-font') || 'notosans';
+    const validFont = FONTS.includes(savedFont) ? savedFont : 'notosans';
+
+    document.documentElement.setAttribute('data-font', validFont);
+}
+
+// run
+initFont();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const fontSelect = document.getElementById('fontSelect');
+ 
+    if (fontSelect) {
+        const currentFont = document.documentElement.getAttribute('data-font') || "notosans";
+        fontSelect.value = currentFont;
+
+        fontSelect.addEventListener('change', (e) => {
+            const selectedFont = e.target.value;
+            document.documentElement.setAttribute('data-font', selectedFont);
+            localStorage.setItem('site-font', selectedFont);
+        })
+    }
+});
+
+
+// ======================
 // DOMAIN WIDE FUNCTIONS
 // ======================
 
@@ -146,4 +221,77 @@ function toggleHeader() {
 
     button.setAttribute('aria-expanded', isExpanded);
     button.innerHTML = isExpanded ? '<span class="nf-fa-close"></span>' : '<span class="nf-md-menu"></span>';
+}
+
+// Directory rendering
+// populate sidebar with blog or wb links only + setup search targets (we can use global filterDirectory() for searching
+async function populateSidebarDirectory(contentType) {
+    const sidebarList = document.getElementById('sidebarList');
+    if (!sidebarList) return;
+
+    const titleElement = document.getElementById('sidebarDirectoryTitle');
+    
+    // Auto-detect contentType from the URL path if not explicitly provided
+    if (!contentType) {
+        const path = window.location.pathname;
+        if (path.includes('blog')) {
+            contentType = 'blog';
+        } else if (path.includes('worldbuilding')) {
+            contentType = 'worldbuilding';
+        } else {
+            contentType = 'docs';
+        }
+    }
+    
+    if (titleElement) {
+        if (contentType === 'blog') titleElement.textContent = 'Blog Directory';
+        else if (contentType === 'worldbuilding') titleElement.textContent = 'Wiki Directory';
+        else if (contentType === 'docs') titleElement.textContent = 'Docs Directory';
+    }
+
+    const dataFiles = {
+        'blog': '../data/blogData.json',
+        'worldbuilding': '../data/wikiData.json',
+        'docs': '../data/docsData.json'
+    };
+
+    const targetUrl = dataFiles[contentType] || dataFiles['docs'];
+
+    try {
+        const response = await fetch(targetUrl);
+        const data = await response.json();
+
+        // Renders Blog, Wiki, and Docs with zero duplicate code
+        renderKeyedSidebar(data, sidebarList);
+
+    } catch (err) {
+        console.error(`Error loading directory for ${contentType}:`, err);
+    }
+}
+
+function renderKeyedSidebar(data, sidebarList) {
+    if (!sidebarList) return;
+
+    sidebarList.innerHTML = Object.entries(data).map(([categoryKey, itemsMap]) => {
+        const items = Object.values(itemsMap);
+
+        const formattedTitle = categoryKey
+            .replace(/([A-Z])/g, ' $1')
+            .replace(/^./, str => str.toUpperCase());
+
+        return `
+            <div class="sidebar-category categoryGroup">
+                <h3>${formattedTitle}</h3>
+                <ul>
+                    ${items.map(item => `
+                        <li class="directoryItem">
+                            <a href="entry.html?file=${encodeURIComponent(item.entryPath)}">
+                                ${item.title}
+                            </a>
+                        </li>
+                    `).join('')}
+                </ul>
+            </div>
+        `;
+    }).join('');
 }

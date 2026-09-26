@@ -21,3 +21,8 @@ fun in general. (And to update the look and, for example, the blog system)
 > Further info and workarounds will be added in the future.
 > I have no reason to try anything malicious but you really shouldn't trust someone
 > if you don't feel like it.
+
+## TODO?
+
+- Try out <https://iframe.chat/>
+- 

@@ -12,8 +12,36 @@
     src: url('../assets/fonts/notosans-nf.woff2') format('woff2');
 }
 
-/* Catppuccin Mocha colors*/
+@font-face {
+    font-family: 'OpenDyslexic Nerd Font';
+    src: url(../assets/fonts/opendyslexic-nf.woff2) format('woff2');
+}
+
+/* ===
+FONTS
+=== */
+
 :root {
+    --font-notosans: 'NotoSans Nerd Font';
+    --font-jetbrainsmono: 'JetBrainsMono Nerd Font';
+    --font-opendyslexic: 'OpenDyslexic Nerd Font';
+
+    --font-main: var(--font-notosans);
+}
+
+[data-font="jetbrainsmono"] {
+    --font-main: var(--font-jetbrainsmono)
+}
+
+[data-font="opendyslexic"] {
+    --font-main: var(--font-opendyslexic)
+}
+
+/* ===
+THEMES
+=== */
+/* Catppuccin Mocha (Default)*/
+:root, [data-theme="catppuccin-mocha"] {
     --color-rosewater: #f5e0dc;
     --color-flamingo: #f2cdcd;
     --color-pink: #f5c2e7;
@@ -27,7 +55,7 @@
     --color-sky: #89dceb;
     --color-sapphire: #74c7ec;
     --color-blue: #89b4fa;
-    --color-lavender: #b4befe;    /* My fav :) */
+    --color-lavender: #b4befe;
 
     --color-text: #cdd6f4;
     --color-subtext1: #bac2de;
@@ -41,6 +69,132 @@
     --color-base: #1e1e2e;
     --color-mantle: #181825;
     --color-crust: #11111b;
+}
+
+/* Catppuccin Latte */
+[data-theme="catppuccin-latte"] {
+    /* Base Colors & Surfaces */
+    --color-rosewater: #dc8a78;
+    --color-flamingo: #dd7878;
+    --color-pink: #ea76cb;
+    --color-mauve: #8839ef;
+    --color-red: #d20f39;
+    --color-maroon: #e64553;
+    --color-peach: #fe640b;
+    --color-yellow: #df8e1d;
+    --color-green: #40a02b;
+    --color-teal: #179299;
+    --color-sky: #04a5e5;
+    --color-sapphire: #209fb5;
+    --color-blue: #1e66f5;
+    --color-lavender: #7287fd;
+
+    --color-text: #4c4f69;
+    --color-subtext1: #5c5f77;
+    --color-subtext0: #6c6f85;
+    --color-overlay2: #7c7f93;
+    --color-overlay1: #8c8fa1;
+    --color-overlay0: #9ca0b0;
+    --color-surface2: #acb0be;
+    --color-surface1: #bcc0cc;
+    --color-surface0: #ccd0da;
+    --color-base: #eff1f5;
+    --color-mantle: #e6e9ef;
+    --color-crust: #dce0e8;
+}
+
+/* Catppuccin Frappé*/
+[data-theme="catppuccin-frappe"] {
+    /* Base Colors & Surfaces */
+    --color-rosewater: #f2d5cf;
+    --color-flamingo: #eebebe;
+    --color-pink: #f4b8e4;
+    --color-mauve: #ca9ee6;
+    --color-red: #e78284;
+    --color-maroon: #ea999c;
+    --color-peach: #ef9f76;
+    --color-yellow: #e5c890;
+    --color-green: #a6d189;
+    --color-teal: #81c8be;
+    --color-sky: #99d1db;
+    --color-sapphire: #85c1dc;
+    --color-blue: #8caaee;
+    --color-lavender: #babbf1;
+
+    --color-text: #c6d0f5;
+    --color-subtext1: #b5bfe2;
+    --color-subtext0: #a5adce;
+    --color-overlay2: #949cbb;
+    --color-overlay1: #838ba7;
+    --color-overlay0: #737994;
+    --color-surface2: #626880;
+    --color-surface1: #51576d;
+    --color-surface0: #414559;
+    --color-base: #303446;
+    --color-mantle: #292c3c;
+    --color-crust: #232634;
+}
+
+[data-theme="legacy-light"] {
+    --color-rosewater: #f2d5cf;
+    --color-flamingo: #eebebe;
+    --color-pink: #f4b8e4;
+    --color-mauve: #ca9ee6;
+    --color-red: #e78284;
+    --color-maroon: #ea999c;
+    --color-peach: #ef9f76;
+    --color-yellow: #e5c890;
+    --color-green: #a6d189;
+    --color-teal: #81c8be;
+    --color-sky: #99d1db;
+    --color-sapphire: #85c1dc;
+    --color-blue: #8caaee;
+    --color-lavender: #babbf1;
+
+    --color-text: #583101;
+    --color-subtext1: #603808;
+    --color-subtext0: #6F4518;
+    --color-overlay2: #8B5E34;
+    --color-overlay1: #A47148;
+    --color-overlay0: #BC8A5F;
+    --color-surface2: #D4A276;
+    --color-surface1: #E7BC91;
+    --color-surface0: #F3D5B5;
+    --color-base: #FFEDD8;
+    --color-mantle: #fceddd;
+    --color-crust: #fef4ea;
+}
+
+[data-theme="saunakatti"] {
+    --color-rosewater: #c2b1ae;
+    --color-flamingo: #d7b8b8;
+    --color-pink: #d0adc7;
+    --color-mauve: #a790c4;
+    --color-red: #cd869a;
+    --color-maroon: #d29ca5;
+    --color-peach: #dba584;
+    --color-yellow: #d4c39d;
+    --color-green: #90ab8e;
+    --color-teal: #8ab7b0;
+    --color-sky: #8fb8c0;
+    --color-sapphire: #83acbe;
+    --color-blue: #abc2e5;
+    --color-lavender: #a8acc7;
+
+    --color-text: #cac8b8;
+    --color-subtext1: #cabda5;
+    --color-subtext0: #beb29e;
+    --color-overlay2: #afa38d;
+    --color-overlay1: #b4a58a;
+    --color-overlay0: #af9b79;
+    --color-surface2: #c6b79e;
+    --color-surface1: #a19581;
+    --color-surface0: #92877b;
+    --color-base: #897c6b;
+    --color-mantle: #7a6e5e;
+    --color-crust: #635a4a;
+
+    --bg-image: linear-gradient(rgba(138, 127, 113, 0.50), rgba(138, 127, 113, 0.50)), url(../assets/images/nature2-comp-bg.jpg)
 }
 
 * {
@@ -57,11 +211,17 @@ html {
 
 
 body {
-    font-family: 'NotoSans Nerd Font';
+    font-family: var(--font-main);
     padding: 0;
     height: 100%;
     background-color: var(--color-base);
     color: var(--color-text);
+
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 a {
@@ -290,6 +450,43 @@ Page header stuffs
 }
 
 /* ===============
+Theme Switcher
+=============== */
+
+.header-settings {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: end;
+    margin-bottom: 0;
+    margin-top: auto;
+    gap: 0.5em;
+}
+
+.setting-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: end;
+    gap: 0.5em;
+    font-size: 0.9rem;
+}
+
+#themeSelect, #fontSelect {
+    background-color: var(--color-base);
+    color: var(--color-text);
+    border: 2px solid var(--color-surface0);
+    padding: 0.3em 0.5em;
+    font-family: inherit;
+    cursor: pointer;
+    width: 8em;
+}
+
+#themeSelect:focus-visible, #fontSelect:focus-visible {
+    outline: 2px solid var(--color-lavender);
+}
+
+/* ===============
 Homepage
 =============== */
 
@@ -338,6 +535,78 @@ Homepage
 .home-options {
     grid-column: 3;
     grid-row: 1 / span 2;
+}
+
+/* =======
+Blog page
+======= */
+.blog-container {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1em;
+    margin: 0;
+    padding-top: 2em;
+}
+
+.blog-feed {
+    background: var(--color-mantle);
+    border: solid 2px var(--color-surface0);
+    padding: 1.5em;
+}
+
+.blog-feed h1 {
+    margin-bottom: 0.5em;
+}
+
+.blog-card {
+    background: var(--color-base);
+    border: 2px solid var(--color-surface0) ;
+    padding: 1.5em;
+}
+
+.blog-card h2 {
+    margin: 0 0 0.2em 0;
+    font-size: 1.5rem;
+}
+
+.blog-card h2 a {
+    color: var(--color-text);
+}
+
+.blog-card h2 a:hover {
+    color: var(--color-text);
+}
+
+.blog-card .blogTags span {
+    font-size: 0.8rem;
+}
+
+.blog-card .metaDetails span {
+    font-size: 0.9rem;
+    border: none;
+    padding: 0;
+}
+
+.blog-card .summary {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.read-more {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Sidebar Styles */
+.blog-sidebar {
+    background: var(--color-mantle);
+    border: 2px solid var(--color-surface0);
+    border-radius: 0px;
+    padding: 1rem;
+    height: fit-content;
 }
 
 /* =======
@@ -603,6 +872,7 @@ Md entry rendering page
 
 .metaDetails {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1em;
     font-size: 1rem;
@@ -616,6 +886,9 @@ Md entry rendering page
     align-self: center;
     margin: auto;
     margin-bottom: 5em;
+    padding: 2em;
+    background-color: var(--color-base);
+    border: solid 2px var(--color-surface0);
 }
 
 #entryBody h1 {font-size: 2.2rem;}
@@ -625,15 +898,16 @@ Md entry rendering page
 
 
 #entryBody p {
-    margin-bottom: .7em;
+    margin-bottom: 0.7em;
+    margin-top: 0.7em;
     font-size: 1.1rem;
 }
 
 #entryBody h1, 
 #entryBody h2, 
 #entryBody h3 {
-    margin-bottom: .5em;
-    margin-top: 1.5em;
+    margin-bottom: 0.2em;
+    margin-top: 1.2em;
 }
 
 #entryBody img {
@@ -648,21 +922,22 @@ Md entry rendering page
 }
 
 #entryHeader {
-    max-height: 500px; /* Set higher than the header's maximum expected height */
+    max-height: 500px; /* Adjust to accommodate your largest header */
     opacity: 1;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out, opacity 0.25s ease-in-out, margin 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
+/* Higher specificity rule to override #entryHeader styles when hidden */
 #entryHeader.headerHidden {
-    max-height: 0;
+    max-height: 0 !important;
     opacity: 0;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+    pointer-events: none; /* Prevents interaction while hidden */
 }
-
 /* || Md callouts */
 
 /* Base Callout Container */
@@ -752,8 +1027,13 @@ Md entry rendering page
     margin-bottom: 2em;
 }
 
-.sidebarSection h3 {
-    margin-bottom: .8em;
+.sidebar-category {
+    margin-bottom: 0.5em;
+}
+
+#sidebarDirectoryTitle,
+#tocTitle {
+    margin-bottom: 0.8em;
 }
 
 /* TOC */
@@ -809,6 +1089,9 @@ Entry metadata (wb and blog)
 /* Attribute and tag grid and blocks */
 .attributeBox, .blogTags {
     margin: 1em 0;
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .attributeBox strong, .blogTags strong {
@@ -1005,7 +1288,7 @@ Accessibility
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
     .expanded-layout {
        flex-wrap: wrap;
     }
@@ -1013,7 +1296,11 @@ Accessibility
     .link-columns {
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 2em;
+        gap: 0;
+    }
+
+    .link-group {
+        margin-bottom: 2em;
     }
 
     .link-section * {
@@ -1022,6 +1309,10 @@ Accessibility
 
     .link-section a {
         margin-bottom: 0em;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1045,4 +1336,31 @@ Animations and transitions
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ================
+Codeblock overrides
+================ */
+
+/* Container styling for code blocks */
+pre[class*="language-"] {
+    background-color: var(--color-mantle) !important;
+    border: 2px solid var(--color-surface0) !important;
+    padding: 1.25em !important;
+    margin: 1.25em 0 !important;
+    overflow-x: auto;
+}
+
+/* Ensure inner code text doesn't add its own box or override fonts */
+pre[class*="language-"] > code {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    font-family: var(--font-mono, monospace) !important;
+}
+
+/* Strip any remnant token background artifacts */
+code[class*="language-"] .token {
+    background: none !important;
+    text-shadow: none !important;
 }
