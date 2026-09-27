@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>saunakatti ✦ guestbook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/bee-icon-256.png">
+    <script src="scripts/main.js" defer></script>
+    <!-- Chattable -->
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+    <!-- Load NF icons -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+    <header class="site-header" id="siteHeader">
+        <div class="header-main">
+            <div class="header-title">
+                <img src="assets/images/saunakatti.jpg" alt="profile picture" height="43px";>
+                <div>
+                    <h3 class="site-title"><a class="active-page" href="/">Saunakatti</a> 🌱</h3>
+                    <p class="site-tagline">For random stuff</p>
+                </div>
+            </div>
+            <div class="header-links">
+                <h4><a href="links.html">Links</a></h4>
+                <h4><a href="blog.html">Blog</a></h4>
+                <h4><a href="guestbook.html">Guestbook</a></h4>
+            </div>
+
+            <button id="headerToggle" class="toggleBtn" aria-expanded="false" onclick="toggleHeader()">
+                <span class="nf-md-menu"></span>
+            </button>
+        </div>
+
+        <div class="header-expanded">
+            <div class="header-expanded-content">
+                <div class="expanded-layout">
+                    <div class="link-columns">
+                        <div class="link-group">
+                            <h3>Main Pages</h3>
+                            <ul>
+                                <li><a href="index.html" class="active-page">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="worldbuilding.html">Worldbuilding</a></li>
+                                <li><a href="links.html">Links</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h3>Misc</h3>
+                            <ul>
+                                <li><a href="guestbook.html">Guestbook</a></li>
+                                <li><a href="docs.html">Digital Garden</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="">Report Bugs and Give Suggestions</a></li>
+                                <li><a href="./rss/rss.xml">Follow Updates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-settings">
+                        <div class="setting-item">
+                            <label for="themeSelect">Theme:</label>
+                            <select id="themeSelect" aria-label="Select Color Theme">
+                                <option value="catppuccin-mocha">Catppuccin Mocha</option>
+                                <option value="catppuccin-frappe">Catppuccin Frappé</option>
+                                <option value="catppuccin-latte">Catppuccin Latte</option>
+                                <option value="saunakatti">Saunakatti</option>
+                                <option value="legacy-light">Legacy Light</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-item">
+                            <label for="fontSelect">Font:</label>
+                            <select id="fontSelect">
+                                <option value="notosans">Noto Sans</option>
+                                <option value="jetbrainsmono">JetBrainsMono</option>
+                                <option value="opendyslexic">OpenDyslexic</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="guestbook-container">
+        <div class="guestbook-intro">
+        <h1>Welcome to the Guestbook</h1>
+        <br>
+        <h3>A place to leave messages, chat and ask questions. Related to this site or something completely different.</h3>
+        <br>
+        <h2>Rules</h2>
+        <li>Keep it respectful.</li>
+        <li>Use child friendly language, no profanity.</li>
+        <li>Do not share your or anyone else's personal information.</li>
+        <br>
+        <p>Chat hosted on <a href="https://iframe.chat/" target="_blank" rel="noopener noreferrer">Chattable</a>.</p>
+    </div>
+
+    <iframe src="https://iframe.chat/embed?chat=83999006" id="chattable"></iframe>
+    </div>
+
+</div>
+<footer>
+    <t>&copy; 2026 Onni / Saunakatti &nbsp; </t>
+    <a href="https://github.com/saunakatti" target="_blank" rel="noopener noreferrer"> &nbsp;GitHub</a>
+    <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
+</footer>
+</body>
+</html>

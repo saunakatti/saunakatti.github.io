@@ -2,8 +2,23 @@
 // THEME SWITCHER AND FONT SWITCHER
 // ======================
 
-// Theme keys
 const THEMES = ["catppuccin-mocha", "catppuccin-frappe", "catppuccin-latte", "legacy-light", "saunakatti"];
+
+const savedTheme = localStorage.getItem('site-theme') || 'catppuccin-mocha';
+const validTheme = THEMES.includes(savedTheme) ? savedTheme : 'catppuccin-mocha';
+
+// Apply the theme to the root element immediately
+document.documentElement.classList.remove(...THEMES);
+document.documentElement.classList.add(validTheme);
+document.documentElement.setAttribute('data-theme', validTheme);
+
+// Apply a specific theme to the root element and Chattable
+function applyTheme(themeName) {
+    // Update the root element's theme
+    document.documentElement.classList.remove(...THEMES);
+    document.documentElement.classList.add(themeName);
+    document.documentElement.setAttribute('data-theme', themeName);
+}
 
 // apply codeblock theme
 function applyPrismTheme(themeName) {
@@ -14,33 +29,54 @@ function applyPrismTheme(themeName) {
     }
 }
 
-// Apply on startup
+// Apply theme to Chattable (only if the iframe exists)
+function applyChattableTheme(themeName) {
+    if (window.chattable && document.getElementById('chattable')) {
+        chattable.reinitialize({
+            stylesheet: `../css/chattable/${themeName}.css`
+        });
+    }
+}
+
+// Initialize Chattable on startup
 function initTheme() {
     const savedTheme = localStorage.getItem('site-theme') || 'catppuccin-mocha';
     const validTheme = THEMES.includes(savedTheme) ? savedTheme : 'catppuccin-mocha';
 
-    document.documentElement.setAttribute('data-theme', validTheme);
-    applyPrismTheme(validTheme)
+    applyTheme(validTheme);
+    applyPrismTheme(validTheme);
+
+    // Initialize Chattable with the default theme first
+    if (document.getElementById('chattable')) {
+        chattable.initialize({
+            stylesheet: `../css/chattable-${validTheme}.css`
+        }).then(() => {
+            // Apply the saved theme to Chattable after the iframe loads
+            applyChattableTheme(validTheme);
+        });
+    }
 }
 
-// run
+// Run on startup
 initTheme();
 
+// Listen for theme changes
 document.addEventListener('DOMContentLoaded', () => {
     const themeSelect = document.getElementById('themeSelect');
- 
     if (themeSelect) {
-        const currentTheme = document.documentElement.getAttribute('data-theme') || "catppuccin-mocha";
-        themeSelect.value = currentTheme;
-
+        themeSelect.value = document.documentElement.getAttribute('data-theme') || 'catppuccin-mocha';
         themeSelect.addEventListener('change', (e) => {
             const selectedTheme = e.target.value;
-            document.documentElement.setAttribute('data-theme', selectedTheme);
             localStorage.setItem('site-theme', selectedTheme);
+            
+            applyTheme(selectedTheme);
 
-            // Swap the Prism stylesheet on theme change
             applyPrismTheme(selectedTheme);
-        })
+
+            if (document.getElementById('chattable')) {
+                applyChattableTheme(selectedTheme);
+            }
+        });
     }
 });
 
@@ -134,29 +170,40 @@ function filterDirectory(inputId, listId) {
     if (!input || !list) return;
 
     const query = input.value.toLowerCase().trim();
-    
-    if (!list) return;
 
-    const items = list.querySelectorAll('.directoryItem');
-    items.forEach(item => {
-        const searchTarget = item.getAttribute('data-search') || item.textContent.toLowerCase();
-        if (searchTarget.includes(query)) {
-            item.style.display = '';
-        } else {
-            item.style.display = 'none';
-        }
-    })
-    
-    // hide empty categories
-    const categoryGroups = list.querySelectorAll('.categoryGroup');
-    categoryGroups.forEach(group => {
+    // Get all category groups
+    const categoryGroups = list.querySelectorAll('.sidebar-category');
+
+    categoryGroups.forEach((group) => {
         const categoryItems = Array.from(group.querySelectorAll('.directoryItem'));
-        const hasVisibleItems = categoryItems.some(item => item.style.display !== 'none');
+        let hasVisibleItems = false;
 
-        if (!hasVisibleItems && query !== '') {
-            group.style.display = 'none';
-        } else {
+        // Filter items within the category
+        categoryItems.forEach((item) => {
+            const searchTarget = item.getAttribute('data-search') || item.textContent.toLowerCase();
+            if (searchTarget.includes(query)) {
+                item.style.display = '';
+                hasVisibleItems = true;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        // Show or hide the category based on visible items
+        if (hasVisibleItems && query !== '') {
             group.style.display = '';
+            // Open the details element if it's a <details> element
+            if (group.tagName === 'DETAILS') {
+                group.open = true;
+            }
+        } else if (query === '') {
+            // If the search query is empty, show all categories
+            group.style.display = '';
+            if (group.tagName === 'DETAILS') {
+                group.open = false; // Optional: Close all categories by default
+            }
+        } else {
+            group.style.display = 'none';
         }
     });
 }
@@ -246,7 +293,7 @@ async function populateSidebarDirectory(contentType) {
     if (titleElement) {
         if (contentType === 'blog') titleElement.textContent = 'Blog Directory';
         else if (contentType === 'worldbuilding') titleElement.textContent = 'Wiki Directory';
-        else if (contentType === 'docs') titleElement.textContent = 'Docs Directory';
+        else if (contentType === 'docs') titleElement.textContent = 'Digital Garden';
     }
 
     const dataFiles = {
@@ -272,26 +319,54 @@ async function populateSidebarDirectory(contentType) {
 function renderKeyedSidebar(data, sidebarList) {
     if (!sidebarList) return;
 
-    sidebarList.innerHTML = Object.entries(data).map(([categoryKey, itemsMap]) => {
-        const items = Object.values(itemsMap);
+    sidebarList.innerHTML = '';
 
+    Object.entries(data).forEach(([categoryKey, itemsMap]) => {
+        const categoryItem = Object.values(itemsMap);
+
+        // Format the title for display
         const formattedTitle = categoryKey
             .replace(/([A-Z])/g, ' $1')
-            .replace(/^./, str => str.toUpperCase());
+            .replace(/^./, (str) => str.toUpperCase());
 
-        return `
-            <div class="sidebar-category categoryGroup">
-                <h3>${formattedTitle}</h3>
-                <ul>
-                    ${items.map(item => `
-                        <li class="directoryItem">
-                            <a href="entry.html?file=${encodeURIComponent(item.entryPath)}">
-                                ${item.title}
-                            </a>
-                        </li>
-                    `).join('')}
-                </ul>
-            </div>
+        // Create a details element for each category
+        const detailsElement = document.createElement('details');
+        detailsElement.className = 'sidebar-category';
+
+        // Create a summary element for the category header
+        const summaryElement = document.createElement('summary');
+        summaryElement.className = 'category-toggle';
+        summaryElement.textContent = formattedTitle;
+
+        // Add Nerd Fonts icons for open/closed states
+        summaryElement.innerHTML = `
+            <span class="icon closed-icon"></span>
+            <span class="icon open-icon"></span>
+            <span class="title">${formattedTitle}</span>
         `;
-    }).join('');
+
+        // Create a list for the category items
+        const itemList = document.createElement('ul');
+        itemList.className = 'category-items';
+
+        // Add items to the list
+        categoryItem.forEach((item) => {
+            const listItem = document.createElement('li');
+            listItem.className = 'directoryItem';
+            listItem.innerHTML = `
+                <a href="entry.html?file=${encodeURIComponent(item.entryPath)}" class="directoryLink">
+                    ${item.title}
+                </a>
+            `;
+            itemList.appendChild(listItem);
+        });
+
+        // Append the summary and item list to the details element
+        detailsElement.appendChild(summaryElement);
+        detailsElement.appendChild(itemList);
+
+        // Append the details element to the sidebar
+        sidebarList.appendChild(detailsElement);
+
+    });
 }

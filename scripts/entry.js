@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Worldbuilding';
         } else if (isDocs) {
             backLink.href = 'docs.html';
-            backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Documentation';
+            backLink.innerHTML = '<span class="nf-fa-arrow_left"></span>&nbsp; Back to Digital Garden';
         }
     }
 

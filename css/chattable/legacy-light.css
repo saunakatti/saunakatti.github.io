@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'NotoSans Nerd Font';
+    src: url('https://saunakatti.github.io/assets/fonts/notosans-nf.woff2') format('woff2');
+}
+
+:root {
+    --color-rosewater: #f2d5cf;
+    --color-flamingo: #eebebe;
+    --color-pink: #f4b8e4;
+    --color-mauve: #ca9ee6;
+    --color-red: #e78284;
+    --color-maroon: #ea999c;
+    --color-peach: #ef9f76;
+    --color-yellow: #e5c890;
+    --color-green: #a6d189;
+    --color-teal: #81c8be;
+    --color-sky: #99d1db;
+    --color-sapphire: #85c1dc;
+    --color-blue: #8caaee;
+    --color-lavender: #babbf1;
+
+    --color-text: #583101;
+    --color-subtext1: #603808;
+    --color-subtext0: #6F4518;
+    --color-overlay2: #8B5E34;
+    --color-overlay1: #A47148;
+    --color-overlay0: #BC8A5F;
+    --color-surface2: #D4A276;
+    --color-surface1: #E7BC91;
+    --color-surface0: #F3D5B5;
+    --color-base: #FFEDD8;
+    --color-mantle: #fceddd;
+    --color-crust: #fef4ea;
+}
+
+body {
+    color: var(--color-text);
+    font-family: 'NotoSans Nerd Font', sans-serif;
+}
+
+.allMessages {
+    border: 2px solid var(--color-surface0);
+    background-color: var(--color-base);
+    color: var(--color-text);
+    margin-top: 1em;
+}
+
+.allMessages::before {
+  content: attr(time);
+  position: static;
+  float: right;
+}
+
+.senderInfo {
+    color: var(--color-lavender);
+}
+
+.msgBody p {
+    color: var(--color-text);
+}
+
+header {
+    display: none;
+}
+
+#textInput {
+    border-radius: 0;
+    border: 2px solid var(--color-surface0);
+}
+
+#input {
+    border-radius: 0;
+    background-color: var(--color-base);
+    color: var(--color-text);
+}
+
+#input:empty::before {
+    color: var(--color-subtext0);
+}
+
+#emojiTray {
+    background-color: var(--color-base);
+    border: 2px solid var(--color-surface0);
+    margin-bottom: 0.5em;
+    width: 90%;
+}
+
+#emojiTrayToggle, #emojiTrayToggle::before {
+    background-image: none;
+    color: var(--color-subtext0);
+    content: "󰇵";
+}
+
+#settings, #settings::before {
+    background-image: none;
+    color: var(--color-subtext0);
+    content: "";
+}
+
+#settingsMenu {
+    background: var(--color-mantle);
+}
+
+#loginBanner {
+    background-color: var(--color-base);
+    transition: none;
+}
+
+#closeSettingsBtn {
+    background: var(--color-base);
+    color: var(--color-red);
+}
+
+#is_typing {
+    background: var(--color-surface0);
+}
+
+#timestamp {
+    display: none;
+}
+
+.highlight {
+    background-color: var(--color-overlay0);
+    animation: none;
+    padding: 0;
+}
+
+.senderInfo .owner {
+    color: var(--color-red) !important;
+}
+
+.senderInfo .mod {
+    color: var(--color-green) !important;
+}

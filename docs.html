@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>saunakatti ✦ digital garden</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/bee-icon-256.png">
+    <!-- Load NF icons -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/docs.js"></script>
+</head>
+<body>
+<div class="page-wrapper">
+
+    <header class="site-header" id="siteHeader">
+        <div class="header-main">
+            <div class="header-title">
+                <img src="assets/images/saunakatti.jpg" alt="profile picture" height="43px";>
+                <div>
+                    <h3 class="site-title"><a href="/">Saunakatti</a> 🌱</h3>
+                    <p class="site-tagline">For random stuff</p>
+                </div>
+            </div>
+            <div class="header-links">
+                <h4><a href="links.html">Links</a></h4>
+                <h4><a href="blog.html">Blog</a></h4>
+                <h4><a href="guestbook.html">Guestbook</a></h4>
+            </div>
+
+            <button id="headerToggle" class="toggleBtn" aria-expanded="false" onclick="toggleHeader()">
+                <span class="nf-md-menu"></span>
+            </button>
+        </div>
+
+        <div class="header-expanded">
+            <div class="header-expanded-content">
+                <div class="expanded-layout">
+                    <div class="link-columns">
+                        <div class="link-group">
+                            <h3>Main Pages</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="worldbuilding.html">Worldbuilding</a></li>
+                                <li><a href="links.html">Links</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h3>Misc</h3>
+                            <ul>
+                                <li><a href="guestbook.html">Guestbook</a></li>
+                                <li><a href="docs.html" class="active-page">Digital Garden</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="">Report Bugs and Give Suggestions</a></li>
+                                <li><a href="./rss/rss.xml">Follow Updates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-settings">
+                        <div class="setting-item">
+                            <label for="themeSelect">Theme:</label>
+                            <select id="themeSelect" aria-label="Select Color Theme">
+                                <option value="catppuccin-mocha">Catppuccin Mocha</option>
+                                <option value="catppuccin-frappe">Catppuccin Frappé</option>
+                                <option value="catppuccin-latte">Catppuccin Latte</option>
+                                <option value="saunakatti">Saunakatti</option>
+                                <option value="legacy-light">Legacy Light</option>
+                            </select>
+                        </div>
+
+                        <div class="setting-item">
+                            <label for="fontSelect">Font:</label>
+                            <select id="fontSelect">
+                                <option value="notosans">Noto Sans</option>
+                                <option value="jetbrainsmono">JetBrainsMono</option>
+                                <option value="opendyslexic">OpenDyslexic</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="docs-container">
+        
+        <aside class="docs-sidebar">
+            <!-- Dir search (knows context) -->
+            <div class="sidebarSection">
+            <h3 id="sidebarDirectoryTitle">Directory</h3>
+            <input
+                type="text"
+                id="directorySearch"
+                placeholder="Search entries..."
+                onkeyup="filterDirectory('directorySearch', 'sidebarList')"
+            >
+            <div id="sidebarList" class="directoryList"></div>
+            </div>
+        </aside>
+
+        <div class="docs-intro docs-section">
+            <h1>Digital Garden</h1>
+            <br>
+            <h2>For everything that is not a blog or related to the worldbuilding project.</h2>
+            <br>
+            <li>Guides</li>
+            <li>Documentation</li>
+            <li>More...</li>
+        </div>
+
+        <div class="docs-feed docs-section">
+            <h1>Some Stuff</h1>
+            <div id="docsPreviews">
+                <p>Loading entries...</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer>
+    <t>&copy; 2026 Onni / Saunakatti &nbsp; </t>
+    <a href="https://github.com/saunakatti" target="_blank" rel="noopener noreferrer"> &nbsp;GitHub</a>
+    <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
+</footer>
+</body>
+</html>

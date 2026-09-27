@@ -2,8 +2,11 @@
   "guides": {
     "markdown_syntax": {
       "title": "Markdown Syntax",
-      "description": "Guide for writing markdown files.",
-      "entryPath": "docs/markdown_syntax.md"
+      "author": "Onni",
+      "language": "English",
+      "tags": ["markdown", "writing"],
+      "summary": "Guide for writing markdown files.",
+      "entryPath": "docs/guides/markdown_syntax.md"
     }
   }
 }
