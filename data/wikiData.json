@@ -147,6 +147,13 @@
             "attributes": {},
             "description": "Style and syntax for the project.",
             "entryPath": "worldbuilding/wiki/other/style_and_syntax.md"
+        },
+        "credit": {
+            "title": "Map Credit",
+            "aliases": "",
+            "type": "Unrelated",
+            "description": "This map is by Onni. Uses Leaflet for displaying the map, which is an SVG file. For project authors see below.",
+            "entryPath": "worldbuilding/wiki/other/authors.md"
         }
     }
 }
