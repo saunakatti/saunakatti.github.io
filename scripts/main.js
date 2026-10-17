@@ -1,3 +1,6 @@
+// hide noJs message
+document.getElementById('noJsMessage').style.display = 'none';
+
 // ======================
 // THEME SWITCHER AND FONT SWITCHER
 // ======================
@@ -164,48 +167,42 @@ function parseMarkdown(markdownText, filePath) {
 
 // Live search filter
 function filterDirectory(inputId, listId) {
-    const input = document.getElementById(inputId);
-    const list = document.getElementById(listId);
+  const input = document.getElementById(inputId);
+  const list = document.getElementById(listId);
+  if (!input || !list) return;
 
-    if (!input || !list) return;
+  const query = input.value.toLowerCase().trim();
 
-    const query = input.value.toLowerCase().trim();
+  // Match the class used in loadDirectory()!
+  const categoryGroups = list.querySelectorAll('.sidebar-category');
 
-    // Get all category groups
-    const categoryGroups = list.querySelectorAll('.sidebar-category');
+  categoryGroups.forEach((group) => {
+    const categoryItems = Array.from(group.querySelectorAll('.directoryItem'));
+    let hasVisibleItems = false;
 
-    categoryGroups.forEach((group) => {
-        const categoryItems = Array.from(group.querySelectorAll('.directoryItem'));
-        let hasVisibleItems = false;
-
-        // Filter items within the category
-        categoryItems.forEach((item) => {
-            const searchTarget = item.getAttribute('data-search') || item.textContent.toLowerCase();
-            if (searchTarget.includes(query)) {
-                item.style.display = '';
-                hasVisibleItems = true;
-            } else {
-                item.style.display = 'none';
-            }
-        });
-
-        // Show or hide the category based on visible items
-        if (hasVisibleItems && query !== '') {
-            group.style.display = '';
-            // Open the details element if it's a <details> element
-            if (group.tagName === 'DETAILS') {
-                group.open = true;
-            }
-        } else if (query === '') {
-            // If the search query is empty, show all categories
-            group.style.display = '';
-            if (group.tagName === 'DETAILS') {
-                group.open = false; // Optional: Close all categories by default
-            }
-        } else {
-            group.style.display = 'none';
-        }
+    categoryItems.forEach((item) => {
+      const searchTarget = item.getAttribute('data-search') || item.textContent.toLowerCase();
+      if (searchTarget.includes(query)) {
+        item.style.display = '';
+        hasVisibleItems = true;
+      } else {
+        item.style.display = 'none';
+      }
     });
+
+    if (query === '') {
+      // Search cleared: show all categories, collapse them
+      group.style.display = '';
+      group.open = false;
+    } else if (hasVisibleItems) {
+      // Show and auto-expand categories with matches
+      group.style.display = '';
+      group.open = true;
+    } else {
+      // Hide categories with no matches
+      group.style.display = 'none';
+    }
+  });
 }
 
 // Switch tab
@@ -273,7 +270,7 @@ function toggleHeader() {
 // Directory rendering
 // populate sidebar with blog or wb links only + setup search targets (we can use global filterDirectory() for searching
 async function populateSidebarDirectory(contentType) {
-    const sidebarList = document.getElementById('sidebarList');
+    const sidebarList = document.getElementById('directoryList');
     if (!sidebarList) return;
 
     const titleElement = document.getElementById('sidebarDirectoryTitle');

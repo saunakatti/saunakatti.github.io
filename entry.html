@@ -33,14 +33,14 @@
 
             <!-- Dir search (knows context) -->
             <div class="sidebarSection">
-            <h3 id="sidebarDirectoryTitle">Directory</h3>
-            <input
-                type="text"
-                id="directorySearch"
-                placeholder="Search entries..."
-                onkeyup="filterDirectory('directorySearch', 'sidebarList')"
-            >
-            <div id="sidebarList" class="directoryList"></div>
+                <h3 id="sidebarDirectoryTitle">Directory</h3>
+                <input
+                    type="text"
+                    id="directorySearch"
+                    placeholder="Search entries..."
+                    onkeyup="filterDirectory('directorySearch', 'directoryList')"
+                >
+                <div id="directoryList" class="directoryList"></div>
             </div>
         </aside>
 

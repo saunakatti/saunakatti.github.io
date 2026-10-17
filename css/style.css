@@ -1,4 +1,4 @@
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import "../css/webfont.css";
 
 @font-face {
     font-family: 'JetBrainsMono Nerd Font';
@@ -211,7 +211,7 @@ html {
 
 
 body {
-    font-family: var(--font-main);
+    font-family: var(--font-main), sans-serif;
     padding: 0;
     height: 100%;
     background-color: var(--color-base);
@@ -442,11 +442,6 @@ Page header stuffs
 .active-page {
     color: var(--color-lavender) !important;
     font-weight: bold;
-}
-
-.header-about {
-    width: 15em;
-    margin-right: 3em;
 }
 
 /* ===============
@@ -936,15 +931,16 @@ Md entry rendering page
     border: solid 2px var(--color-surface0);
 }
 
-#entryBody h1 {font-size: 2.2rem;}
-#entryBody h2 {font-size: 1.6rem;}
-#entryBody h3 {font-size: 1.2rem;}
+#entryBody h1 {font-size: 2.3rem;}
+#entryBody h2 {font-size: 1.8rem;}
+#entryBody h3 {font-size: 1.3rem;}
 #entryBody h4 {font-size: 1rem;}
 
 
 #entryBody p {
-    margin-bottom: 0.7em;
+    margin-bottom: 0.8em;
     font-size: 1.1rem;
+    line-height: 1.8rem;
 }
 
 #entryBody li {
@@ -962,8 +958,8 @@ Md entry rendering page
 
 #entryBody h2, 
 #entryBody h3 {
-    margin-bottom: 0.2em;
-    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    margin-top: 1.5em;
 }
 
 #entryBody h1 {
@@ -1405,6 +1401,43 @@ g[id] {
     color: var(--color-surface1) !important;
     cursor: not-allowed;
 }
+
+/* ============
+Bare-bones page
+============ */
+
+#noJsMessage {
+    position: absolute;
+    top: auto;
+    bottom: 1em;
+    background-color: var(--color-mantle);
+    padding: 1em;
+    border: var(--color-surface0) 2px solid;
+}
+
+.bb-section {
+    background: var(--color-mantle);
+    padding: 1em;
+    margin-top: 1em;
+    border: solid var(--color-surface0) 2px;
+}
+
+.bb-section li, .bb-section p {
+    margin-top: 0.5em;
+}
+
+.bb-section h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.bb-note {
+    align-self: center;
+    margin-right: 1em;
+    margin-left: auto;
+    color: var(--color-subtext0);
+}
+
 
 /* ==========
 Accessibility

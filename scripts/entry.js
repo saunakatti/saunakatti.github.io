@@ -42,7 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
         populateSidebarDirectory('worldbuilding');
         fetchWikiMeta(filePath, headerContainer);
     } 
-    else populateSidebarDirectory('docs');
+    else {
+        populateSidebarDirectory('docs');
+        fetchDocsMeta(filePath, headerContainer);
+    }
 
     // Fetch and render the content file
     if (filePath) {
@@ -62,8 +65,38 @@ function toggleEntryHeader() {
     header.classList.toggle('headerHidden');
 }
 
+// Render DOCS metadata
+function fetchDocsMeta(filePath, container) {
+    fetch('../data/docsData.json')
+        .then(res => res.json())
+        .then(data => {
+            // Flatten nested year/category objects to search for the post
+            const posts = Object.values(data).flatMap(category => Object.values(category));
+            const post = posts.find(p => p.entryPath === filePath);
+            if (!post) return;
+
+            const postDate = typeof formatDate === 'function' ? formatDate(post.pubDate || post.date, true) : (post.pubDate || post.date || '');
+
+            container.innerHTML = `
+                <div class="blogMetaHeader">
+                    <div class="metaDetails">
+                        ${post.author ? `<span class="postAuthor"><span class="nf-fa-user_pen"></span>&nbsp;${post.author}</span>` : ''}
+                        ${post.language ? `<span class="postLang lang-${post.language.toLowerCase()}">${post.language}</span>` : ''}
+                    </div>
+                    <hr>
+                    <strong>Tags: </strong>
+                    ${post.tags ? `
+                        <div class="blogTags">
+                            ${post.tags.map(t => `<span class="blogTag">${t}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        });
+}
 
 // Render BLOG metadata
+// bit scuffed since it just uses most of the blog meta features
 function fetchBlogMeta(filePath, container) {
     fetch('../data/blogData.json')
         .then(res => res.json())

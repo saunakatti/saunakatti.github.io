@@ -106,48 +106,58 @@ function displayWikiEntry(id) {
 }
 
 // Load worldbuilding directory
+// Load worldbuilding directory
 function loadDirectory() {
-    const container = document.getElementById('directoryList');
-    if (!container) return;
+  const container = document.getElementById('directoryList');
+  if (!container) return;
 
-    fetch('../data/wikiData.json')
-        .then(response => response.json())
-        .then(data => {
-            let html = '';
+  fetch('./data/wikiData.json')
+    .then(response => response.json())
+    .then(data => {
+      let html = '';
 
-            for (const [category, entries] of Object.entries(data)) {
-                html += `<h4 class="categoryHeader">${capitalizeFirstLetter(category)}</h4><ul> `
+      for (const [category, entries] of Object.entries(data)) {
+        // Wrap each category in a <details> element
+        html += `
+          <details class="sidebar-category">
+            <summary class="categoryHeader">
+              <span class="nf-fa-chevron_right icon"></span>
+              <span class="title">${capitalizeFirstLetter(category)}</span>
+            </summary>
+            <ul>`;
 
-                for (const [key, entry] of Object.entries(entries)) {
-                    const entryUrl = `entry.html?file=${encodeURIComponent(entry.entryPath)}`;
+        for (const [key, entry] of Object.entries(entries)) {
+          const entryUrl = `entry.html?file=${encodeURIComponent(entry.entryPath)}`;
 
-                    // format attributes into search string
-                    let attributeString = '';
-                    if (entry.attributes) {
-                        attributeString = Object.entries(entry.attributes)
-                            .map(([k, v]) => `${k} ${v}`)
-                            .join(' ');
-                    }
+          // format attributes into search string
+          let attributeString = '';
+          if (entry.attributes) {
+            attributeString = Object.entries(entry.attributes)
+              .map(([k, v]) => ` ${k}: ${v}`)
+              .join(' ');
+          }
 
-                    // combine all text into a single search target
-                    const searchableText = `${entry.title} ${entry.aliases || ''} ${entry.type} ${attributeString} ${entry.description || ''}`.toLowerCase();
+          // combine all text into a single search target
+          const searchableText = `${entry.title} ${entry.aliases || ''} ${entry.type} ${attributeString} ${entry.description || ''}`.toLowerCase();
 
-                    html += `
-                    <li class="directoryItem" data-search="${searchableText}">
-                        <a href="#" onclick="event.preventDefault(); displayWikiEntry('${key}')">
-                        <strong>${entry.title}</strong>
-                        </a>
-                        <small>(${entry.type})</small>
-                        <a href="${entryUrl}" class="directEntryLink">Read <span class="nf-fa-arrow_right"></span></a>
-                    </li>
-                    `;
-                }
-                html += '</ul>';   
-            }
+          html +=
+          `<li class="directoryItem" data-search="${searchableText}">
+            <a href="#" onclick="event.preventDefault(); displayWikiEntry('${key}')">
+              <strong>${entry.title}</strong>
+            </a>
+            <small>${entry.type}</small>
+            <a href="${entryUrl}" class="directEntryLink">Read <span class="nf-fa-arrow_right"></span></a>
+          </li>`;
+        }
 
-            container.innerHTML = html;
-        })
-        .catch(err => console.error("Error loading directory:", err));
+        html += `
+            </ul>
+          </details>`;
+      }
+
+      container.innerHTML = html;
+    })
+    .catch(err => console.error('Error loading directory:', err));
 }
 
 // ----------------------------
