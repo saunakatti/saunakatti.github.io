@@ -23,7 +23,37 @@ for it to appear.
 
 So how did this website come to be?
 
+The short story about it is that I was just looking for options to host
+some links in a centralized place. Didn't really find anything that I was
+happy with and just decided to make my own and host it on GitHub. Then it
+got a bit out of hand and now we're here. The original website was launched
+on June 25th 2026, so not that long ago as of writing. I was previously
+somewhat familiar with GitHub and coding in general so it felt like a good option.
 
+Creating a personal website from scratch is, at least in my opinion, certainly
+more fun than playing by the rules of some random megacorporation. (Although GitHub
+is owned by one :D) A good source of inspiration has been the indie web, websites
+that try to bring back that old web design from the 2000's. Especially a website
+called [Neocities](<https://neocities.org/>) that hosts these types of websites.
+Even if I'm not necessarily following the style of the Golden Age of Web Design,
+I'm not trying to make my website look like some corporate-looking vibecoded one.
+
+The source code for this website is public on GitHub. The site uses HTML, CSS and JavaScript.
+Feel free to borrow code snippets. Provide the original source if you wanna be
+polite. (The code needs some cleaning tho.) More info about the site can be found
+in the _Documentation_ section of the [Digital Garden](docs.html). Anyone can make
+a basic static website since the main languages HTML and CSS are really easy to
+learn. If you want to see an example of a simple website here's
+[my old one](<https://saunakatti.github.io/saunakatti.github.io-archived/>).
+
+I personally use Firefox based browsers and the website has those in mind. It
+should work on others as well, although there may be visual bugs or differences.
+For usability on other than computer monitors see
+[Responsive Web Design](#responsive-web-design).
+
+And feel free to leave a message in the [Guestbook](guestbook.html).
+
+> English isn't my first language so don't get crazy over some mistakes.
 
 ## Options
 
@@ -60,7 +90,7 @@ The website has three font choices, all [Nerd Fonts](https://www.nerdfonts.com/)
 - OpenDyslexic Nerd Font
   - _"Designed specifically to alleviate reading errors caused by dyslexia."_
 
-## Site Responsiveness (e.g. Mobile Devices)
+## Responsive Web Design
 
 This site is built mainly with larger screens like laptops and desktop
 computers in mind. I also try to make it fairly usable with smaller devices
@@ -85,7 +115,7 @@ You also cannot switch themes or fonts without JavaScript.
 I've used AI to help me develop this site and to teach me new concepts on the way. I do
 not recommend the usage of AI if you don't know what the code it's giving you does. This way projects
 easily get out of hand. I make all the design choices, site structure and ideas. AI has only been
-used for some behind the scenes JS for the bit more complicated features.
+used for learning the bit more complicated features.
 
 If you're just starting your first site I'd begin by
 checking out [W3Schools](<https://www.w3schools.com/>) and watching YouTube. Also
@@ -99,7 +129,7 @@ My rules with this have been:
 2. I make the site design choices.
 3. I invent new ideas for the site myself or look for new ideas on the indie web.
 4. Never give AI direct access to the code ie. link a bot to it on GitHub. (This is an easy way for
-   the code to get out of hands/become difficult to understand.)
+   the code to get out of hands.)
 
 > Note: AI has nothing to do with the worldbuilding project. I do not condone the use of AI for creative
 > content such as arts or literature.

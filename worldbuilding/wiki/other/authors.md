@@ -21,7 +21,7 @@ tools for creation.
 ### Main Author
 
 Onni / Saunakatti  
-[Website](https://saunakatti.github.io/)
+<https://saunakatti.github.io/>
 
 ### Authors
   

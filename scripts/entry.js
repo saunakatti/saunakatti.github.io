@@ -213,12 +213,40 @@ async function fetchMarkdownContent(filePath) {
             Prism.highlightAllUnder(entryBody);
         }
 
+        addHeadingIds();
         generateToc();
+
+        if (!window._hashHandled && location.hash) {
+            window._hashHandled = true;
+            const target = document.getElementById(location.hash.slice(1));
+            if (target) target.scrollIntoView();
+        }
 
     } catch (err) {
         console.error('Error loading entry content:', err);
-        entryBody.innerHTML = '<p>Error loading entry content.</p>';
+        entryBody.innerHTML = '<p>Error loading entry content. The entry might be work in progress.</p>';
     }
+}
+
+// github style heading handling
+function slugify(text) {
+  return text.trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')   // ä->a, ö->o
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-');
+}
+
+function addHeadingIds() {
+  const usedCount = new Map();
+  document.querySelectorAll('#entryBody h1, #entryBody h2, #entryBody h3, #entryBody h4, #entryBody h5, #entryBody h6')
+    .forEach(h => {
+      let slug = slugify(h.textContent);
+      const n = usedCount.get(slug) || 0;
+      usedCount.set(slug, n + 1);
+      h.id = n === 0 ? slug : `${slug}-${n}`;
+    });
 }
 
 // Sidebar (hidden by default)
@@ -246,10 +274,8 @@ function generateToc() {
 
     let currentH2List = null;
 
-    headings.forEach((heading, idx) => {
-        if (!heading.id) {
-            heading.id = `heading-${idx}`;
-        }
+    headings.forEach((heading) => {
+        
         const tag = heading.tagName.toLowerCase();
         const link = `<a href="#${heading.id}">${heading.textContent}</a>`
 
@@ -275,5 +301,7 @@ function generateToc() {
         }
     })
 }
+
+
 
 

@@ -329,6 +329,9 @@ button:hover,
     flex-direction: column;
     min-height: 100vh; /* Full viewport height minimum */
     padding: 2em;
+    width: min(100em, 100%);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .entry-main-content {

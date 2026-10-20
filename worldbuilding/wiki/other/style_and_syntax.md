@@ -31,8 +31,7 @@ relative links.
 
 ### Math and other misc
 
-Not configured to translate from md to html (except one line code).
-So doesn't work atm.
+Code should now work. Math not at the moment.
 
 ## File Names
 

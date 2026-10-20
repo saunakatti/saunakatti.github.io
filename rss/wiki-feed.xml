@@ -7,6 +7,7 @@
         <language>en-us</language>
     </channel>
 
+    <!--
     <item>
         <title>Added: Tophu System</title>
         <link>https://saunakatti.github.io/entry.html?file=worldbuilding/wiki/systems/tophu.md</link>
@@ -14,5 +15,6 @@
         <pubDate>Sat, 19 Sep 2026 19:00:00 GMT</pubDate>
         <guid>https://saunakatti.github.io/entry.html?file=worldbuilding/wiki/systems/tophu.md</guid>
     </item>
+    -->
 
 </rss>
