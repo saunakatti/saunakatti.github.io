@@ -1,5 +1,8 @@
 // hide noJs message
-document.getElementById('noJsMessage').style.display = 'none';
+const noJsMessage = document.getElementById('noJsMessage');
+if (noJsMessage) {
+    noJsMessage.style.display = 'none';
+}
 
 // ======================
 // THEME SWITCHER AND FONT SWITCHER
@@ -7,8 +10,8 @@ document.getElementById('noJsMessage').style.display = 'none';
 
 const THEMES = ["catppuccin-mocha", "catppuccin-frappe", "catppuccin-latte", "legacy-light", "saunakatti"];
 
-const savedTheme = localStorage.getItem('site-theme') || 'catppuccin-mocha';
-const validTheme = THEMES.includes(savedTheme) ? savedTheme : 'catppuccin-mocha';
+const savedTheme = localStorage.getItem('site-theme') || 'saunakatti';
+const validTheme = THEMES.includes(savedTheme) ? savedTheme : 'saunakatti';
 
 // Apply the theme to the root element immediately
 document.documentElement.classList.remove(...THEMES);
@@ -43,8 +46,8 @@ function applyChattableTheme(themeName) {
 
 // Initialize Chattable on startup
 function initTheme() {
-    const savedTheme = localStorage.getItem('site-theme') || 'catppuccin-mocha';
-    const validTheme = THEMES.includes(savedTheme) ? savedTheme : 'catppuccin-mocha';
+    const savedTheme = localStorage.getItem('site-theme') || 'saunakatti';
+    const validTheme = THEMES.includes(savedTheme) ? savedTheme : 'saunakatti';
 
     applyTheme(validTheme);
     applyPrismTheme(validTheme);
@@ -129,7 +132,7 @@ function parseMarkdown(markdownText, filePath) {
     // Convert Markdown to HTML
     const htmlContent = marked.parse(markdownText);
 
-    // load new HTML string into in-memory DOM parser
+    // load new HTML string into DOM parser
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlContent, 'text/html');
 
@@ -158,7 +161,7 @@ function parseMarkdown(markdownText, filePath) {
         // External links
         else if (href.startsWith('http://') || href.startsWith('https://')) {
             link.target = '_blank';
-            link.rel = 'noopener noreferrer';
+            link.rel = 'noopener noreferrer';         // it's good measure to add _blank as target and noopener noreferrer for external links
         }
     });
     // IMPORTANT return processed string 

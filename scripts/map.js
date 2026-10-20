@@ -106,7 +106,6 @@ function displayWikiEntry(id) {
 }
 
 // Load worldbuilding directory
-// Load worldbuilding directory
 function loadDirectory() {
   const container = document.getElementById('directoryList');
   if (!container) return;

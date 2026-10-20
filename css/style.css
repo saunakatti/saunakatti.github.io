@@ -40,38 +40,38 @@ FONTS
 /* ===
 THEMES
 === */
-/* Catppuccin Mocha (Default)*/
-:root, [data-theme="catppuccin-mocha"] {
-    --color-rosewater: #f5e0dc;
-    --color-flamingo: #f2cdcd;
-    --color-pink: #f5c2e7;
-    --color-mauve: #cba6f7;
-    --color-red: #f38ba8;
-    --color-maroon: #eba0ac;
-    --color-peach: #fab387;
-    --color-yellow: #f9e2af;
-    --color-green: #a6e3a1;
-    --color-teal: #94e2d5;
-    --color-sky: #89dceb;
-    --color-sapphire: #74c7ec;
-    --color-blue: #89b4fa;
-    --color-lavender: #b4befe;
+:root, [data-theme="saunakatti"] {
+    --color-rosewater: #c2b1ae;
+    --color-flamingo: #d7b8b8;
+    --color-pink: #d0adc7;
+    --color-mauve: #a790c4;
+    --color-red: #cd869a;
+    --color-maroon: #d29ca5;
+    --color-peach: #dba584;
+    --color-yellow: #d4c39d;
+    --color-green: #90ab8e;
+    --color-teal: #8ab7b0;
+    --color-sky: #8fb8c0;
+    --color-sapphire: #83acbe;
+    --color-blue: #abc2e5;
+    --color-lavender: #a8acc7;
 
-    --color-text: #cdd6f4;
-    --color-subtext1: #bac2de;
-    --color-subtext0: #a6adc8;
-    --color-overlay2: #9399b2;
-    --color-overlay1: #7f849c;
-    --color-overlay0: #6c7086;
-    --color-surface2: #585b70;
-    --color-surface1: #45475a;
-    --color-surface0: #313244;
-    --color-base: #1e1e2e;
-    --color-mantle: #181825;
-    --color-crust: #11111b;
+    --color-text: #cac8b8;
+    --color-subtext1: #cabda5;
+    --color-subtext0: #beb29e;
+    --color-overlay2: #afa38d;
+    --color-overlay1: #b4a58a;
+    --color-overlay0: #af9b79;
+    --color-surface2: #c6b79e;
+    --color-surface1: #a19581;
+    --color-surface0: #92877b;
+    --color-base: #897c6b;
+    --color-mantle: #7a6e5e;
+    --color-crust: #635a4a;
+
+    --bg-image: linear-gradient(rgba(138, 127, 113, 0.50), rgba(138, 127, 113, 0.50)), url(../assets/images/nature2-comp-bg.jpg)
 }
 
-/* Catppuccin Latte */
 [data-theme="catppuccin-latte"] {
     /* Base Colors & Surfaces */
     --color-rosewater: #dc8a78;
@@ -101,9 +101,10 @@ THEMES
     --color-base: #eff1f5;
     --color-mantle: #e6e9ef;
     --color-crust: #dce0e8;
+
+    --bg-image: none;
 }
 
-/* Catppuccin Frappé*/
 [data-theme="catppuccin-frappe"] {
     /* Base Colors & Surfaces */
     --color-rosewater: #f2d5cf;
@@ -133,6 +134,8 @@ THEMES
     --color-base: #303446;
     --color-mantle: #292c3c;
     --color-crust: #232634;
+
+    --bg-image: none;
 }
 
 [data-theme="legacy-light"] {
@@ -163,38 +166,40 @@ THEMES
     --color-base: #FFEDD8;
     --color-mantle: #fceddd;
     --color-crust: #fef4ea;
+
+    --bg-image: none;
 }
 
-[data-theme="saunakatti"] {
-    --color-rosewater: #c2b1ae;
-    --color-flamingo: #d7b8b8;
-    --color-pink: #d0adc7;
-    --color-mauve: #a790c4;
-    --color-red: #cd869a;
-    --color-maroon: #d29ca5;
-    --color-peach: #dba584;
-    --color-yellow: #d4c39d;
-    --color-green: #90ab8e;
-    --color-teal: #8ab7b0;
-    --color-sky: #8fb8c0;
-    --color-sapphire: #83acbe;
-    --color-blue: #abc2e5;
-    --color-lavender: #a8acc7;
+[data-theme="catppuccin-mocha"] {
+    --color-rosewater: #f5e0dc;
+    --color-flamingo: #f2cdcd;
+    --color-pink: #f5c2e7;
+    --color-mauve: #cba6f7;
+    --color-red: #f38ba8;
+    --color-maroon: #eba0ac;
+    --color-peach: #fab387;
+    --color-yellow: #f9e2af;
+    --color-green: #a6e3a1;
+    --color-teal: #94e2d5;
+    --color-sky: #89dceb;
+    --color-sapphire: #74c7ec;
+    --color-blue: #89b4fa;
+    --color-lavender: #b4befe;
 
-    --color-text: #cac8b8;
-    --color-subtext1: #cabda5;
-    --color-subtext0: #beb29e;
-    --color-overlay2: #afa38d;
-    --color-overlay1: #b4a58a;
-    --color-overlay0: #af9b79;
-    --color-surface2: #c6b79e;
-    --color-surface1: #a19581;
-    --color-surface0: #92877b;
-    --color-base: #897c6b;
-    --color-mantle: #7a6e5e;
-    --color-crust: #635a4a;
+    --color-text: #cdd6f4;
+    --color-subtext1: #bac2de;
+    --color-subtext0: #a6adc8;
+    --color-overlay2: #9399b2;
+    --color-overlay1: #7f849c;
+    --color-overlay0: #6c7086;
+    --color-surface2: #585b70;
+    --color-surface1: #45475a;
+    --color-surface0: #313244;
+    --color-base: #1e1e2e;
+    --color-mantle: #181825;
+    --color-crust: #11111b;
 
-    --bg-image: linear-gradient(rgba(138, 127, 113, 0.50), rgba(138, 127, 113, 0.50)), url(../assets/images/nature2-comp-bg.jpg)
+    --bg-image: none;
 }
 
 * {
@@ -626,26 +631,16 @@ Digital Garden page
     background-color: var(--color-mantle);
     border: 2px solid var(--color-surface0);
     padding: 1.5em;
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    height: 80vh;
+    height: fit-content;
 }
 
 .docs-container {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     gap: 1em;
     margin: 0;
     padding-top: 2em;
-}
-
-.docs-intro {
-    grid-column: 2 / span 2;
-}
-
-.docs-feed {
-    grid-column: 2;
 }
 
 
@@ -655,7 +650,7 @@ Links page
 .link-page-grid {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 2fr 2fr 2fr;
     gap: 1em;
     margin-top: 1.5em;
 }
@@ -750,6 +745,29 @@ Links page
 .link-section.bluesky .link-section-icon,
 .link-section.bluesky .link-section-icon-heading {
     color: var(--color-sky);
+}
+
+.link-section.newgrounds {
+    border-color: var(--color-peach);
+}
+
+.link-section.newgrounds .link-section-icon-heading-newgrounds {
+    display: none;
+    fill: var(--color-peach);
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+    flex-shrink: 0;
+}
+
+.link-section.newgrounds .link-section-icon-newgrounds {
+    fill: var(--color-peach);
+    width: 6em;
+    height: 6em;
+    padding-left: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
 }
 
 /* ====================
@@ -1444,13 +1462,17 @@ Accessibility
 ========== */
 @media(max-width: 1600px) {
     
-    .link-section-icon {
+    .link-section-icon, .link-section-icon-newgrounds {
         display: none;
     }
 
     .link-section-icon-heading {
         display: inline;
         margin-right: 0.5em;
+    }
+
+    .link-section.newgrounds .link-section-icon-heading-newgrounds {
+        display: inline;
     }
 
     .link-section-text {
@@ -1504,6 +1526,14 @@ Accessibility
         width: 100%;
     }
 
+    .page-wrapper {
+        padding: 0.8em;
+    }
+
+    #entryBody {
+        padding: 2em;
+    }
+
 }
 
 @media(max-width: 800px) {
@@ -1533,7 +1563,6 @@ Accessibility
     .docs-container {
         grid-template-columns: 1fr;
     }
-
 }
 
 /* =======================

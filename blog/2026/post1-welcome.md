@@ -4,20 +4,26 @@
 
 > A picture I took on a road trip some time ago.
 
+## Introduction
+
 Hi, and welcome to my personal website!
 
 Well this is actually the second version of my personal website.
-The old one will be archived on my [GitHub](<>) by the time
+The old one will be archived on my [GitHub](<https://github.com/saunakatti>) by the time
 this new one goes out.
 
 The main feature of this new website is the page you are on right now,
 the entry page. It displays blog posts and other entries
-written in [Markdown](../../docs/markdown_syntax.md). This makes
+written in [Markdown](<https://www.markdownguide.org/>). This makes
 writing posts and entries really easy compared to the old website.
 
 If you don't like this beautiful entry page, you can always use your
 browsers reader view instead. You might need to refresh the page
 for it to appear.
+
+So how did this website come to be?
+
+
 
 ## Options
 
@@ -34,8 +40,8 @@ The website has five different themes:
   - Frappé (medium)
   - Latte (light)
 
-- Saunakatti theme.
-  - A more personalised and experimental theme with a background image.
+- Saunakatti theme (Default).
+  - A more personalised theme with a background image.
 
 - Legacy Light from my old website.
   - light brown, sandy colours, combined with the colours from
@@ -45,7 +51,7 @@ The website has five different themes:
 
 The website has three font choices, all [Nerd Fonts](https://www.nerdfonts.com/):
 
-- Noto Sans Nerd Font
+- Noto Sans Nerd Font (Default)
   - A basic sans-serif font.
 
 - JetBrainsMono Nerd Font
@@ -68,9 +74,35 @@ you can open an issue on [GitHub](https://github.com/saunakatti/saunakatti.githu
 
 The downside of the entry feature is its dependency
 on JavaScript, which some users might prefer not to use.
-I'll add another way to interact with the content without JavaScript later
-but it's not on the top of the priority list. The theme and font switchers use
-JavaScript.
+You also cannot switch themes or fonts without JavaScript.
+
+> [!TIP]
+> If you have JavaScript disabled, the main page should display a "No JavaScript?" -box
+> with a link to a simplified page of the website's contents.
+
+### Notice About Artificial Intelligence
+
+I've used AI to help me develop this site and to teach me new concepts on the way. I do
+not recommend the usage of AI if you don't know what the code it's giving you does. This way projects
+easily get out of hand. I make all the design choices, site structure and ideas. AI has only been
+used for some behind the scenes JS for the bit more complicated features.
+
+If you're just starting your first site I'd begin by
+checking out [W3Schools](<https://www.w3schools.com/>) and watching YouTube. Also
+depends on your previous familiarity with coding and willingness to learn. It's also worth noting there are
+easier ways of making a website. (I believe [WordPress](<https://wordpress.com/free/>) is one
+of the popular choices.)
+
+My rules with this have been:
+
+1. Understand what each line does before I write it down.
+2. I make the site design choices.
+3. I invent new ideas for the site myself or look for new ideas on the indie web.
+4. Never give AI direct access to the code ie. link a bot to it on GitHub. (This is an easy way for
+   the code to get out of hands/become difficult to understand.)
+
+> Note: AI has nothing to do with the worldbuilding project. I do not condone the use of AI for creative
+> content such as arts or literature.
 
 ### Old Website's Welcome Post
 
