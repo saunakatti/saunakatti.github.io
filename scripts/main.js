@@ -39,8 +39,7 @@ function applyPrismTheme(themeName) {
 function applyChattableTheme(themeName) {
     if (window.chattable && document.getElementById('chattable')) {
         chattable.reinitialize({
-            stylesheet: `../css/chattable/saunakatti.css`
-            // stylesheet: `../css/chattable/${themeName}.css`
+            stylesheet: `../css/chattable/${themeName}.css`
         });
     }
 }
@@ -56,7 +55,7 @@ function initTheme() {
     // Initialize Chattable with the default theme first
     if (document.getElementById('chattable')) {
         chattable.initialize({
-            stylesheet: `../css/chattable-${validTheme}.css`
+            stylesheet: `../css/${validTheme}.css`
         }).then(() => {
             // Apply the saved theme to Chattable after the iframe loads
             applyChattableTheme(validTheme);
