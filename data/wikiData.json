@@ -152,7 +152,7 @@
             "title": "Map Credit",
             "aliases": "",
             "type": "Unrelated",
-            "description": "This map is by Onni. Uses Leaflet for displaying the map, which is an SVG file. For project authors see below.",
+            "description": "This map is being edited by Onni. Uses Leaflet for displaying the map, which is an SVG file. For project authors see below.",
             "entryPath": "worldbuilding/wiki/other/authors.md"
         }
     }

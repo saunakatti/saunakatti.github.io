@@ -90,7 +90,7 @@ header {
     color: var(--color-subtext0);
     content: "󰇵";
 }
-
+/*
 #settings, #settings::before {
     background-image: none;
     color: var(--color-subtext0);
@@ -110,6 +110,7 @@ header {
     background: var(--color-base);
     color: var(--color-red);
 }
+*/
 
 #is_typing {
     background: var(--color-surface0);

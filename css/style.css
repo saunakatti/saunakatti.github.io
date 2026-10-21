@@ -332,7 +332,7 @@ button:hover,
 
 .entry-main-content {
     flex: 1 0 auto; /* Pushes footer to the bottom */
-    width: min(50em, 100%);
+    width: min(60em, 100%);
     margin: auto auto;
 }
 
@@ -939,11 +939,12 @@ Md entry rendering page
 }
 
 #entryBody {
-    width: min(50em, 100%);
+    width: 100%;
+    text-align: left;
     align-self: center;
     margin: auto;
     margin-bottom: 5em;
-    padding: 2em;
+    padding: 3em;
     background-color: var(--color-base);
     border: solid 2px var(--color-surface0);
 }
