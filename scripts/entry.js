@@ -265,7 +265,7 @@ function generateToc() {
     if (!tocList || !entryBody) return;
 
     tocList.innerHTML = '';
-    const headings = entryBody.querySelectorAll('h2, h3');
+    const headings = entryBody.querySelectorAll('h1, h2, h3');
 
     if (headings.length === 0) {
         tocList.innerHTML = '<li><em>No subheadings<em><li>';
@@ -278,8 +278,17 @@ function generateToc() {
         
         const tag = heading.tagName.toLowerCase();
         const link = `<a href="#${heading.id}">${heading.textContent}</a>`
+        
+        if (tag === 'h1') {
+            const h1Item = document.createElement('li');
+            h1Item.className = 'toc-h1';
+            h1Item.innerHTML = link;
+            tocList.appendChild(h1Item)
 
-        if (tag === 'h2') {
+            currentH1List = document.createElement('ul')
+            currentH1List.className = 'toc-list';
+            h1Item.appendChild(currentH1List);
+        } else if (tag === 'h2') {
             const h2Item = document.createElement('li');
             h2Item.className = 'toc-h2';
             h2Item.innerHTML = link;
@@ -288,6 +297,11 @@ function generateToc() {
             currentH2List = document.createElement('ul');
             currentH2List.className = 'toc-sublist';
             h2Item.appendChild(currentH2List)
+
+            if (currentH1List) {
+                currentH1List.appendChild(h2Item)
+            }
+
         } else if (tag === 'h3') {
             const h3Item = document.createElement('li');
             h3Item.className = 'toc-h3'

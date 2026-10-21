@@ -234,16 +234,12 @@ a {
     color: var(--color-blue);
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 li {
     margin-left: 1em;
 }
 
-li li {
-    margin-left: 1em;
+a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -967,10 +963,12 @@ Md entry rendering page
 #entryBody li {
     margin-bottom: 1em;
     font-size: 1.1rem;
+    margin-left: 1em;
 }
 
 #entryBody li li {
     margin-bottom: 0;
+    margin-left: 1em;
 }
 
 #entryBody li p {
@@ -1217,13 +1215,32 @@ details[open] .closed-icon {
 
 .toc-sublist {
     list-style: none;
-    padding-left: .5em;
+    padding-left: 1em;
+    margin-top: .2em;
+    border-left: 2px solid var(--color-surface0);
+}
+
+.toc-list {
+    list-style: none;
+    padding-left: 0.5em;
     margin-top: .2em;
     border-left: 2px solid var(--color-surface0);
 }
 
 .toc-h3 {
     font-size: 0.8rem;
+    margin-left: 0em;
+}
+
+.toc-h2 {
+    margin-left: 1em;
+    font-size: 0.9rem;
+}
+
+.toc-h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 0;
 }
 
 
