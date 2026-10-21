@@ -39,7 +39,8 @@ function applyPrismTheme(themeName) {
 function applyChattableTheme(themeName) {
     if (window.chattable && document.getElementById('chattable')) {
         chattable.reinitialize({
-            stylesheet: `../css/chattable/${themeName}.css`
+            stylesheet: `../css/chattable/saunakatti.css`
+            // stylesheet: `../css/chattable/${themeName}.css`
         });
     }
 }
