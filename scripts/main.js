@@ -55,7 +55,7 @@ function initTheme() {
     // Initialize Chattable with the default theme first
     if (document.getElementById('chattable')) {
         chattable.initialize({
-            stylesheet: `../css/${validTheme}.css`
+            stylesheet: `../css/chattable/${validTheme}.css`
         }).then(() => {
             // Apply the saved theme to Chattable after the iframe loads
             applyChattableTheme(validTheme);
