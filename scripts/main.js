@@ -124,9 +124,6 @@ function capitalizeFirstLetter(val) {
     return String(val).charAt(0).toUpperCase() + String(val).slice(1);
 }
 
-// Register marked-alert once at startup
-marked.use(markedAlert());
-
 // markdown parser (marked.js)
 function parseMarkdown(markdownText, filePath) {
     // Convert Markdown to HTML

@@ -2,6 +2,9 @@
 // Entry renderer script
 // ======================
 
+// Register marked-alert once at startup
+marked.use(markedAlert());
+
 // Data header & Entry rendering
 // -----------------------------
 
