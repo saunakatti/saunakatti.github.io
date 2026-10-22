@@ -90,13 +90,13 @@ header {
     color: var(--color-subtext0);
     content: "󰇵";
 }
-/*
+
 #settings, #settings::before {
     background-image: none;
     color: var(--color-subtext0);
     content: "";
 }
-
+/*
 #settingsMenu {
     background: var(--color-mantle);
 }

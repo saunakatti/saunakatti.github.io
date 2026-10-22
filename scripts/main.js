@@ -36,13 +36,13 @@ function applyPrismTheme(themeName) {
 }
 
 // Apply theme to Chattable (only if the iframe exists)
-//function applyChattableTheme(themeName) {
-//    if (window.chattable && document.getElementById('chattable')) {
-//        chattable.reinitialize({
-//            stylesheet: `../css/chattable/${themeName}.css`
-//        });
-//    }
-//}
+function applyChattableTheme(themeName) {
+    if (window.chattable && document.getElementById('chattable')) {
+       chattable.reinitialize({
+           stylesheet: `../css/chattable/${themeName}.css`
+        });
+    }
+}
 
 // Initialize Chattable on startup
 function initTheme() {
@@ -53,14 +53,14 @@ function initTheme() {
     applyPrismTheme(validTheme);
 
     // Initialize Chattable with the default theme first
-   // if (document.getElementById('chattable')) {
-   //     chattable.initialize({
-   //         stylesheet: `../css/chattable/${validTheme}.css`
-   //     }).then(() => {
-   //         // Apply the saved theme to Chattable after the iframe loads
-   //         applyChattableTheme(validTheme);
-   //     });
-   // }
+    if (document.getElementById('chattable')) {
+        chattable.initialize({
+            stylesheet: `../css/chattable/${validTheme}.css`
+        }).then(() => {
+            // Apply the saved theme to Chattable after the iframe loads
+            applyChattableTheme(validTheme);
+        });
+    }
 }
 
 // Run on startup
@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             applyPrismTheme(selectedTheme);
 
-          //  if (document.getElementById('chattable')) {
-          //      applyChattableTheme(selectedTheme);
-          //  }
+            if (document.getElementById('chattable')) {
+                applyChattableTheme(selectedTheme);
+            }
         });
     }
 });
