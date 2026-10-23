@@ -3,5 +3,13 @@
   },
   
   "others": {
+    "system_specs": {
+      "title": "System Hardware and Software",
+      "author": "Onni / Saunakatti",
+      "language": "English",
+      "tags": ["system", "computer", "hardware", "software", "linux"],
+      "summary": "System hardware and software.",
+      "entryPath": "docs/others/system_specs.md"
+    }
   }
 }
