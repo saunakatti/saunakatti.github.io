@@ -86,6 +86,7 @@ header {
 }
 
 #emojiTrayToggle, #emojiTrayToggle::before {
+    font-family: 'NotoSans Nerd Font' !important;
     background-image: none;
     color: var(--color-subtext0);
     content: "󰇵";
