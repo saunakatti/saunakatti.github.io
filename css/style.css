@@ -17,6 +17,11 @@
     src: url(../assets/fonts/opendyslexic-nf.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: 'NMS Futura Pro Book';
+    src: url(../assets/fonts/NMSFuturaProBook_Kerned.woff) format('woff');
+}
+
 /* ===
 FONTS
 === */
@@ -295,6 +300,7 @@ button,
     border: 2px solid var(--color-surface0);
     transition: 100ms ease;
     cursor: pointer;
+    font-family: var(--font-main) !important;
 }
 
 button:hover,

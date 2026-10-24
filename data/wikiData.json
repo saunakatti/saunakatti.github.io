@@ -44,6 +44,17 @@
             },
             "description": "A galaxy with highly developed civilisations and an active Emitter. Many proficient in Äen'e. In the Lynx Cluster.",
             "entryPath": "worldbuilding/wiki/regions/capricorns_galaxy.md"
+        },
+        "navigators_nebula": {
+            "title": "Navigator's Nebula",
+            "aliases": "",
+            "type": "Nebula",
+            "attributes": {
+                "Danger Level": "High",
+                "Location": "n/a" 
+            },
+            "description": "A large nebula fairly close to the Great Nebula. Hides some systems, the most notable being Lupovalea'i.",
+            "entryPath": "worldbuilding/wiki/regions/navigators_nebula.md"
         }
     },
 
@@ -71,6 +82,18 @@
             },
             "description": "Capital system of Atal'val. Administrative capital of Capricorn's Great Union. Houses the biggest ecumonopolis of the Val Conjunct.",
             "entryPath": "worldbuilding/wiki/systems/tophu.md"
+        },
+        "lupovaleai": {
+            "title": "Lupovalea'i",
+            "aliases": ["Valleys of Peace"],
+            "type": "System",
+            "attributes": {
+                "Danger Level": "High",
+                "Location": "Navigator's Nebula",
+                "Control": "Capricorn's Great Union / Independent"
+            },
+            "description": "A hidden system in Navigator's Nebula. The system is an important meeting point for people of Capricorn's Great Union, and the best known way of travelling to the union's main regions.",
+            "entryPath": "worldbuilding/wiki/systems/lupovaleai.md"
         }
     },
 
@@ -86,6 +109,31 @@
             },
             "description": "The most powerful union in the galaxy. The union is made up of lots of smaller independent factions. Tophu acts as the unions administrative capital system.",
             "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md"
+        },
+        "olias_union": {
+            "title": "Olia's Union",
+            "aliases": "",
+            "type": "Union",
+            "attributes": {
+                "Power": "Medium",
+                "Location": "Olia Region",
+                "Capital": "Oliarion"
+            },
+            "description": "Olia's Union is a large union in the Olia Region of the galaxy. Composed of smaller independent unions and peoples. Oliarion is the Union's Capital and houses its senate. The Union's systems are guarded by the OSC.",
+            "entryPath": "worldbuilding/wiki/factions/olias_union.md"
+        },
+        "arvens_realm": {
+            "title": "Arven's Realm",
+            "aliases": "",
+            "type": "Union",
+            "attributes": {
+                "Power": "High",
+                "Location": "",
+                "Capital": "Arven"
+            },
+            "description": "",
+            "entryPath": ""
+
         }
     },
 
