@@ -1,11 +1,12 @@
 // Blog page stuff
 
+// Listen when page content is loaded to avoid running function before ready
 document.addEventListener('DOMContentLoaded', () => {
-
     populateSidebarDirectory('blog');
     loadBlogPreviews();
 });
 
+// Load blog preview list from blogData.json
 async function loadBlogPreviews() {
     const container = document.getElementById('blogPreviews');
     if (!container) return;
