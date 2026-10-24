@@ -121,6 +121,16 @@
 </footer>
 
 <script>
+// Declare chattable.commands
+chattable.commands = {
+  "where" : function(){
+    chattable.sendMessage("Finland");
+  },
+  "who" : function(){
+    chattable.sendMessage('Onni');
+  }
+};
+// Init
   chattable.initialize({
     stylesheet: "chattable.css",
   });

@@ -96,7 +96,7 @@ header {
     color: var(--color-subtext0);
     content: "";
 }
-/*
+
 #settingsMenu {
     background: var(--color-mantle);
 }
@@ -110,7 +110,7 @@ header {
     background: var(--color-base);
     color: var(--color-red);
 }
-*/
+
 #is_typing {
     background: var(--color-surface0);
 }
@@ -126,9 +126,29 @@ header {
 }
 
 .senderInfo .owner {
-    color: var(--color-red) !important;
+    background-color: transparent !important;
+    margin-right: 0.2em;
 }
 
 .senderInfo .mod {
-    color: var(--color-green) !important;
+    background-color: transparent !important;
+    margin-right: 0.2em;
+}
+
+.senderInfo .owner::before {
+    content: "(Owner)";
+    color: var(--color-red);
+}
+
+.senderInfo .mod::before {
+    content: "(Mod)";
+    color: var(--color-blue);
+}
+
+.badge {
+    height: 20pt;
+    width: 40pt;
+    border-radius: 0;
+    align-items: center;
+    display: flex;
 }
