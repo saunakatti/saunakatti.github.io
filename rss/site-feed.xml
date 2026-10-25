@@ -7,6 +7,14 @@
         <language>en-us</language>
 
         <item>
+            <title>This is a test</title>
+            <link>https://saunakatti.github.io/blog/2026/post1-welcome.md</link>
+            <description>this is a test</description>
+            <pubDate>Fri, 23 Oct 2026 18:01:00 GMT</pubDate>
+            <guid>tag:saunakatti.github.io,2026:siteupdates.3</guid>
+        </item>
+
+        <item>
             <title>System Specs</title>
             <link>https://saunakatti.github.io/entry.html?file=docs/others/system_specs.md</link>
             <description>Hardware and software info available.</description>
