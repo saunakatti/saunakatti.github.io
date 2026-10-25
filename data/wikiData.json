@@ -2,11 +2,11 @@
     "regions": {
         "great_nebula": {
             "title": "Capricorn's Great Nebula",
-            "aliases": ["The Great Nebula", "Galactic Region 0"],
+            "aliases": ["The Great Nebula"],
             "type": "Nebula",
             "attributes": {
                 "Danger Level": "High",
-                "Location": "Central Galaxy"
+                "Location": "GR00"
             },
             "description": "A large nebula in the centre of Capricorn's Galaxy thought to be caused by the Nexus. Travel to the nebula is extremely dangerous due to its high activity, making it a perfect place for hiding all kinds of interesting regions like the Val Conjunct.",
             "entryPath": "worldbuilding/wiki/regions/great_nebula.md"   
@@ -51,7 +51,7 @@
             "type": "Nebula",
             "attributes": {
                 "Danger Level": "High",
-                "Location": "n/a" 
+                "Location": "GR01" 
             },
             "description": "A large nebula fairly close to the Great Nebula. Hides some systems, the most notable being Lupovalea'i.",
             "entryPath": "worldbuilding/wiki/regions/navigators_nebula.md"
@@ -107,7 +107,7 @@
                 "Location": "Multiple Locations",
                 "Capital": "Tophu"
             },
-            "description": "The most powerful union in the galaxy. The union is made up of lots of smaller independent factions. Tophu acts as the unions administrative capital system.",
+            "description": "The most powerful union in the galaxy. The union is made up of lots of smaller independent factions. Tophu acts as the union's administrative capital system.",
             "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md"
         },
         "olias_union": {
@@ -116,7 +116,7 @@
             "type": "Union",
             "attributes": {
                 "Power": "Medium",
-                "Location": "Olia Region",
+                "Location": "GR08",
                 "Capital": "Oliarion"
             },
             "description": "Olia's Union is a large union in the Olia Region of the galaxy. Composed of smaller independent unions and peoples. Oliarion is the Union's Capital and houses its senate. The Union's systems are guarded by the OSC.",
@@ -128,12 +128,11 @@
             "type": "Union",
             "attributes": {
                 "Power": "High",
-                "Location": "",
+                "Location": "GR10",
                 "Capital": "Arven"
             },
-            "description": "",
-            "entryPath": ""
-
+            "description": "A powerful and large union found close to the Half Dead Void. Arven's Realm is split into five sectors with their own capitals. The union's capital is Arven.",
+            "entryPath": "worldbuilding/wiki/factions/arvens_realm.md"
         }
     },
 

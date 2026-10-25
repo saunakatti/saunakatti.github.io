@@ -779,25 +779,26 @@ Links page
 Worldbuilding wiki page
 ==================== */
 .worldbuilding-layout {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1em;
     width: 100%;
 }
 
 .wiki-column {
-    flex: 1 1 30%;
+    grid-column: 2;
+    grid-row: 1;
     min-width: 0;
-    overflow: visible;
 }
 
 .map-column {
+    grid-column: 1;
+    grid-row: 1;
     padding: 0em;
     background: var(--color-mantle);
     border: var(--color-surface0) 2px solid;
     height: 40em;
-    flex: 1 1 70%;
     flex-shrink: 0;
 }
 
@@ -809,11 +810,11 @@ Worldbuilding wiki page
 .tabContent {
     display: none;
     height: auto !important;
-    max-height: none !important;
     padding: 2.5em;
     background: var(--color-mantle);
-    overflow: visible;
+    overflow: scroll;
     border: var(--color-surface0) 2px solid;
+    max-height: 32em;
 }
 
 .tabContent.active {
@@ -852,6 +853,26 @@ Worldbuilding wiki page
 .directoryList {
     line-height: 2em;
     list-style: none;
+}
+
+/* Settings section */
+
+.map-settings {
+    height: fit-content;
+    padding: 2.5em;
+    background: var(--color-mantle);
+    overflow: visible;
+    border: var(--color-surface0) 2px solid;
+}
+
+.map-settings-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0em;
+}
+
+.map-setting.active {
+    border-color: var(--color-lavender);
 }
 
 /* search */
@@ -1511,6 +1532,7 @@ Accessibility
 @media(max-width: 1400px) {
 
     .worldbuilding-layout {
+        display: flex;
         flex-direction: column;
     }
 

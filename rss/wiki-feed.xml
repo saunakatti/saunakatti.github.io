@@ -5,16 +5,17 @@
         <link>https://saunakatti.github.io/worldbuilding.html</link>
         <description>Recent additions and modifications to the encyclopedia entries.</description>
         <language>en-us</language>
+
+        <item>
+            <title>Experimental: Galactic Regions</title>
+            <link>https://saunakatti.github.io/worldbuilding.html</link>
+            <description>
+                Started planning out of Galactic Regions. Mainly to make it easier to define some locations for places.
+                Also added settings to show/hide features on the map.
+            </description>
+            <pubDate>Sun, 26 Oct 2026 22:00:00 +0200</pubDate>
+            <guid>tag:saunakatti.github.io,2026:wikiupdates.1</guid>
+        </item>
+
     </channel>
-
-    <!--
-    <item>
-        <title>Added: Tophu System</title>
-        <link>https://saunakatti.github.io/entry.html?file=worldbuilding/wiki/systems/tophu.md</link>
-        <description>New system entry.</description>
-        <pubDate>Sat, 19 Sep 2026 19:00:00 GMT</pubDate>
-        <guid>https://saunakatti.github.io/entry.html?file=worldbuilding/wiki/systems/tophu.md</guid>
-    </item>
-    -->
-
 </rss>

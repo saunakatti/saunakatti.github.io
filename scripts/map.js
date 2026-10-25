@@ -159,6 +159,21 @@ function loadDirectory() {
     .catch(err => console.error('Error loading directory:', err));
 }
 
+// Function for toggling map elements
+function mapActivate(element) {
+    const mapElement = document.querySelector(element)
+    const activeBtn = Array.from(document.querySelectorAll('.map-setting'))
+    .find(btn => btn.getAttribute('onclick')?.includes(element));
+
+    if (mapElement.style.display === 'none') {
+        mapElement.style.display = 'block'
+        activeBtn.classList.add('active')
+    } else {
+        mapElement.style.display = 'none'
+        activeBtn.classList.remove('active')
+    }
+}
+
 // ----------------------------
 //  svg fetch and leaflet init
 // ----------------------------

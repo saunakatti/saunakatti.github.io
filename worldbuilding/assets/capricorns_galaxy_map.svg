@@ -24,16 +24,17 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#4a4a4a"
      inkscape:document-units="px"
-     inkscape:zoom="4.0000001"
-     inkscape:cx="1552"
-     inkscape:cy="657.74998"
+     inkscape:zoom="0.3535534"
+     inkscape:cx="893.78295"
+     inkscape:cy="653.36665"
      inkscape:window-width="1896"
      inkscape:window-height="1024"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="half_dead_void"
-     showgrid="false">
+     inkscape:current-layer="galacticRegions"
+     showgrid="false"
+     showguides="true">
     <inkscape:grid
        id="grid44"
        units="px"
@@ -51,6 +52,23 @@
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <linearGradient
+       id="swatch25">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop25" />
+    </linearGradient>
+    <linearGradient
+       id="swatch3"
+       inkscape:swatch="solid"
+       inkscape:label="blue2"
+       gradientTransform="matrix(1.1653769e-8,0,0,1.1653769e-8,63.039709,-108.93661)">
+      <stop
+         style="stop-color:#4c52ff;stop-opacity:1;"
+         offset="0"
+         id="stop3" />
+    </linearGradient>
     <linearGradient
        id="swatch150">
       <stop
@@ -606,6 +624,15 @@
        id="linearGradient169"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.01852198,0,0,0.01852198,40.039281,-47.097606)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch3"
+       id="linearGradient3"
+       x1="302.96131"
+       y1="132.3578"
+       x2="307.1017"
+       y2="132.3578"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <rect
      style="fill:#030007;fill-opacity:1;stroke:none;stroke-width:0.770001;stroke-opacity:1;paint-order:markers fill stroke"
@@ -615,7 +642,8 @@
      x="1.0908203e-05"
      y="5.4541015e-06"
      ry="7.3436623e-18"
-     inkscape:label="background" />
+     inkscape:label="background"
+     sodipodi:insensitive="true" />
   <g
      inkscape:groupmode="layer"
      id="lockedElems"
@@ -651,27 +679,27 @@
          inkscape:label="galaxyInfo"><tspan
            x="39.615234"
            y="49.950022"
-           id="tspan5"><tspan
+           id="tspan59"><tspan
              style="font-size:29.0423px;line-height:1.1;stroke:url(#swatch54);paint-order:stroke fill markers"
-             id="tspan1">Capricorn's Galaxy</tspan><tspan
+             id="tspan22">Capricorn's Galaxy</tspan><tspan
              style="stroke:url(#swatch54);paint-order:stroke fill markers"
-             id="tspan2"> </tspan><tspan
+             id="tspan23"> </tspan><tspan
              style="line-height:1.1"
-             id="tspan3">  SA(s)c</tspan><tspan
+             id="tspan24">  SA(s)c</tspan><tspan
              style="line-height:1.1"
-             id="tspan4">
+             id="tspan58">
 </tspan></tspan><tspan
            x="39.615234"
            y="78.656761"
-           id="tspan8"><tspan
+           id="tspan61"><tspan
              style="line-height:1.1"
-             id="tspan6">Lynx Cluster
+             id="tspan60">Lynx Cluster
 </tspan></tspan><tspan
            x="39.615234"
            y="106.0395"
-           id="tspan10"><tspan
+           id="tspan79"><tspan
              style="line-height:1.1"
-             id="tspan9">(Lynx Foundry // 20.16.25.53.8.4)</tspan></tspan></text>
+             id="tspan78">(Lynx Foundry // 20.16.25.53.8.4)</tspan></tspan></text>
     </g>
     <g
        id="credit"
@@ -685,9 +713,9 @@
          inkscape:label="credit"><tspan
            x="1737.9707"
            y="983.19975"
-           id="tspan12"><tspan
+           id="tspan81"><tspan
              style="stroke:none"
-             id="tspan11">Onni V</tspan></tspan></text>
+             id="tspan80">Onni V</tspan></tspan></text>
     </g>
   </g>
   <g
@@ -710,7 +738,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect47);shape-padding:0.0839204;display:inline;fill:#9137ff;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
            x="931.34961"
            y="525.1432"
-           id="tspan13">The Great Nebula </tspan></text>
+           id="tspan82">The Great Nebula </tspan></text>
     </g>
     <g
        id="olias_union"
@@ -988,18 +1016,18 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect44);shape-padding:6.13765;display:inline;fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
            x="979.79883"
            y="470.29438"
-           id="tspan15"><tspan
+           id="tspan85"><tspan
              style="baseline-shift:baseline"
-             id="tspan14">The Capricorn </tspan></tspan><tspan
+             id="tspan84">The Capricorn </tspan></tspan><tspan
            x="979.79883"
            y="483.49439"
-           id="tspan21"><tspan
+           id="tspan94"><tspan
              style="baseline-shift:baseline"
-             id="tspan18">Emmiter (E</tspan><tspan
+             id="tspan86">Emmiter (E</tspan><tspan
              style="font-size:65%;baseline-shift:sub"
-             id="tspan19">0</tspan><tspan
+             id="tspan92">0</tspan><tspan
              style="baseline-shift:baseline"
-             id="tspan20">)</tspan></tspan></text>
+             id="tspan93">)</tspan></tspan></text>
     </g>
     <g
        id="ethu"
@@ -1630,5 +1658,409 @@
          style="stroke-width:0.05"
          x="387.67111"
          y="155.21342" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="galacticRegions"
+     inkscape:label="galacticRegions"
+     onload=""
+     style="display:none">
+    <g
+       id="galactic_region_10"
+       inkscape:label="galactic_region_10"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="380.55652"
+         y="195.73329"
+         id="text77"
+         transform="rotate(-3.0713931)"><tspan
+           sodipodi:role="line"
+           id="tspan73"
+           style="stroke:none;stroke-width:0.0432711"
+           x="380.55652"
+           y="195.73329">Region 10</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="380.55652"
+           y="198.78307"
+           id="tspan74" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="380.55652"
+           y="201.83284"
+           id="tspan75" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="380.55652"
+           y="204.88261"
+           id="tspan76" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="380.55652"
+           y="207.93237"
+           id="tspan77" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 389.73592,175.92866 -8.30324,-14.67061 16.78554,-20.34521 21.32812,-10.10279 33.84082,1.03653 5.69148,29.41993 -11.38219,24.21403 -26.4401,-10.59741 z"
+         id="path72"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+    <g
+       id="galactic_region_9"
+       inkscape:label="galactic_region_9"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="306.34009"
+         y="346.82419"
+         id="text71"
+         transform="rotate(-19.292531)"><tspan
+           sodipodi:role="line"
+           id="tspan67"
+           style="stroke:none;stroke-width:0.0432711"
+           x="306.34009"
+           y="346.82419">Region 9</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="306.34009"
+           y="349.87396"
+           id="tspan68" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="306.34009"
+           y="352.92374"
+           id="tspan69" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="306.34009"
+           y="355.97351"
+           id="tspan70" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="306.34009"
+           y="359.02328"
+           id="tspan71" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 389.73125,175.94791 31.48541,-1.05833 26.45833,10.58333 13.98985,16.6026 -19.01693,9.85573 -24.34167,10.45104 -21.69583,7.14375 -21.16666,-19.69492 15.29093,-15.06012 z"
+         id="path66" />
+    </g>
+    <g
+       id="galactic_region_8"
+       inkscape:label="galactic_region_8"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="386.82968"
+         y="129.62885"
+         id="text66"
+         transform="rotate(11.534984)"><tspan
+           sodipodi:role="line"
+           id="tspan62"
+           style="stroke:none;stroke-width:0.0432711"
+           x="386.82968"
+           y="129.62885">Region 8</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="386.82968"
+           y="132.67862"
+           id="tspan63" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="386.82968"
+           y="135.72839"
+           id="tspan64" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="386.82968"
+           y="138.77817"
+           id="tspan65" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="386.82968"
+           y="141.82793"
+           id="tspan66" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 347.43099,204.09296 5.25859,-16.07344 -12.23698,-12.53463 16.10651,-17.56172 24.82112,3.25371 8.32546,14.78001 1.02899,18.80241 -15.24773,15.06064 z"
+         id="path56" />
+    </g>
+    <g
+       id="galactic_region_7"
+       inkscape:label="galactic_region_7"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="333.30563"
+         y="182.90485"
+         id="text56"
+         transform="rotate(5.883326)"><tspan
+           sodipodi:role="line"
+           id="tspan52"
+           style="stroke:none;stroke-width:0.0432711"
+           x="333.30563"
+           y="182.90485">Region 7</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="333.30563"
+           y="185.95462"
+           id="tspan53" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="333.30563"
+           y="189.00439"
+           id="tspan54" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="333.30563"
+           y="192.05417"
+           id="tspan55" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="333.30563"
+           y="195.10393"
+           id="tspan56" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 293.85286,193.97265 3.9923,21.74058 28.43747,2.61924 21.14103,-14.21874 5.23846,-16.08962 -12.25429,-12.65188 -23.78366,-6.31424 2.19874,11.43745 -7.39044,10.14791 z"
+         id="path50" />
+    </g>
+    <g
+       id="galactic_region_6"
+       inkscape:label="galactic_region_6"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="255.90047"
+         y="243.32986"
+         id="text50"
+         transform="rotate(-10.507426)"><tspan
+           sodipodi:role="line"
+           id="tspan44"
+           style="stroke:none;stroke-width:0.0432711"
+           x="255.90047"
+           y="243.32986">Region 6</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="255.90047"
+           y="246.37964"
+           id="tspan46" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="255.90047"
+           y="249.42941"
+           id="tspan48" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="255.90047"
+           y="252.47919"
+           id="tspan49" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="255.90047"
+           y="255.52895"
+           id="tspan50" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 266.86536,153.45833 2.54662,12.27005 -7.48785,6.51012 9.40607,15.08649 22.48959,6.61459 17.59479,-3.3073 7.40833,-10.18645 -2.17535,-11.43461 -13.73933,-16.73274 -17.43433,4.6129 z"
+         id="path43" />
+    </g>
+    <g
+       id="galactic_region_5"
+       inkscape:label="galactic_region_5"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="221.37392"
+         y="150.03677"
+         id="text42"
+         transform="rotate(6.0649152)"><tspan
+           sodipodi:role="line"
+           id="tspan39"
+           style="stroke:none;stroke-width:0.0432711"
+           x="221.37392"
+           y="150.03677">Region 5</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="221.37392"
+           y="153.08655"
+           id="tspan43" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="221.37392"
+           y="156.13632"
+           id="tspan40" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="221.37392"
+           y="159.1861"
+           id="tspan41" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="221.37392"
+           y="162.23586"
+           id="tspan42" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 201.87708,134.60677 -12.17084,22.29114 12.17084,16.40417 25.4,2.38125 16.93333,-5.55625 17.72708,2.11666 7.40834,-6.61458 -2.48047,-12.2039 -9.35964,-8.13594 -18.26609,0.21889 -9.68184,-17.8202 z"
+         id="path38" />
+    </g>
+    <g
+       id="galactic_region_4"
+       inkscape:label="galactic_region_4"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="158.84711"
+         y="185.18379"
+         id="text37"
+         transform="rotate(-16.341463)"><tspan
+           sodipodi:role="line"
+           id="tspan35"
+           style="stroke:none;stroke-width:0.0432711"
+           x="158.84711"
+           y="185.18379">Region 4</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="158.84711"
+           y="188.23357"
+           id="tspan38" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="158.84711"
+           y="191.28334"
+           id="tspan36" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="158.84711"
+           y="194.33311"
+           id="tspan37" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 202.94443,79.232047 -22.4986,3.317949 -11.64167,25.400004 10.05417,16.66875 23.01875,10.05416 27.44685,-7.07844 14.26551,-15.57513 -28.81166,-6.12716 z"
+         id="path34" />
+    </g>
+    <g
+       id="galactic_region_3"
+       inkscape:label="galactic_region_3"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="241.1181"
+         y="53.31287"
+         id="text34"
+         transform="rotate(13.073102)"><tspan
+           sodipodi:role="line"
+           id="tspan32"
+           style="stroke:none;stroke-width:0.0432711"
+           x="241.1181"
+           y="53.31287">Region 3</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="241.1181"
+           y="56.36264"
+           id="tspan33" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="241.1181"
+           y="59.412415"
+           id="tspan34" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 271.3302,80.367184 -12.17083,12.964583 4.29948,13.493753 -19.84375,5.15937 -28.83732,-6.09271 -11.78658,-26.566587 11.97367,-18.147601 21.32811,-0.935442 z"
+         id="path31" />
+    </g>
+    <g
+       id="galactic_region_2"
+       inkscape:label="galactic_region_2">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;display:inline;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="279.22101"
+         y="182.40714"
+         id="text30"
+         transform="rotate(-11.032494)"><tspan
+           sodipodi:role="line"
+           id="tspan29"
+           style="stroke:none;stroke-width:0.0432711"
+           x="279.22101"
+           y="182.40714">Region 2</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="279.22101"
+           y="185.45691"
+           id="tspan31" /><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="279.22101"
+           y="188.50668"
+           id="tspan30" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 284.1625,109.07448 6.28385,10.51718 12.50156,8.06979 27.78125,-5.09323 3.59828,-19.66946 -12.34786,-16.650886 -25.06988,-7.857726 -25.63114,2.057977 -12.16076,12.909116 4.37412,13.567499 z"
+         id="path28" />
+    </g>
+    <g
+       id="galactic_region_1"
+       inkscape:label="galactic_region_1"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="348.97675"
+         y="87.066483"
+         id="text28"
+         transform="rotate(13.910029)"><tspan
+           sodipodi:role="line"
+           id="tspan27"
+           style="stroke:none;stroke-width:0.0432711"
+           x="348.97675"
+           y="87.066483">Region 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="348.97675"
+           y="90.116257"
+           id="tspan28" /></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 302.99009,127.59447 c 0.0935,0.37418 4.11596,9.54152 4.11596,9.54152 l -4.11596,15.24773 13.71616,16.68502 23.8125,6.35 16.00729,-17.4625 -2.0906,-19.95485 -23.57363,-15.51633 z"
+         id="path25"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+    <g
+       id="galactic_region_0"
+       inkscape:label="galactic_region_0"
+       style="display:inline">
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient3);stroke-width:0.115623;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 303.01406,127.85989 4.03489,8.99583 -4.10104,15.41198 -17.4625,4.63021 -18.52084,-3.43958 -9.525,-8.20209 -18.25625,0.26459 -9.78958,-17.99167 14.2875,-15.61041 19.84375,-5.02709 20.6375,2.11667 6.35,10.58333 z"
+         id="path3" />
+      <text
+         xml:space="preserve"
+         style="font-size:2.77252px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch3);fill-opacity:1;stroke:none;stroke-width:0.0432711;stroke-opacity:1;paint-order:stroke fill markers"
+         x="207.09782"
+         y="175.94296"
+         id="text25"
+         transform="rotate(-15.654063)"><tspan
+           sodipodi:role="line"
+           id="tspan25"
+           style="stroke:none;stroke-width:0.0432711"
+           x="207.09782"
+           y="175.94296">Region 0</tspan><tspan
+           sodipodi:role="line"
+           style="stroke:none;stroke-width:0.0432711"
+           x="207.09782"
+           y="178.99274"
+           id="tspan26" /></text>
+    </g>
   </g>
 </svg>
