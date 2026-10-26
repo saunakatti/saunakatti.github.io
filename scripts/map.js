@@ -46,7 +46,7 @@ function displayWikiEntry(id) {
                     attributesHtml = `
                     <hr>
                     <div class="attributeBox">
-                        <strong>Attributes:</strong><br>
+                        <strong>Attributes:</strong>
                         <div class="attributeGrid">
                     `;
 

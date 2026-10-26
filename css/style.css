@@ -1300,7 +1300,7 @@ Entry metadata (wb and blog)
 }
 
 /* Attribute and tag grid and blocks */
-.attributeBox, .blogTags {
+.blogTags {
     margin: 1em 0;
     gap: 1em;
     display: flex;
@@ -1313,6 +1313,12 @@ Entry metadata (wb and blog)
     font-size: 1rem;
     color: var(--color-text);
     text-transform: capitalize;
+}
+
+.attributeBox {
+    display: block;
+    margin: 1em 0;
+    gap: 1em;
 }
 
 .attributeGrid {
@@ -1409,7 +1415,9 @@ footer {
     text-align: center;
     height: auto;
     position: relative;
+    height: fit-content;
     z-index: 200;
+    bottom: -5em;
     flex-shrink: 0;
 }
 

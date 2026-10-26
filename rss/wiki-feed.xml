@@ -3,8 +3,19 @@
     <channel>
         <title>Capricorn's Encyclopedia Updates</title>
         <link>https://saunakatti.github.io/worldbuilding.html</link>
-        <description>Recent additions and modifications to the encyclopedia entries.</description>
+        <description>Recent additions and modifications to the encyclopedia entries and features.</description>
         <language>en-us</language>
+
+        <item>
+            <title>Feature: View On Map</title>
+            <link>https://saunakatti.github.io/worldbuilding.html</link>
+            <description>
+                Added a way to find an entry on the map. When you open an entry to the selection tab, 
+                click &quot;View on map&quot; and the map pans to its location.
+            </description>
+            <pubDate>Mon, 27 Oct 2026 23:00:00 +0200</pubDate>
+            <guid>tag:saunakatti.github.io,2026:wikiupdates.2</guid>
+        </item>
 
         <item>
             <title>Experimental: Galactic Regions</title>
