@@ -46,7 +46,7 @@ function displayWikiEntry(id) {
                     attributesHtml = `
                     <hr>
                     <div class="attributeBox">
-                        <strong>Attributes:</strong>
+                        <strong>Attributes:</strong><br>
                         <div class="attributeGrid">
                     `;
 
@@ -61,6 +61,16 @@ function displayWikiEntry(id) {
                     attributesHtml += `
                         </div>
                     </div>
+                    `;
+                }
+
+                let focusLink = ''
+                if (entry.onMap === true) {
+                    focusLink = `
+                    <a href="#" class="focus-link" data-target="${id}">
+                    View on map &nbsp; <span class="nf-fa-location_crosshairs"></span>
+                    </a>
+                    <br>
                     `;
                 }
 
@@ -85,11 +95,20 @@ function displayWikiEntry(id) {
                     <p>${entry.description || ''}</p>
                 </div>
                 <hr>
+                ${focusLink}
                 <a href="entry.html?file=${encodeURIComponent(entry.entryPath)}" id="wikiLink" data-path="${entry.entryPath}">
                     Read &nbsp; <span class="nf-fa-arrow_right"></span>
                 </a>
                 `;
-
+              
+                if (focusLink) {
+                    wikiContainer.querySelector('.focus-link').addEventListener('click', (e) => {
+                        e.preventDefault();
+                        focusOnElement(galaxyOverlay, '#' + e.currentTarget.dataset.target);
+                    });
+                }
+                
+            
             } else {
                 wikiContainer.innerHTML = `
                 <h2><span class="nf-oct-question"></span>&nbsp; Unknown Location</h2>
@@ -98,9 +117,10 @@ function displayWikiEntry(id) {
                 <p>Do not worry, an entry might be on the way.</p>
                 `;
             }
+            
         })
         .catch(error => {
-            console.error("Error loading entry");
+            console.error("Error loading entry", error);
             wikiContainer.innerHTML = `<p>Error loading entry.</p>`
         })
 }
@@ -120,8 +140,9 @@ function loadDirectory() {
         html += `
           <details class="sidebar-category">
             <summary class="categoryHeader">
-              <span class="nf-fa-chevron_right icon"></span>
-              <span class="title">${capitalizeFirstLetter(category)}</span>
+                <span class="icon closed-icon"></span>
+                <span class="icon open-icon"></span>
+                <span class="title">${capitalizeFirstLetter(category)}</span>
             </summary>
             <ul>`;
 
@@ -161,9 +182,9 @@ function loadDirectory() {
 
 // Function for toggling map elements
 function mapActivate(element) {
-    const mapElement = document.querySelector(element)
+    const mapElement = document.querySelector(element);
     const activeBtn = Array.from(document.querySelectorAll('.map-setting'))
-    .find(btn => btn.getAttribute('onclick')?.includes(element));
+    .find(btn => btn.getAttribute('onclick')?.includes(element))
 
     if (mapElement.style.display === 'none') {
         mapElement.style.display = 'block'
@@ -172,6 +193,25 @@ function mapActivate(element) {
         mapElement.style.display = 'none'
         activeBtn.classList.remove('active')
     }
+}
+
+// Focus on object on map
+function focusOnElement(overlay, element) {
+    const mapElement = overlay.getElement().querySelector(element);
+    const bbox = mapElement.getBBox();
+    const viewBox = overlay.getElement().viewBox.baseVal;
+
+    const fraction = (v, axis) =>
+        axis === 'x' ? v / viewBox.width : v / viewBox.height;
+
+    const bounds = overlay.getBounds();
+
+    const west  = bounds.getWest()  + fraction(bbox.x, 'x') * (bounds.getEast() - bounds.getWest());
+    const east  = bounds.getWest()  + fraction(bbox.x + bbox.width, 'x') * (bounds.getEast() - bounds.getWest());
+    const north = bounds.getSouth() + (1 - fraction(bbox.y, 'y')) * (bounds.getNorth() - bounds.getSouth());
+    const south = bounds.getSouth() + (1 - fraction(bbox.y + bbox.height, 'y')) * (bounds.getNorth() - bounds.getSouth());
+
+    map.flyToBounds(L.latLngBounds([[south, west], [north, east]]).pad(0.25));
 }
 
 // ----------------------------
@@ -188,6 +228,8 @@ var map = L.map('map', {
 
 var bounds = [[0,0], [1000, 2000]];
 
+var galaxyOverlay;
+
 // Load map and detect input on svg objects
 fetch('../worldbuilding/assets/capricorns_galaxy_map.svg')
     .then(response => response.text())
@@ -198,11 +240,11 @@ fetch('../worldbuilding/assets/capricorns_galaxy_map.svg')
 
         svgElement.setAttribute('preserveAspectRatio', 'xMidYMid meet');
         
-        var image = L.svgOverlay(svgElement, bounds, {
+        galaxyOverlay = L.svgOverlay(svgElement, bounds, {
             interactive: true,
         }).addTo(map);
 
-        image.on('click', function(e) {
+        galaxyOverlay.on('click', function(e) {
             var originalMouseEvent = e.originalEvent;
             var group = originalMouseEvent.target.closest('g[id]');
             if (group) {

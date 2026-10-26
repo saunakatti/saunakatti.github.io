@@ -13,7 +13,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
@@ -24,15 +27,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#4a4a4a"
      inkscape:document-units="px"
-     inkscape:zoom="0.3535534"
-     inkscape:cx="893.78295"
-     inkscape:cy="653.36665"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="1434.5429"
+     inkscape:cy="701.09637"
      inkscape:window-width="1896"
      inkscape:window-height="1024"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="galacticRegions"
+     inkscape:current-layer="svg1"
      showgrid="false"
      showguides="true">
     <inkscape:grid
@@ -52,6 +55,26 @@
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <linearGradient
+       id="swatch92"
+       inkscape:swatch="solid"
+       inkscape:label="orange"
+       gradientTransform="matrix(0.20729237,0,0,0.20729237,349.96199,19.101178)">
+      <stop
+         style="stop-color:#ffb82b;stop-opacity:1;"
+         offset="0"
+         id="stop92" />
+    </linearGradient>
+    <linearGradient
+       id="swatch16"
+       inkscape:swatch="solid"
+       inkscape:label="lightpink"
+       gradientTransform="matrix(0.00413425,0,0,0.00413425,3.3452077,9.0286828)">
+      <stop
+         style="stop-color:#efa4ff;stop-opacity:1;"
+         offset="0"
+         id="stop16" />
+    </linearGradient>
     <linearGradient
        id="swatch25">
       <stop
@@ -89,7 +112,7 @@
        id="swatch98"
        inkscape:swatch="solid"
        inkscape:label="gray"
-       gradientTransform="matrix(0.01852198,0,0,0.01852198,7.8213657,-5.3064173)">
+       gradientTransform="matrix(0.01852198,0,0,0.01852198,-3.3390472,4.424141)">
       <stop
          style="stop-color:#afafaf;stop-opacity:1;"
          offset="0"
@@ -99,7 +122,7 @@
        id="swatch96"
        inkscape:swatch="solid"
        inkscape:label="graybg"
-       gradientTransform="translate(7.8713539,-5.3578123)">
+       gradientTransform="translate(-3.289059,4.372746)">
       <stop
          style="stop-color:#2b2b2b;stop-opacity:0.32256004;"
          offset="0"
@@ -163,7 +186,7 @@
        id="swatch52"
        inkscape:swatch="solid"
        inkscape:label="blue"
-       gradientTransform="matrix(0,0,0,0,18.481827,-3.4805368)">
+       gradientTransform="matrix(0,0,0,0,3.3856272,23.860674)">
       <stop
          style="stop-color:#90f1fe;stop-opacity:1;"
          offset="0"
@@ -173,7 +196,7 @@
        id="swatch51"
        inkscape:swatch="solid"
        inkscape:label="bluebg"
-       gradientTransform="matrix(4.4482337e-7,0,0,4.4482337e-7,-0.25120189,0.47711021)">
+       gradientTransform="matrix(4.4482337e-7,0,0,4.4482337e-7,-8.6701917,13.666861)">
       <stop
          style="stop-color:#274c50;stop-opacity:0.32256003;"
          offset="0"
@@ -302,43 +325,15 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#swatch52"
-       id="linearGradient93"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.02317207,0,0,0.02317207,199.01773,97.966442)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
        id="linearGradient96"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.00408479,0,0,0.00408479,231.34474,114.37225)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#swatch52"
-       id="linearGradient99"
-       x1="295.90851"
-       y1="146.84364"
-       x2="296.10785"
-       y2="146.84364"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.103694,0,0,1.103694,-30.717021,-15.204073)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient101"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.28273,114.32678)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
        id="linearGradient103"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.02317207,0,0,0.02317207,198.21583,97.600734)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient112"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,230.35267,113.99827)" />
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,176.36985,87.656931)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#swatch52"
@@ -356,13 +351,7 @@
        xlink:href="#swatch52"
        id="linearGradient24"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.02317207,0,0,0.02317207,199.01773,97.966442)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient28"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.06111,114.39966)" />
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,238.63912,107.99635)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#swatch52"
@@ -566,72 +555,124 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient138"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.30216,114.33505)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient139"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.27312,114.40294)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient140"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.22635,114.37371)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient141"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.19712,114.3854)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient142"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.18543,114.37955)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient143"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.26728,114.3737)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient144"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.21437,114.39195)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient145"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.26356,114.39025)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient146"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.24418,114.40294)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch98"
-       id="linearGradient169"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.01852198,0,0,0.01852198,40.039281,-47.097606)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#swatch3"
        id="linearGradient3"
        x1="302.96131"
        y1="132.3578"
        x2="307.1017"
        y2="132.3578"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.30216,114.33505)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.27312,114.40294)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient6"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.22635,114.37371)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.19712,114.3854)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient10"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.18543,114.37955)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient11"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.26728,114.3737)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient12"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.21437,114.39195)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient13"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.26356,114.39025)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient14"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.24418,114.40294)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch16"
+       id="linearGradient16"
+       x1="335.72858"
+       y1="167.19599"
+       x2="361.96113"
+       y2="167.19599"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient40"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,196.5776,98.419234)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient41"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.103694,0,0,1.103694,-33.157154,-14.751281)"
+       x1="295.90851"
+       y1="146.84364"
+       x2="296.10785"
+       y2="146.84364" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient58"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,228.84449,114.78784)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient63"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,208.50669,104.05447)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient67"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,270.68976,124.4337)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch98"
+       id="linearGradient90"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.01852198,0,0,0.01852198,7.7232139,31.373825)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch92"
+       id="linearGradient92"
+       x1="377.35647"
+       y1="189.13326"
+       x2="416.61953"
+       y2="189.13326"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <rect
@@ -648,7 +689,8 @@
      inkscape:groupmode="layer"
      id="lockedElems"
      inkscape:label="lockedElems"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     inkscape:highlight-color="#e1e1e1">
     <g
        id="galaxy_border"
        inkscape:label="galaxy_border">
@@ -679,27 +721,27 @@
          inkscape:label="galaxyInfo"><tspan
            x="39.615234"
            y="49.950022"
-           id="tspan59"><tspan
+           id="tspan5"><tspan
              style="font-size:29.0423px;line-height:1.1;stroke:url(#swatch54);paint-order:stroke fill markers"
-             id="tspan22">Capricorn's Galaxy</tspan><tspan
+             id="tspan1">Capricorn's Galaxy</tspan><tspan
              style="stroke:url(#swatch54);paint-order:stroke fill markers"
-             id="tspan23"> </tspan><tspan
+             id="tspan2"> </tspan><tspan
              style="line-height:1.1"
-             id="tspan24">  SA(s)c</tspan><tspan
+             id="tspan3">  SA(s)c</tspan><tspan
              style="line-height:1.1"
-             id="tspan58">
+             id="tspan4">
 </tspan></tspan><tspan
            x="39.615234"
            y="78.656761"
-           id="tspan61"><tspan
+           id="tspan8"><tspan
              style="line-height:1.1"
-             id="tspan60">Lynx Cluster
+             id="tspan6">Lynx Cluster
 </tspan></tspan><tspan
            x="39.615234"
            y="106.0395"
-           id="tspan79"><tspan
+           id="tspan10"><tspan
              style="line-height:1.1"
-             id="tspan78">(Lynx Foundry // 20.16.25.53.8.4)</tspan></tspan></text>
+             id="tspan9">(Lynx Foundry // 20.16.25.53.8.4)</tspan></tspan></text>
     </g>
     <g
        id="credit"
@@ -713,958 +755,18 @@
          inkscape:label="credit"><tspan
            x="1737.9707"
            y="983.19975"
-           id="tspan81"><tspan
+           id="tspan12"><tspan
              style="stroke:none"
-             id="tspan80">Onni V</tspan></tspan></text>
+             id="tspan11">Onni V</tspan></tspan></text>
     </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="sections"
-     inkscape:label="sections"
-     inkscape:highlight-color="#de0e0c">
-    <g
-       id="great_nebula"
-       inkscape:label="great_nebula">
-      <path
-         style="fill:url(#linearGradient53);stroke:url(#linearGradient54);stroke-width:0.142;stroke-dasharray:none;paint-order:markers fill stroke"
-         d="m 246.88634,121.60405 17.7847,-4.72247 12.78948,0.71052 9.31936,7.06216 12.47728,3.32298 4.13758,9.86486 -3.27247,11.37212 -13.06965,3.19367 -14.92105,-2.48684 -11.71998,-7.89153 -14.63784,-0.17177 -6.17923,-10.7047 z"
-         id="path46"
-         sodipodi:nodetypes="ccccccccccccc" />
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-0.02220395,2.3980263)"
-         id="text47"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect47);shape-padding:0.0839204;display:inline;fill:#9137ff;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
-           x="931.34961"
-           y="525.1432"
-           id="tspan82">The Great Nebula </tspan></text>
-    </g>
-    <g
-       id="olias_union"
-       inkscape:label="olias_union">
-      <path
-         style="fill:url(#swatch51);stroke:url(#swatch52);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 364.22761,182.31259 3.91612,-0.7475 4.7429,0.7257 5.12155,-1.42939 2.15722,2.25329 2.4221,3.94573 -8.26077,2.47755 -7.66743,-1.63833 -2.75906,-3.04124 z"
-         id="path2"
-         sodipodi:nodetypes="cccccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.597476px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);stroke:none;stroke-width:0.0282272;paint-order:markers fill stroke"
-         x="398.89465"
-         y="103.2095"
-         id="text16"
-         transform="rotate(12.606827)"><tspan
-           sodipodi:role="line"
-           id="tspan16"
-           style="stroke-width:0.0282273"
-           x="398.89465"
-           y="103.2095">Olia's Union</tspan></text>
-    </g>
-    <g
-       id="navigators_nebula"
-       inkscape:label="navigators_nebula">
-      <path
-         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 336.01125,153.15546 3.1805,-0.93544 4.95785,0.18709 1.77733,1.87089 -2.05795,3.27405 -4.58367,0.84189 -3.08697,2.24507 -4.77076,-2.71279 0.28062,-2.80633 z"
-         id="path16" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.574277px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0271312;paint-order:markers fill stroke"
-         x="366.45804"
-         y="-23.816216"
-         id="text17"
-         transform="rotate(29.165113)"><tspan
-           sodipodi:role="line"
-           id="tspan17"
-           style="stroke-width:0.0271312"
-           x="366.45804"
-           y="-23.816216">Navigator's Nebula</tspan></text>
-    </g>
-    <g
-       id="noian"
-       inkscape:label="noian"
-       transform="translate(10.14956,-19.270133)">
-      <path
-         style="fill:url(#swatch51);stroke:url(#swatch52);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 401.95303,210.02714 3.41629,-1.98907 8.67103,0.73035 4.39486,3.84599 -4.6233,4.76793 -9.21775,-0.88081 -5.15588,-1.98284 z"
-         id="path108"
-         sodipodi:nodetypes="cccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.737144px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);stroke:none;stroke-width:0.0348258;paint-order:markers fill stroke"
-         x="423.20956"
-         y="178.12555"
-         id="text108"
-         transform="rotate(5.2828979)"><tspan
-           sodipodi:role="line"
-           id="tspan108"
-           style="stroke-width:0.0348258"
-           x="423.20956"
-           y="178.12555">Noian (TD-G)</tspan></text>
-    </g>
-    <g
-       id="arvens_realm"
-       inkscape:label="arvens_realm"
-       transform="translate(-7.4835465,3.9288619)">
-      <path
-         style="fill:url(#swatch51);stroke:url(#swatch52);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 437.92772,146.06232 4.50377,3.12588 6.47466,0.78647 5.47221,-0.6815 1.63799,-4.54454 -4.96792,-5.90853 -12.03854,-3.50572 -8.7974,-0.0662 -3.1526,3.64098 3.59373,4.81628 z"
-         id="path109"
-         sodipodi:nodetypes="ccccccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.833651px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);stroke:none;stroke-width:0.0393851;paint-order:markers fill stroke"
-         x="458.13034"
-         y="91.666298"
-         id="text109"
-         transform="rotate(7.290239)"><tspan
-           sodipodi:role="line"
-           id="tspan109"
-           style="stroke-width:0.0393852"
-           x="458.13034"
-           y="91.666298">Arven's Realm</tspan></text>
-    </g>
-    <g
-       id="half_dead_void"
-       transform="translate(-6.5302043,15.749829)">
-      <path
-         style="fill:url(#swatch96);stroke:url(#swatch98);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 421.15431,147.60378 9.90203,3.10942 11.47808,2.6558 -7.88264,2.79598 -14.42522,-1.40971 -13.08367,-6.56235 -2.70514,-9.61252 4.18702,2.46449 5.60578,0.49811 z"
-         id="path92"
-         sodipodi:nodetypes="cccccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-size:1.05833px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient169);stroke:none;stroke-width:0.0499999;stroke-opacity:1;paint-order:markers fill stroke"
-         x="434.71533"
-         y="107.59918"
-         id="text99"
-         transform="rotate(6.2702843)"><tspan
-           sodipodi:role="line"
-           id="tspan99"
-           style="fill:url(#linearGradient169);stroke-width:0.05"
-           x="434.71533"
-           y="107.59918">The Half Dead Void</tspan></text>
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="subSections"
-     inkscape:label="subSections"
-     inkscape:highlight-color="#ff8809">
-    <g
-       id="val_conjunct"
-       inkscape:label="val_conjunct">
-      <path
-         style="fill:url(#linearGradient51);stroke:url(#linearGradient52);stroke-width:0.05;stroke-dasharray:none;paint-order:markers fill stroke"
-         d="m 288.79612,150.85099 7.00246,-1.50725 3.26572,-3.42272 1.60146,-4.80437 -5.84062,-2.29228 -5.18117,-0.12561 -5.28593,1.19572 -6.04989,1.8502 -3.45412,6.87683 5.76226,1.47547 3.88867,0.69949 z"
-         id="path48"
-         sodipodi:nodetypes="cccccccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.629337px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#8af2ff;fill-opacity:1;stroke:none;stroke-width:0.0297325;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="303.30685"
-         y="76.456619"
-         id="text51"
-         transform="rotate(14.191577)"><tspan
-           sodipodi:role="line"
-           id="tspan51"
-           style="stroke-width:0.0297326"
-           x="303.30685"
-           y="76.456619">The Val Conjunct</tspan></text>
-    </g>
-    <g
-       id="nexus"
-       inkscape:label="nexus">
-      <path
-         style="fill:url(#swatch53);fill-opacity:1;stroke:#ab57ff;stroke-width:0.0499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         d="m 267.11584,131.00884 4.81754,-0.79513 3.60145,1.49671 0.42095,2.75956 2.3386,1.44994 -0.74835,2.57246 -3.50789,1.44994 -3.69502,-2.43215 h -2.61924 l -1.40316,-2.19829 -2.19829,-1.73057 -0.14032,-1.96443 z"
-         id="path112" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.612011px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);fill-opacity:1;stroke:none;stroke-width:0.0289139;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="267.76633"
-         y="137.35834"
-         id="text112"><tspan
-           sodipodi:role="line"
-           id="tspan112"
-           style="fill:url(#swatch54);stroke:none;stroke-width:0.028914"
-           x="267.76633"
-           y="137.35834">The Nexus</tspan></text>
-    </g>
-    <g
-       id="olias_endless_clouds"
-       inkscape:label="olias_endless_clouds"
-       transform="translate(7.2042214,3.5399773)">
-      <path
-         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 364.87288,183.65703 3.25408,-1.22404 2.21172,1.406 -1.1122,1.20689 -2.02811,0.65238 -2.42995,-0.6117 z"
-         id="path45"
-         sodipodi:nodetypes="ccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.432716px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0204433;paint-order:markers fill stroke"
-         x="398.3074"
-         y="92.772919"
-         id="text45"
-         transform="rotate(13.712511)"><tspan
-           sodipodi:role="line"
-           id="tspan45"
-           style="stroke-width:0.0204434"
-           x="398.3074"
-           y="92.772919">Olia's Endless</tspan><tspan
-           sodipodi:role="line"
-           style="stroke-width:0.0204434"
-           x="398.3074"
-           y="93.248909"
-           id="tspan7">Clouds</tspan></text>
-    </g>
-    <g
-       id="arvens_nebula"
-       inkscape:label="arvens_nebula"
-       transform="translate(-7.4835465,3.9288619)">
-      <path
-         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 444.10401,140.76416 0.70157,1.0056 -0.11692,0.70158 -1.12255,0.14032 -0.16369,-0.74836 -0.63143,-0.35079 -0.35079,-0.79512 0.63143,-0.5145 z"
-         id="path13" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.189978px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.00897532;paint-order:markers fill stroke"
-         x="457.65604"
-         y="-80.625175"
-         id="text87"
-         transform="rotate(27.575934)"><tspan
-           sodipodi:role="line"
-           id="tspan87"
-           style="stroke-width:0.0089754"
-           x="457.65604"
-           y="-80.625175">Arven's Nebula</tspan></text>
-    </g>
-    <g
-       id="palidans_cold_storm"
-       inkscape:label="palidans_cold_storm"
-       transform="translate(-7.4835465,3.9288619)">
-      <path
-         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
-         d="m 429.38017,141.01808 0.57295,1.04068 1.35642,0.8419 0.36248,0.56127 1.20438,0.0234 0.80682,-0.64312 -0.59635,-1.05237 0.0585,-0.56127 -0.90035,-0.98222 -1.25116,0.0117 -0.87281,-0.10582 -0.403,0.27593 z"
-         id="path87"
-         sodipodi:nodetypes="ccccccccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.254402px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.012019;paint-order:markers fill stroke"
-         x="437.01123"
-         y="126.13107"
-         id="text89"
-         transform="rotate(2.2361452)"><tspan
-           sodipodi:role="line"
-           id="tspan89"
-           style="stroke-width:0.0120191"
-           x="437.01123"
-           y="126.13107">Palidan's</tspan><tspan
-           sodipodi:role="line"
-           style="stroke-width:0.0120191"
-           x="437.01123"
-           y="126.41091"
-           id="tspan90">Cold Storm</tspan></text>
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="subSubSections"
-     inkscape:label="subSubSections"
-     inkscape:highlight-color="#f3d321">
-    <g
-       id="atalval"
-       inkscape:label="atalval">
-      <path
-         style="fill:url(#swatch51);fill-opacity:1;stroke:url(#swatch52);stroke-width:0.0499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         d="m 289.25573,149.78724 2.77298,-0.12477 3.48886,-0.83435 1.78525,-1.83603 -0.67183,-1.43819 -1.81197,-0.89531 -2.52059,-0.22916 -1.40304,2.47313 -2.4247,1.28417 z"
-         id="path54"
-         sodipodi:nodetypes="cccccccccc" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.440195px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient71);fill-opacity:1;stroke:none;stroke-width:0.0207966;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="261.93475"
-         y="177.45309"
-         id="text57"
-         transform="matrix(1.0538771,-0.06810619,0.07603636,0.94396346,0,0)"><tspan
-           sodipodi:role="line"
-           id="tspan57"
-           style="fill:url(#linearGradient71);stroke-width:0.0207967"
-           x="261.93475"
-           y="177.45309">Atal'val</tspan></text>
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="objects"
-     inkscape:label="objects"
-     inkscape:highlight-color="#21f3f0">
-    <g
-       id="capricorn_emitter"
-       inkscape:label="capricorn_emitter">
-      <circle
-         style="fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.0398293;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path44"
-         cx="270.66687"
-         cy="134.28984"
-         r="0.51069069" />
-      <text
-         xml:space="preserve"
-         transform="matrix(0.06650991,0,0,0.06650991,203.33879,101.29411)"
-         id="text44"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect44);shape-padding:6.13765;display:inline;fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
-           x="979.79883"
-           y="470.29438"
-           id="tspan85"><tspan
-             style="baseline-shift:baseline"
-             id="tspan84">The Capricorn </tspan></tspan><tspan
-           x="979.79883"
-           y="483.49439"
-           id="tspan94"><tspan
-             style="baseline-shift:baseline"
-             id="tspan86">Emmiter (E</tspan><tspan
-             style="font-size:65%;baseline-shift:sub"
-             id="tspan92">0</tspan><tspan
-             style="baseline-shift:baseline"
-             id="tspan93">)</tspan></tspan></text>
-    </g>
-    <g
-       id="ethu"
-       inkscape:label="ethu"
-       transform="translate(0.01653646,0.00826823)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient89);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.79169"
-         y="146.75047"
-         id="text72"><tspan
-           sodipodi:role="line"
-           id="tspan72"
-           style="fill:url(#linearGradient89);stroke-width:0.0110269"
-           x="295.79169"
-           y="146.75047">Ethu</tspan></text>
-      <circle
-         style="fill:url(#linearGradient72);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="othu"
-       inkscape:label="othu"
-       transform="translate(-3.1202793,-1.3581261)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient88);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.76831"
-         y="146.72124"
-         id="text83"><tspan
-           sodipodi:role="line"
-           id="tspan83"
-           style="fill:url(#linearGradient88);stroke-width:0.0110269"
-           x="295.76831"
-           y="146.72124">Othu</tspan></text>
-      <circle
-         style="fill:url(#linearGradient85);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle83"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="athu"
-       inkscape:label="athu"
-       transform="translate(-4.5589512,1.8251421)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient96);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.76831"
-         y="146.72124"
-         id="text88"><tspan
-           sodipodi:role="line"
-           id="tspan88"
-           style="fill:url(#linearGradient96);stroke-width:0.0110269"
-           x="295.76831"
-           y="146.72124">Athu</tspan></text>
-      <circle
-         style="fill:url(#linearGradient91);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle88"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="tophu"
-       inkscape:label="tophu"
-       transform="translate(-2.5332351,0.44434784)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient101);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.7063"
-         y="146.67577"
-         id="text91"><tspan
-           sodipodi:role="line"
-           id="tspan91"
-           style="fill:url(#linearGradient101);stroke-width:0.0110269"
-           x="295.7063"
-           y="146.67577">Tophu</tspan></text>
-      <circle
-         style="fill:url(#linearGradient93);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle91"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-      <circle
-         style="fill:none;stroke:url(#linearGradient99);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
-         id="circle98"
-         cx="295.98547"
-         cy="146.86639"
-         r="0.097716853" />
-    </g>
-    <g
-       id="ajankajo"
-       inkscape:label="ajankajo"
-       transform="translate(-21.84598,-9.9438035)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient112);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="294.77625"
-         y="146.34726"
-         id="text101"><tspan
-           sodipodi:role="line"
-           id="tspan101"
-           style="fill:url(#linearGradient112);stroke-width:0.0110269"
-           x="294.77625"
-           y="146.34726">Ajankajo</tspan></text>
-      <circle
-         style="fill:url(#linearGradient103);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle101"
-         cx="295.18353"
-         cy="146.50067"
-         r="0.065798551" />
-    </g>
-    <g
-       id="lumonea"
-       inkscape:label="lumonea"
-       transform="translate(66.404195,30.955202)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient22);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.57974"
-         y="146.75485"
-         id="text72-1"><tspan
-           sodipodi:role="line"
-           id="tspan72-2"
-           style="fill:url(#linearGradient22);stroke-width:0.0110269"
-           x="295.57974"
-           y="146.75485">Lumonea</tspan></text>
-      <circle
-         style="fill:url(#linearGradient18);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="windworld"
-       inkscape:label="windworld"
-       transform="translate(69.642125,36.267342)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient107);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.48621"
-         y="146.74316"
-         id="text72-1-1"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-4"
-           style="fill:url(#linearGradient107);stroke-width:0.0110269"
-           x="295.48621"
-           y="146.74316">Windworld</tspan></text>
-      <circle
-         style="fill:url(#linearGradient76);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-9"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="palidan-ga1"
-       inkscape:label="palidan-ga1"
-       transform="translate(57.636685,-37.836463)">
-      <circle
-         style="fill:url(#swatch54);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
-         id="path47-5-6"
-         cx="366.43552"
-         cy="183.36865"
-         r="0.049609374" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.260122px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0122893;paint-order:markers fill stroke"
-         x="365.82755"
-         y="183.23445"
-         id="text48-9-1"><tspan
-           sodipodi:role="line"
-           id="tspan47-2-0"
-           style="stroke-width:0.0122893"
-           x="365.82755"
-           y="183.23445">Palidan-GA1</tspan></text>
-    </g>
-    <g
-       id="illan"
-       inkscape:label="illan"
-       transform="translate(70.56477,36.502797)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient108);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.79263"
-         y="146.75243"
-         id="text72-1-1-6"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-4-6"
-           style="fill:url(#linearGradient108);stroke-width:0.0110269"
-           x="295.79263"
-           y="146.75243">Illan</tspan></text>
-      <circle
-         style="fill:url(#linearGradient82);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-9-4"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="lupovaleai"
-       inkscape:label="lupovaleai"
-       transform="translate(39.628654,10.034043)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient28);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.48465"
-         y="146.74866"
-         id="text72-1-2"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-6"
-           style="fill:url(#linearGradient28);stroke-width:0.0110269"
-           x="295.48465"
-           y="146.74866">Lupovalea'i</tspan></text>
-      <circle
-         style="fill:url(#linearGradient24);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-1"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="oliarion"
-       inkscape:label="oliarion"
-       transform="translate(81.116653,37.487399)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient44);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.60294"
-         y="146.68404"
-         id="text91-3"><tspan
-           sodipodi:role="line"
-           id="tspan91-6"
-           style="fill:url(#linearGradient44);stroke-width:0.0110269"
-           x="295.60294"
-           y="146.68404">Oliarion</tspan></text>
-      <circle
-         style="fill:url(#linearGradient38);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle91-1"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-      <circle
-         style="fill:none;stroke:url(#linearGradient39);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
-         id="circle98-2"
-         cx="295.98547"
-         cy="146.86639"
-         r="0.097716853" />
-    </g>
-    <g
-       id="olia-a1"
-       inkscape:label="olia-a1"
-       transform="translate(8.0138637,4.2501279)">
-      <circle
-         style="fill:url(#swatch54);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
-         id="path47"
-         cx="366.70422"
-         cy="183.67871"
-         r="0.049609374" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.311435px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0147135;paint-order:markers fill stroke"
-         x="366.20847"
-         y="183.51007"
-         id="text48"><tspan
-           sodipodi:role="line"
-           id="tspan47"
-           style="stroke-width:0.0147135"
-           x="366.20847"
-           y="183.51007">Olia-A1</tspan></text>
-    </g>
-    <g
-       id="t6"
-       inkscape:label="t6"
-       transform="translate(79.504145,40.264837)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient73);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.87207"
-         y="146.74901"
-         id="text72-1-5"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-5"
-           style="fill:url(#linearGradient73);stroke-width:0.0110269"
-           x="295.87207"
-           y="146.74901">T6</tspan></text>
-      <circle
-         style="fill:url(#linearGradient49);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-4"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="t12"
-       inkscape:label="t12"
-       transform="translate(78.313302,41.272858)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient74);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.81833"
-         y="146.76347"
-         id="text72-1-5-7"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-5-4"
-           style="fill:url(#linearGradient74);stroke-width:0.0110269"
-           x="295.81833"
-           y="146.76347">T12</tspan></text>
-      <circle
-         style="fill:url(#linearGradient59);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-4-5"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="s5"
-       inkscape:label="s5"
-       transform="translate(84.068009,43.910427)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient68);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.87207"
-         y="146.74901"
-         id="text72-1-5-3"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-5-0"
-           style="fill:url(#linearGradient68);stroke-width:0.0110269"
-           x="295.87207"
-           y="146.74901">S5</tspan></text>
-      <circle
-         style="fill:url(#linearGradient66);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-4-7"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="arven"
-       inkscape:label="arven"
-       transform="translate(135.97976,-1.5619944)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient138);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.72571"
-         y="146.68404"
-         id="text91-3-1"><tspan
-           sodipodi:role="line"
-           id="tspan91-6-7"
-           style="fill:url(#linearGradient138);stroke-width:0.0110269"
-           x="295.72571"
-           y="146.68404">Arven</tspan></text>
-      <circle
-         style="fill:url(#linearGradient118);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle91-1-2"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-      <circle
-         style="fill:none;stroke:url(#linearGradient119);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
-         id="circle98-2-7"
-         cx="295.98547"
-         cy="146.86639"
-         r="0.097716853" />
-    </g>
-    <g
-       id="td-00"
-       inkscape:label="td-00"
-       transform="translate(120.89104,47.00413)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient132);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.71869"
-         y="146.69231"
-         id="text91-3-15"><tspan
-           sodipodi:role="line"
-           id="tspan91-6-9"
-           style="fill:url(#linearGradient132);stroke-width:0.0110269"
-           x="295.71869"
-           y="146.69231">TD-00</tspan></text>
-      <circle
-         style="fill:url(#linearGradient126);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="circle91-1-4"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-      <circle
-         style="fill:none;stroke:url(#linearGradient127);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
-         id="circle98-2-9"
-         cx="295.98547"
-         cy="146.86639"
-         r="0.097716853" />
-    </g>
-    <g
-       id="td-17"
-       inkscape:label="td-17"
-       transform="translate(101.70397,44.02493)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient7);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.71292"
-         y="146.74695"
-         id="text72-1-5-3-2"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-5-0-9"
-           style="fill:url(#linearGradient7);stroke-width:0.0110269"
-           x="295.71292"
-           y="146.74695">TD-17</tspan></text>
-      <circle
-         style="fill:url(#linearGradient2);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-4-7-1"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="ovian"
-       inkscape:label="ovian"
-       transform="translate(136.39094,-0.85376113)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient139);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.69669"
-         y="146.75192"
-         id="text72-1-6"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1"
-           style="fill:url(#linearGradient139);stroke-width:0.0110269"
-           x="295.69669"
-           y="146.75192">Ovian</tspan></text>
-      <circle
-         style="fill:url(#linearGradient9);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="palidan"
-       inkscape:label="palidan"
-       transform="translate(131.66095,-1.2450911)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient140);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.6499"
-         y="146.72269"
-         id="text72-1-6-0"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1-3"
-           style="fill:url(#linearGradient140);stroke-width:0.0110269"
-           x="295.6499"
-           y="146.72269">Palidan</tspan></text>
-      <circle
-         style="fill:url(#linearGradient23);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8-6"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="outreus"
-       inkscape:label="outreus"
-       transform="translate(134.92019,2.0147855)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient141);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.62067"
-         y="146.73438"
-         id="text72-1-6-0-7"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1-3-4"
-           style="fill:url(#linearGradient141);stroke-width:0.0110269"
-           x="295.62067"
-           y="146.73438">Outreus</tspan></text>
-      <circle
-         style="fill:url(#linearGradient45);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8-6-52"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="palekam"
-       inkscape:label="palekam"
-       transform="translate(145.09014,2.3443304)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient142);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.60898"
-         y="146.72853"
-         id="text72-1-6-0-7-7"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1-3-4-8"
-           style="fill:url(#linearGradient142);stroke-width:0.0110269"
-           x="295.60898"
-           y="146.72853">Palekam</tspan></text>
-      <circle
-         style="fill:url(#linearGradient62);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8-6-52-6"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="aploia"
-       inkscape:label="aploia"
-       transform="translate(144.56377,-0.54815133)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient143);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.69083"
-         y="146.72269"
-         id="text72-1-6-0-7-7-5"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1-3-4-8-04"
-           style="fill:url(#linearGradient143);stroke-width:0.0110269"
-           x="295.69083"
-           y="146.72269">Aploia</tspan></text>
-      <circle
-         style="fill:url(#linearGradient81);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8-6-52-6-8"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="malmik"
-       inkscape:label="malmik"
-       transform="translate(141.38877,5.2726819)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient144);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.63791"
-         y="146.74094"
-         id="text72-1-6-0-7-7-2"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1-3-4-8-0"
-           style="fill:url(#linearGradient144);stroke-width:0.0110269"
-           x="295.63791"
-           y="146.74094">Malmik</tspan></text>
-      <circle
-         style="fill:url(#linearGradient70);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8-6-52-6-6"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="titania"
-       inkscape:label="titania"
-       transform="translate(129.56729,-4.868248)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient145);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.6871"
-         y="146.73923"
-         id="text72-1-6-0-1"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1-3-5"
-           style="fill:url(#linearGradient145);stroke-width:0.0110269"
-           x="295.6871"
-           y="146.73923">Titania</tspan></text>
-      <circle
-         style="fill:url(#linearGradient33);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8-6-5"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="biatoid"
-       inkscape:label="biatoid"
-       transform="translate(140.51621,-0.84821623)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient146);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.66776"
-         y="146.75192"
-         id="text72-1-6-2"><tspan
-           sodipodi:role="line"
-           id="tspan72-2-1-9"
-           style="fill:url(#linearGradient146);stroke-width:0.0110269"
-           x="295.66776"
-           y="146.75192">Biatoid</tspan></text>
-      <circle
-         style="fill:url(#linearGradient15);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         id="path71-7-8-3"
-         cx="295.98544"
-         cy="146.86638"
-         r="0.065798551" />
-    </g>
-    <g
-       id="arven-ga1"
-       inkscape:label="arven-ga1"
-       transform="translate(69.736559,-38.066522)">
-      <circle
-         style="fill:url(#swatch54);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
-         id="path47-5"
-         cx="366.43552"
-         cy="183.36865"
-         r="0.049609374" />
-      <text
-         xml:space="preserve"
-         style="font-size:0.260122px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0122893;paint-order:markers fill stroke"
-         x="365.88602"
-         y="183.23445"
-         id="text48-9"><tspan
-           sodipodi:role="line"
-           id="tspan47-2"
-           style="stroke-width:0.0122893"
-           x="365.88602"
-           y="183.23445">Arven-GA1</tspan></text>
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-size:1.05833px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);fill-opacity:0.32256;stroke:none;stroke-width:0.0499999;stroke-opacity:1;paint-order:markers fill stroke"
-       x="387.67111"
-       y="155.21342"
-       id="text98"><tspan
-         sodipodi:role="line"
-         id="tspan98"
-         style="stroke-width:0.05"
-         x="387.67111"
-         y="155.21342" /></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="galacticRegions"
      inkscape:label="galacticRegions"
      onload=""
-     style="display:none">
+     style="display:none"
+     inkscape:highlight-color="#3b21f3">
     <g
        id="galactic_region_10"
        inkscape:label="galactic_region_10"
@@ -2063,4 +1165,1024 @@
            id="tspan26" /></text>
     </g>
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="sections"
+     inkscape:label="sections"
+     inkscape:highlight-color="#de0e0c">
+    <g
+       id="great_nebula"
+       inkscape:label="great_nebula">
+      <path
+         style="fill:url(#linearGradient53);stroke:url(#linearGradient54);stroke-width:0.142;stroke-dasharray:none;paint-order:markers fill stroke"
+         d="m 246.88634,121.60405 17.7847,-4.72247 12.78948,0.71052 9.31936,7.06216 12.47728,3.32298 4.13758,9.86486 -3.27247,11.37212 -13.06965,3.19367 -14.92105,-2.48684 -11.71998,-7.89153 -14.63784,-0.17177 -6.17923,-10.7047 z"
+         id="path46"
+         sodipodi:nodetypes="ccccccccccccc" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,-0.02220395,2.3980263)"
+         id="text47"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect47);shape-padding:0.0839204;display:inline;fill:#9137ff;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
+           x="931.34961"
+           y="525.1432"
+           id="tspan13">The Great Nebula </tspan></text>
+    </g>
+    <g
+       id="olias_union"
+       inkscape:label="olias_union">
+      <path
+         style="fill:url(#swatch51);stroke:url(#swatch52);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 364.22761,182.31259 3.91612,-0.7475 4.7429,0.7257 5.12155,-1.42939 2.15722,2.25329 2.4221,3.94573 -8.26077,2.47755 -7.66743,-1.63833 -2.75906,-3.04124 z"
+         id="path2"
+         sodipodi:nodetypes="cccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.597476px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);stroke:none;stroke-width:0.0282272;paint-order:markers fill stroke"
+         x="398.89465"
+         y="103.2095"
+         id="text16"
+         transform="rotate(12.606827)"><tspan
+           sodipodi:role="line"
+           id="tspan16"
+           style="stroke-width:0.0282273"
+           x="398.89465"
+           y="103.2095">Olia's Union</tspan></text>
+    </g>
+    <g
+       id="navigators_nebula"
+       inkscape:label="navigators_nebula">
+      <path
+         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 336.01125,153.15546 3.1805,-0.93544 4.95785,0.18709 1.77733,1.87089 -2.05795,3.27405 -4.58367,0.84189 -3.08697,2.24507 -4.77076,-2.71279 0.28062,-2.80633 z"
+         id="path16" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.574277px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0271312;paint-order:markers fill stroke"
+         x="366.45804"
+         y="-23.816216"
+         id="text17"
+         transform="rotate(29.165113)"><tspan
+           sodipodi:role="line"
+           id="tspan17"
+           style="stroke-width:0.0271312"
+           x="366.45804"
+           y="-23.816216">Navigator's Nebula</tspan></text>
+    </g>
+    <g
+       id="noian"
+       inkscape:label="noian"
+       transform="translate(10.14956,-19.270133)">
+      <path
+         style="fill:url(#swatch51);stroke:url(#swatch52);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 401.95303,210.02714 3.41629,-1.98907 8.67103,0.73035 4.39486,3.84599 -4.6233,4.76793 -9.21775,-0.88081 -5.15588,-1.98284 z"
+         id="path108"
+         sodipodi:nodetypes="cccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.737144px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);stroke:none;stroke-width:0.0348258;paint-order:markers fill stroke"
+         x="423.20956"
+         y="178.12555"
+         id="text108"
+         transform="rotate(5.2828979)"><tspan
+           sodipodi:role="line"
+           id="tspan108"
+           style="stroke-width:0.0348258"
+           x="423.20956"
+           y="178.12555">Noian (TD-G)</tspan></text>
+    </g>
+    <g
+       id="arvens_realm"
+       inkscape:label="arvens_realm">
+      <path
+         style="fill:url(#swatch51);stroke:url(#swatch52);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 429.50873,159.25207 4.50377,3.12588 6.47466,0.78647 5.47221,-0.6815 1.63799,-4.54454 -4.96792,-5.90853 -12.03854,-3.50572 -8.7974,-0.0662 -3.1526,3.64098 3.59373,4.81628 z"
+         id="path109"
+         sodipodi:nodetypes="ccccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.833651px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);stroke:none;stroke-width:0.0393851;paint-order:markers fill stroke"
+         x="451.45312"
+         y="105.81776"
+         id="text109"
+         transform="rotate(7.290239)"><tspan
+           sodipodi:role="line"
+           id="tspan109"
+           style="stroke-width:0.0393852"
+           x="451.45312"
+           y="105.81776">Arven's Realm</tspan></text>
+    </g>
+    <g
+       id="half_dead_void"
+       inkscape:label="half_dead_void">
+      <path
+         style="fill:url(#swatch96);stroke:url(#swatch98);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 403.57774,161.43537 5.95299,1.3088 8.57188,-0.08 6.5362,5.62709 -16.05838,0.46678 -8.12037,-3.75772 z"
+         id="path92"
+         sodipodi:nodetypes="ccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-size:1.05833px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient90);stroke:none;stroke-width:0.0499999;stroke-opacity:1;paint-order:markers fill stroke"
+         x="402.39926"
+         y="186.07062"
+         id="text99"
+         transform="rotate(-2.5010464)"><tspan
+           sodipodi:role="line"
+           id="tspan99"
+           style="fill:url(#linearGradient90);stroke-width:0.05"
+           x="402.39926"
+           y="186.07062">The Half Dead Void</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="subSections"
+     inkscape:label="subSections"
+     inkscape:highlight-color="#ff8809">
+    <g
+       id="val_conjunct"
+       inkscape:label="val_conjunct">
+      <path
+         style="fill:url(#linearGradient51);stroke:url(#linearGradient52);stroke-width:0.05;stroke-dasharray:none;paint-order:markers fill stroke"
+         d="m 288.79612,150.85099 7.00246,-1.50725 3.26572,-3.42272 1.60146,-4.80437 -5.84062,-2.29228 -5.18117,-0.12561 -5.28593,1.19572 -6.04989,1.8502 -3.45412,6.87683 5.76226,1.47547 3.88867,0.69949 z"
+         id="path48"
+         sodipodi:nodetypes="cccccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.629337px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#8af2ff;fill-opacity:1;stroke:none;stroke-width:0.0297325;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="303.30685"
+         y="76.456619"
+         id="text51"
+         transform="rotate(14.191577)"><tspan
+           sodipodi:role="line"
+           id="tspan51"
+           style="stroke-width:0.0297326"
+           x="303.30685"
+           y="76.456619">The Val Conjunct</tspan></text>
+    </g>
+    <g
+       id="nexus"
+       inkscape:label="nexus">
+      <path
+         style="fill:url(#swatch53);fill-opacity:1;stroke:#ab57ff;stroke-width:0.0499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="m 267.11584,131.00884 4.81754,-0.79513 3.60145,1.49671 0.42095,2.75956 2.3386,1.44994 -0.74835,2.57246 -3.50789,1.44994 -3.69502,-2.43215 h -2.61924 l -1.40316,-2.19829 -2.19829,-1.73057 -0.14032,-1.96443 z"
+         id="path112" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.612011px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);fill-opacity:1;stroke:none;stroke-width:0.0289139;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="267.76633"
+         y="137.35834"
+         id="text112"><tspan
+           sodipodi:role="line"
+           id="tspan112"
+           style="fill:url(#swatch54);stroke:none;stroke-width:0.028914"
+           x="267.76633"
+           y="137.35834">The Nexus</tspan></text>
+    </g>
+    <g
+       id="olias_endless_clouds"
+       inkscape:label="olias_endless_clouds"
+       transform="translate(7.2042214,3.5399773)">
+      <path
+         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 364.87288,183.65703 3.25408,-1.22404 2.21172,1.406 -1.1122,1.20689 -2.02811,0.65238 -2.42995,-0.6117 z"
+         id="path45"
+         sodipodi:nodetypes="ccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.432716px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0204433;paint-order:markers fill stroke"
+         x="398.3074"
+         y="92.772919"
+         id="text45"
+         transform="rotate(13.712511)"><tspan
+           sodipodi:role="line"
+           id="tspan45"
+           style="stroke-width:0.0204434"
+           x="398.3074"
+           y="92.772919">Olia's Endless</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.0204434"
+           x="398.3074"
+           y="93.248909"
+           id="tspan7">Clouds</tspan></text>
+    </g>
+    <g
+       id="arvens_nebula"
+       inkscape:label="arvens_nebula"
+       transform="translate(-8.4189898,13.189751)">
+      <path
+         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 444.10401,140.76416 0.70157,1.0056 -0.11692,0.70158 -1.12255,0.14032 -0.16369,-0.74836 -0.63143,-0.35079 -0.35079,-0.79512 0.63143,-0.5145 z"
+         id="path13" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.189978px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.00897532;paint-order:markers fill stroke"
+         x="457.65604"
+         y="-80.625175"
+         id="text87"
+         transform="rotate(27.575934)"><tspan
+           sodipodi:role="line"
+           id="tspan87"
+           style="stroke-width:0.0089754"
+           x="457.65604"
+           y="-80.625175">Arven's Nebula</tspan></text>
+    </g>
+    <g
+       id="palidans_cold_storm"
+       inkscape:label="palidans_cold_storm"
+       transform="translate(-8.4189898,13.189751)">
+      <path
+         style="fill:url(#swatch53);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
+         d="m 429.38017,141.01808 0.57295,1.04068 1.35642,0.8419 0.36248,0.56127 1.20438,0.0234 0.80682,-0.64312 -0.59635,-1.05237 0.0585,-0.56127 -0.90035,-0.98222 -1.25116,0.0117 -0.87281,-0.10582 -0.403,0.27593 z"
+         id="path87"
+         sodipodi:nodetypes="ccccccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.254402px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.012019;paint-order:markers fill stroke"
+         x="437.01123"
+         y="126.13107"
+         id="text89"
+         transform="rotate(2.2361452)"><tspan
+           sodipodi:role="line"
+           id="tspan89"
+           style="stroke-width:0.0120191"
+           x="437.01123"
+           y="126.13107">Palidan's</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.0120191"
+           x="437.01123"
+           y="126.41091"
+           id="tspan90">Cold Storm</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="subSubSections"
+     inkscape:label="subSubSections"
+     inkscape:highlight-color="#f3d321">
+    <g
+       id="atalval"
+       inkscape:label="atalval">
+      <path
+         style="fill:url(#swatch51);fill-opacity:1;stroke:url(#swatch52);stroke-width:0.0499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="m 289.25573,149.78724 2.77298,-0.12477 3.48886,-0.83435 1.78525,-1.83603 -0.67183,-1.43819 -1.81197,-0.89531 -2.52059,-0.22916 -1.40304,2.47313 -2.4247,1.28417 z"
+         id="path54"
+         sodipodi:nodetypes="cccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.440195px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient71);fill-opacity:1;stroke:none;stroke-width:0.0207966;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="261.93475"
+         y="177.45309"
+         id="text57"
+         transform="matrix(1.0538771,-0.06810619,0.07603636,0.94396346,0,0)"><tspan
+           sodipodi:role="line"
+           id="tspan57"
+           style="fill:url(#linearGradient71);stroke-width:0.0207967"
+           x="261.93475"
+           y="177.45309">Atal'val</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="paths"
+     inkscape:label="paths"
+     inkscape:highlight-color="#21f336"
+     style="display:none">
+    <g
+       id="lumonea_gateway"
+       inkscape:label="lumonea_gateway">
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient16);stroke-width:0.0362479;stroke-dasharray:0.434975, 0.434975;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         d="M 361.95,177.38658 335.73971,157.0054"
+         id="path14" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.649629px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch16);fill-opacity:1;stroke:none;stroke-width:0.0080908;stroke-dasharray:0.0970897, 0.0970897;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         x="373.79272"
+         y="-90.706917"
+         id="text18"
+         transform="rotate(39.111257)"><tspan
+           sodipodi:role="line"
+           id="tspan18"
+           style="font-size:0.649629px;fill:url(#swatch16);stroke:none;stroke-width:0.0080908"
+           x="373.79272"
+           y="-90.706917">Lumonea Gateway</tspan></text>
+    </g>
+    <g
+       id="pol_atal"
+       inkscape:label="pol_atal">
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#swatch16);stroke-width:0.0362479;stroke-dasharray:0.434975, 0.434975;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 296.18474,146.94061 38.80337,9.83384"
+         id="path19" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.649629px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch16);fill-opacity:1;stroke:none;stroke-width:0.0080908;stroke-dasharray:0.0970897, 0.0970897;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         x="343.22076"
+         y="71.861038"
+         id="text19"
+         transform="rotate(13.810854)"><tspan
+           sodipodi:role="line"
+           id="tspan19"
+           style="font-size:0.649629px;fill:url(#swatch16);stroke:none;stroke-width:0.0080908"
+           x="343.22076"
+           y="71.861038">Pol Atal</tspan></text>
+    </g>
+    <g
+       id="olia-noian_route"
+       inkscape:label="olia-noian_route">
+      <path
+         style="fill:none;fill-opacity:1;stroke:url(#linearGradient92);stroke-width:0.0362479;stroke-dasharray:0.434975, 0.434975;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 377.36197,184.43112 20.32744,6.46989 18.93012,2.93935"
+         id="path90" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.603308px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch92);fill-opacity:1;stroke:none;stroke-width:0.00751393;stroke-dasharray:0.0901672, 0.0901672;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         x="430.82568"
+         y="57.990505"
+         id="text95"
+         transform="rotate(18.057138)"><tspan
+           sodipodi:role="line"
+           id="tspan95"
+           style="fill:url(#swatch92);stroke-width:0.00751393"
+           x="430.82568"
+           y="57.990505">Olia-Noian Route</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="objects"
+     inkscape:label="objects"
+     inkscape:highlight-color="#21f3f0">
+    <g
+       id="capricorn_emitter"
+       inkscape:label="capricorn_emitter">
+      <circle
+         style="fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.0398293;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path44"
+         cx="270.66687"
+         cy="134.28984"
+         r="0.51069069" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.06650991,0,0,0.06650991,203.33879,101.29411)"
+         id="text44"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect44);shape-padding:6.13765;display:inline;fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
+           x="979.79883"
+           y="470.29438"
+           id="tspan15"><tspan
+             style="baseline-shift:baseline"
+             id="tspan14">The Capricorn </tspan></tspan><tspan
+           x="979.79883"
+           y="483.49439"
+           id="tspan23"><tspan
+             style="baseline-shift:baseline"
+             id="tspan20">Emmiter (E</tspan><tspan
+             style="font-size:65%;baseline-shift:sub"
+             id="tspan21">0</tspan><tspan
+             style="baseline-shift:baseline"
+             id="tspan22">)</tspan></tspan></text>
+    </g>
+    <g
+       id="ethu"
+       inkscape:label="ethu"
+       transform="translate(0.01653646,0.00826823)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient89);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.79169"
+         y="146.75047"
+         id="text72"><tspan
+           sodipodi:role="line"
+           id="tspan72"
+           style="fill:url(#linearGradient89);stroke-width:0.0110269"
+           x="295.79169"
+           y="146.75047">Ethu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient72);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="othu"
+       inkscape:label="othu"
+       transform="translate(-3.1202793,-1.3581261)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient88);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.76831"
+         y="146.72124"
+         id="text83"><tspan
+           sodipodi:role="line"
+           id="tspan83"
+           style="fill:url(#linearGradient88);stroke-width:0.0110269"
+           x="295.76831"
+           y="146.72124">Othu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient85);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle83"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="athu"
+       inkscape:label="athu"
+       transform="translate(-4.5589512,1.8251421)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient96);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.76831"
+         y="146.72124"
+         id="text88"><tspan
+           sodipodi:role="line"
+           id="tspan88"
+           style="fill:url(#linearGradient96);stroke-width:0.0110269"
+           x="295.76831"
+           y="146.72124">Athu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient91);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle88"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="tophu"
+       inkscape:label="tophu">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient58);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="293.26804"
+         y="147.13683"
+         id="text91-3-1-7"><tspan
+           sodipodi:role="line"
+           id="tspan91-6-7-7"
+           style="fill:url(#linearGradient58);stroke-width:0.0110269"
+           x="293.26804"
+           y="147.13683">Tophu</tspan></text>
+      <circle
+         style="fill:url(#linearGradient40);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle91-1-2-6"
+         cx="293.54532"
+         cy="147.31917"
+         r="0.065798551" />
+      <circle
+         style="fill:none;stroke:url(#linearGradient41);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="circle98-2-7-4"
+         cx="293.54535"
+         cy="147.31918"
+         r="0.097716853" />
+    </g>
+    <g
+       id="ajankajo"
+       inkscape:label="ajankajo">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient63);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="272.93027"
+         y="136.40346"
+         id="text101"><tspan
+           sodipodi:role="line"
+           id="tspan101"
+           style="fill:url(#linearGradient63);stroke-width:0.0110269"
+           x="272.93027"
+           y="136.40346">Ajankajo</tspan></text>
+      <circle
+         style="fill:url(#linearGradient103);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle101"
+         cx="273.33755"
+         cy="136.55687"
+         r="0.065798551" />
+    </g>
+    <g
+       id="lumonea"
+       inkscape:label="lumonea"
+       transform="translate(66.404195,30.955202)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient22);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.57974"
+         y="146.75485"
+         id="text72-1"><tspan
+           sodipodi:role="line"
+           id="tspan72-2"
+           style="fill:url(#linearGradient22);stroke-width:0.0110269"
+           x="295.57974"
+           y="146.75485">Lumonea</tspan></text>
+      <circle
+         style="fill:url(#linearGradient18);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="windworld"
+       inkscape:label="windworld"
+       transform="translate(69.642125,36.267342)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient107);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.48621"
+         y="146.74316"
+         id="text72-1-1"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-4"
+           style="fill:url(#linearGradient107);stroke-width:0.0110269"
+           x="295.48621"
+           y="146.74316">Windworld</tspan></text>
+      <circle
+         style="fill:url(#linearGradient76);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-9"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="palidan-ga1"
+       inkscape:label="palidan-ga1"
+       transform="translate(56.701242,-28.575574)">
+      <circle
+         style="fill:url(#swatch54);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
+         id="path47-5-6"
+         cx="366.43552"
+         cy="183.36865"
+         r="0.049609374" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.260122px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0122893;paint-order:markers fill stroke"
+         x="365.82755"
+         y="183.23445"
+         id="text48-9-1"><tspan
+           sodipodi:role="line"
+           id="tspan47-2-0"
+           style="stroke-width:0.0122893"
+           x="365.82755"
+           y="183.23445">Palidan-GA1</tspan></text>
+    </g>
+    <g
+       id="illan"
+       inkscape:label="illan"
+       transform="translate(70.56477,36.502797)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient108);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.79263"
+         y="146.75243"
+         id="text72-1-1-6"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-4-6"
+           style="fill:url(#linearGradient108);stroke-width:0.0110269"
+           x="295.79263"
+           y="146.75243">Illan</tspan></text>
+      <circle
+         style="fill:url(#linearGradient82);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-9-4"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="lupovaleai"
+       inkscape:label="lupovaleai">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient67);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="335.11331"
+         y="156.7827"
+         id="text72-1-2"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-6"
+           style="fill:url(#linearGradient67);stroke-width:0.0110269"
+           x="335.11331"
+           y="156.7827">Lupovalea'i</tspan></text>
+      <circle
+         style="fill:url(#linearGradient24);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-1"
+         cx="335.60684"
+         cy="156.89629"
+         r="0.065798551" />
+    </g>
+    <g
+       id="oliarion"
+       inkscape:label="oliarion"
+       transform="translate(81.116653,37.487399)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient44);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.60294"
+         y="146.68404"
+         id="text91-3"><tspan
+           sodipodi:role="line"
+           id="tspan91-6"
+           style="fill:url(#linearGradient44);stroke-width:0.0110269"
+           x="295.60294"
+           y="146.68404">Oliarion</tspan></text>
+      <circle
+         style="fill:url(#linearGradient38);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle91-1"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+      <circle
+         style="fill:none;stroke:url(#linearGradient39);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="circle98-2"
+         cx="295.98547"
+         cy="146.86639"
+         r="0.097716853" />
+    </g>
+    <g
+       id="olia-a1"
+       inkscape:label="olia-a1"
+       transform="translate(8.0138637,4.2501279)">
+      <circle
+         style="fill:url(#swatch54);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
+         id="path47"
+         cx="366.70422"
+         cy="183.67871"
+         r="0.049609374" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.311435px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0147135;paint-order:markers fill stroke"
+         x="366.20847"
+         y="183.51007"
+         id="text48"><tspan
+           sodipodi:role="line"
+           id="tspan47"
+           style="stroke-width:0.0147135"
+           x="366.20847"
+           y="183.51007">Olia-A1</tspan></text>
+    </g>
+    <g
+       id="t6"
+       inkscape:label="t6"
+       transform="translate(79.504145,40.264837)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient73);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.87207"
+         y="146.74901"
+         id="text72-1-5"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-5"
+           style="fill:url(#linearGradient73);stroke-width:0.0110269"
+           x="295.87207"
+           y="146.74901">T6</tspan></text>
+      <circle
+         style="fill:url(#linearGradient49);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-4"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="t12"
+       inkscape:label="t12"
+       transform="translate(78.313302,41.272858)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient74);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.81833"
+         y="146.76347"
+         id="text72-1-5-7"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-5-4"
+           style="fill:url(#linearGradient74);stroke-width:0.0110269"
+           x="295.81833"
+           y="146.76347">T12</tspan></text>
+      <circle
+         style="fill:url(#linearGradient59);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-4-5"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="s5"
+       inkscape:label="s5"
+       transform="translate(84.068009,43.910427)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient68);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.87207"
+         y="146.74901"
+         id="text72-1-5-3"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-5-0"
+           style="fill:url(#linearGradient68);stroke-width:0.0110269"
+           x="295.87207"
+           y="146.74901">S5</tspan></text>
+      <circle
+         style="fill:url(#linearGradient66);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-4-7"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="arven"
+       inkscape:label="arven"
+       transform="translate(135.04432,7.6988944)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient4);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.72571"
+         y="146.68404"
+         id="text91-3-1"><tspan
+           sodipodi:role="line"
+           id="tspan91-6-7"
+           style="fill:url(#linearGradient4);stroke-width:0.0110269"
+           x="295.72571"
+           y="146.68404">Arven</tspan></text>
+      <circle
+         style="fill:url(#linearGradient118);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle91-1-2"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+      <circle
+         style="fill:none;stroke:url(#linearGradient119);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="circle98-2-7"
+         cx="295.98547"
+         cy="146.86639"
+         r="0.097716853" />
+    </g>
+    <g
+       id="td-00"
+       inkscape:label="td-00"
+       transform="translate(120.89104,47.00413)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient132);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.71869"
+         y="146.69231"
+         id="text91-3-15"><tspan
+           sodipodi:role="line"
+           id="tspan91-6-9"
+           style="fill:url(#linearGradient132);stroke-width:0.0110269"
+           x="295.71869"
+           y="146.69231">TD-00</tspan></text>
+      <circle
+         style="fill:url(#linearGradient126);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle91-1-4"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+      <circle
+         style="fill:none;stroke:url(#linearGradient127);stroke-width:0.0245788;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="circle98-2-9"
+         cx="295.98547"
+         cy="146.86639"
+         r="0.097716853" />
+    </g>
+    <g
+       id="td-17"
+       inkscape:label="td-17"
+       transform="translate(101.70397,44.02493)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient7);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.71292"
+         y="146.74695"
+         id="text72-1-5-3-2"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-5-0-9"
+           style="fill:url(#linearGradient7);stroke-width:0.0110269"
+           x="295.71292"
+           y="146.74695">TD-17</tspan></text>
+      <circle
+         style="fill:url(#linearGradient2);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-4-7-1"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="ovian"
+       inkscape:label="ovian"
+       transform="translate(135.4555,8.4071276)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient5);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.69669"
+         y="146.75192"
+         id="text72-1-6"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1"
+           style="fill:url(#linearGradient5);stroke-width:0.0110269"
+           x="295.69669"
+           y="146.75192">Ovian</tspan></text>
+      <circle
+         style="fill:url(#linearGradient9);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="palidan"
+       inkscape:label="palidan"
+       transform="translate(130.72551,8.0157977)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient6);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.6499"
+         y="146.72269"
+         id="text72-1-6-0"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1-3"
+           style="fill:url(#linearGradient6);stroke-width:0.0110269"
+           x="295.6499"
+           y="146.72269">Palidan</tspan></text>
+      <circle
+         style="fill:url(#linearGradient23);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8-6"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="outreus"
+       inkscape:label="outreus"
+       transform="translate(133.98475,11.275674)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient8);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.62067"
+         y="146.73438"
+         id="text72-1-6-0-7"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1-3-4"
+           style="fill:url(#linearGradient8);stroke-width:0.0110269"
+           x="295.62067"
+           y="146.73438">Outreus</tspan></text>
+      <circle
+         style="fill:url(#linearGradient45);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8-6-52"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="palekam"
+       inkscape:label="palekam"
+       transform="translate(144.1547,11.605219)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient10);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.60898"
+         y="146.72853"
+         id="text72-1-6-0-7-7"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1-3-4-8"
+           style="fill:url(#linearGradient10);stroke-width:0.0110269"
+           x="295.60898"
+           y="146.72853">Palekam</tspan></text>
+      <circle
+         style="fill:url(#linearGradient62);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8-6-52-6"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="aploia"
+       inkscape:label="aploia"
+       transform="translate(143.62833,8.7127374)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient11);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.69083"
+         y="146.72269"
+         id="text72-1-6-0-7-7-5"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1-3-4-8-04"
+           style="fill:url(#linearGradient11);stroke-width:0.0110269"
+           x="295.69083"
+           y="146.72269">Aploia</tspan></text>
+      <circle
+         style="fill:url(#linearGradient81);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8-6-52-6-8"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="malmik"
+       inkscape:label="malmik"
+       transform="translate(140.45333,14.533571)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient12);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.63791"
+         y="146.74094"
+         id="text72-1-6-0-7-7-2"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1-3-4-8-0"
+           style="fill:url(#linearGradient12);stroke-width:0.0110269"
+           x="295.63791"
+           y="146.74094">Malmik</tspan></text>
+      <circle
+         style="fill:url(#linearGradient70);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8-6-52-6-6"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="titania"
+       inkscape:label="titania"
+       transform="translate(128.63185,4.3926408)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient13);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.6871"
+         y="146.73923"
+         id="text72-1-6-0-1"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1-3-5"
+           style="fill:url(#linearGradient13);stroke-width:0.0110269"
+           x="295.6871"
+           y="146.73923">Titania</tspan></text>
+      <circle
+         style="fill:url(#linearGradient33);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8-6-5"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="biatoid"
+       inkscape:label="biatoid"
+       transform="translate(139.58077,8.4126725)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient14);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         x="295.66776"
+         y="146.75192"
+         id="text72-1-6-2"><tspan
+           sodipodi:role="line"
+           id="tspan72-2-1-9"
+           style="fill:url(#linearGradient14);stroke-width:0.0110269"
+           x="295.66776"
+           y="146.75192">Biatoid</tspan></text>
+      <circle
+         style="fill:url(#linearGradient15);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="path71-7-8-3"
+         cx="295.98544"
+         cy="146.86638"
+         r="0.065798551" />
+    </g>
+    <g
+       id="arven-ga1"
+       inkscape:label="arven-ga1"
+       transform="translate(68.801116,-28.805633)">
+      <circle
+         style="fill:url(#swatch54);stroke:url(#swatch54);stroke-width:0.0499999;paint-order:markers fill stroke"
+         id="path47-5"
+         cx="366.43552"
+         cy="183.36865"
+         r="0.049609374" />
+      <text
+         xml:space="preserve"
+         style="font-size:0.260122px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch54);stroke:none;stroke-width:0.0122893;paint-order:markers fill stroke"
+         x="365.88602"
+         y="183.23445"
+         id="text48-9"><tspan
+           sodipodi:role="line"
+           id="tspan47-2"
+           style="stroke-width:0.0122893"
+           x="365.88602"
+           y="183.23445">Arven-GA1</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:1.05833px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch52);fill-opacity:0.32256;stroke:none;stroke-width:0.0499999;stroke-opacity:1;paint-order:markers fill stroke"
+       x="387.67111"
+       y="155.21342"
+       id="text98"><tspan
+         sodipodi:role="line"
+         id="tspan98"
+         style="stroke-width:0.05"
+         x="387.67111"
+         y="155.21342" /></text>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Onni &quot;Saunakatti&quot;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:language>English</dc:language>
+        <dc:date>2026</dc:date>
+        <dc:relation>https://www.saunakatti.github.io</dc:relation>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

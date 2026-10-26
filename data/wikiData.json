@@ -9,7 +9,8 @@
                 "Location": "GR00"
             },
             "description": "A large nebula in the centre of Capricorn's Galaxy thought to be caused by the Nexus. Travel to the nebula is extremely dangerous due to its high activity, making it a perfect place for hiding all kinds of interesting regions like the Val Conjunct.",
-            "entryPath": "worldbuilding/wiki/regions/great_nebula.md"   
+            "entryPath": "worldbuilding/wiki/regions/great_nebula.md",
+            "onMap": true
         },
         "nexus": {
             "title": "The Nexus",
@@ -20,7 +21,8 @@
                 "Location": "Capricorn's Great Nebula"
             },
             "description": "An area of extreme cosmic activity in the eye of The Great Nebula. Traversing here is thought to be impossible. Hides the Ajankajo System.",
-            "entryPath": "worldbuilding/wiki/regions/nexus.md"
+            "entryPath": "worldbuilding/wiki/regions/nexus.md",
+            "onMap": true
         },
         "val_conjunct": {
             "title": "The Val Conjunct",
@@ -32,7 +34,8 @@
                 "Control": "Capricorn's Great Union"
             },
             "description": "A region under the supervision of Capricorn's Great Union. The region holds many mythical places, the best example being Atal'val. Travel to the region is very difficult, caused by the Great Nebula.",
-            "entryPath": "worldbuilding/wiki/regions/val_conjunct.md"
+            "entryPath": "worldbuilding/wiki/regions/val_conjunct.md",
+            "onMap": true
         },
         "capricorns_galaxy": {
             "title": "Capricorn's Galaxy",
@@ -54,7 +57,20 @@
                 "Location": "GR01" 
             },
             "description": "A large nebula fairly close to the Great Nebula. Hides some systems, the most notable being Lupovalea'i.",
-            "entryPath": "worldbuilding/wiki/regions/navigators_nebula.md"
+            "entryPath": "worldbuilding/wiki/regions/navigators_nebula.md",
+            "onMap": true
+        },
+        "half_dead_void": {
+            "title": "The Half Dead Void",
+            "aliases": ["Arven's Void"],
+            "type": "Void",
+            "attributes": {
+                "Danger Level": "Medium",
+                "Location": "GR10"
+            },
+            "description": "A large void in Galactic Region 10, found next to Arven's Realm. Small quantity of active stars. Known for sudden local outbursts of energy, earning it its name as \"Half Dead\".",
+            "entryPath": "worldbuilding/wiki/regions/half_dead_void.md",
+            "onMap": true
         }
     },
 
@@ -69,7 +85,8 @@
                 "Control": "Unknown"
             },
             "description": "A mysterious system hidden in the Nexus. Travel to here can be deemed impossible due to extreme cosmic activity caused by the Emitter.",
-            "entryPath": "worldbuilding/wiki/systems/ajankajo.md"
+            "entryPath": "worldbuilding/wiki/systems/ajankajo.md",
+            "onMap": true
         },
         "tophu": {
             "title": "Tophu",
@@ -81,7 +98,8 @@
                 "Control": "Capricorn's Great Union"
             },
             "description": "Capital system of Atal'val. Administrative capital of Capricorn's Great Union. Houses the biggest ecumonopolis of the Val Conjunct.",
-            "entryPath": "worldbuilding/wiki/systems/tophu.md"
+            "entryPath": "worldbuilding/wiki/systems/tophu.md",
+            "onMap": true
         },
         "lupovaleai": {
             "title": "Lupovalea'i",
@@ -93,7 +111,8 @@
                 "Control": "Capricorn's Great Union / Independent"
             },
             "description": "A hidden system in Navigator's Nebula. The system is an important meeting point for people of Capricorn's Great Union, and the best known way of travelling to the union's main regions.",
-            "entryPath": "worldbuilding/wiki/systems/lupovaleai.md"
+            "entryPath": "worldbuilding/wiki/systems/lupovaleai.md",
+            "onMap": true
         }
     },
 
@@ -120,7 +139,8 @@
                 "Capital": "Oliarion"
             },
             "description": "Olia's Union is a large union in the Olia Region of the galaxy. Composed of smaller independent unions and peoples. Oliarion is the Union's Capital and houses its senate. The Union's systems are guarded by the OSC.",
-            "entryPath": "worldbuilding/wiki/factions/olias_union.md"
+            "entryPath": "worldbuilding/wiki/factions/olias_union.md",
+            "onMap": true
         },
         "arvens_realm": {
             "title": "Arven's Realm",
@@ -132,7 +152,8 @@
                 "Capital": "Arven"
             },
             "description": "A powerful and large union found close to the Half Dead Void. Arven's Realm is split into five sectors with their own capitals. The union's capital is Arven.",
-            "entryPath": "worldbuilding/wiki/factions/arvens_realm.md"
+            "entryPath": "worldbuilding/wiki/factions/arvens_realm.md",
+            "onMap": true
         }
     },
 
@@ -199,7 +220,7 @@
             "title": "Map Credit",
             "aliases": "",
             "type": "Unrelated",
-            "description": "This map is being edited by Onni. Uses Leaflet for displaying the map, which is an SVG file. For project authors see below.",
+            "description": "This map is being edited by Onni. Uses Leaflet for displaying the map, which is an SVG file. For project authors see below. Map uses \"No Man's Sky Universal Font\" published under SIL Open Font License 1.1.",
             "entryPath": "worldbuilding/wiki/other/authors.md"
         }
     }
