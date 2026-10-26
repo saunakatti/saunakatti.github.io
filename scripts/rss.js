@@ -54,5 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
     renderRssFeed('../rss/wiki-feed.xml', 'wikiRssContainer', 5);
 
     // Page updates
-    renderRssFeed('../rss/rss.xml', 'siteRssContainer', 5);
+    renderRssFeed('../rss/site-feed.xml', 'siteRssContainer', 5);
 })
