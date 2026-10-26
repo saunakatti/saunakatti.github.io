@@ -859,7 +859,7 @@ Worldbuilding wiki page
 
 .map-settings {
     height: fit-content;
-    padding: 2.5em;
+    padding: 1.5em;
     background: var(--color-mantle);
     overflow: visible;
     border: var(--color-surface0) 2px solid;
@@ -1530,22 +1530,13 @@ Accessibility
 }
 
 @media(max-width: 1400px) {
-
-    .worldbuilding-layout {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .wiki-column,
     .map-column {
-        flex: 1 1 100%;
-        width: 100%;
+        max-height: 30em;
     }
 
-    #map {
-        height: 30em !important;
+    .wiki-column {
+        max-height: 30em;
     }
-
 }
 
 @media(max-width: 1000px) {
@@ -1581,6 +1572,23 @@ Accessibility
 
     #entryBody {
         padding: 2em;
+    }
+    
+
+    /* Wb page */
+    .worldbuilding-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wiki-column,
+    .map-column {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    #map {
+        height: 30em !important;
     }
 
 }
