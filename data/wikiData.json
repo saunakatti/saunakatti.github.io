@@ -169,7 +169,8 @@
                 "Location": "No specific locations",
                 "Knowledge on Äen'e": "Extreme"
             },
-            "description": "A mysterious humanoid species from far after Capricorn's Galaxy existed."
+            "description": "A mysterious humanoid species from far after Capricorn's Galaxy existed.",
+            "entryPath": "worldbuilding/wiki/beings/tellusians.md"
         }
     },
 

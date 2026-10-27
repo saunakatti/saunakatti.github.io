@@ -210,7 +210,7 @@ function loadDirectory() {
             <a href="#" onclick="event.preventDefault(); displayWikiEntry('${key}')">
               <strong>${entry.title}</strong>
             </a>
-            <small>${entry.type}</small>
+            <small>(${entry.type})</small>
             <a href="${entryUrl}" class="directEntryLink">Read <span class="nf-fa-arrow_right"></span></a>
           </li>`;
         }
