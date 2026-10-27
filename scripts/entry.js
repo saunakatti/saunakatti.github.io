@@ -8,7 +8,92 @@ marked.use(markedAlert());
 // Data header & Entry rendering
 // -----------------------------
 
-// For loading content to entry.html, it's important that this happens in the right order (at least some of it I think)
+const dataCache = {};
+// Fetching data and saving it to cache
+function getData(file) {
+    if (!dataCache[file]) {
+        dataCache[file] = fetch(file)
+            .then(response => {
+                if (!response.ok) throw new Error("Failed fetching database: " + file);
+                return response.json();
+            })
+            .catch(err => {
+                console.error(err);
+                delete dataCache[file]; // allow retry on failure
+                throw err;
+            });
+    }
+    return dataCache[file];
+}
+
+// Pass data-file path from filepath
+function getDataFileForPath(filePath) {
+    if (filePath.includes('blog/')) return '../data/blogData.json';
+    if (filePath.includes('docs/')) return '../data/docsData.json';
+    return '../data/wikiData.json'; // default fallback
+}
+
+// Resolve relative links to entryPath found in datafiles
+function resolveRelativePath(currentPath, relativePath) {
+    if (!relativePath.startsWith('.')) return relativePath;
+
+    const stack = currentPath.split('/');
+    stack.pop(); // remove current filename from path stack
+
+    for (const part of relativePath.split('/')) {
+        if (part === '..') {
+            stack.pop();
+        } else if (part !== '.') {
+            stack.push(part);
+        }
+    }
+    return stack.join('/');
+}
+
+// Add the class wiki-missing to links with no entry in datafile of currently active group (blog, wb, docs)
+async function markMissingMdLinks(html, currentFilePath) {
+    const dataFile = getDataFileForPath(currentFilePath);
+    const data = await getData(dataFile);
+
+    // Collect all valid entry paths into a Set
+    const validPaths = new Set();
+    Object.values(data).forEach(category => {
+        Object.values(category || {}).forEach(entry => {
+            if (entry && entry.entryPath) {
+                validPaths.add(entry.entryPath);
+            }
+        });
+    });
+
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+
+    doc.querySelectorAll('a').forEach(a => {
+        const href = a.getAttribute('href');
+        if (!href) return;
+
+        // Extract target path if it's routed through your universal reader (entry.html?file=...)
+        let targetPath = href;
+        if (href.includes('file=')) {
+            try {
+                const urlParams = new URLSearchParams(href.split('?')[1]);
+                targetPath = urlParams.get('file') || href;
+            } catch (e) {
+                // fallback
+            }
+        }
+
+        targetPath = targetPath.split(/[?#]/)[0];
+
+        // If it's an internal entry link and not found in the valid paths, add your red CSS class
+        if (!href.startsWith('http') && !href.startsWith('#') && !validPaths.has(targetPath)) {
+            a.classList.add('wiki-missing');
+        }
+    });
+
+    return doc.body.innerHTML;
+}
+
+// For LOADING CONTENT to entry.html
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const filePath = urlParams.get('file') || '';
@@ -36,31 +121,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Populate directory sidebar based on section
+    // Populate directory sidebar and meta header based on group
     if (isBlog) {
         populateSidebarDirectory('blog');
         fetchBlogMeta(filePath, headerContainer);
     }
-    else if (isWiki) {
-        populateSidebarDirectory('worldbuilding');
-        fetchWikiMeta(filePath, headerContainer);
-    } 
-    else {
+    else if (isDocs) {
         populateSidebarDirectory('docs');
         fetchDocsMeta(filePath, headerContainer);
+    } 
+    else {
+        populateSidebarDirectory('worldbuilding');
+        fetchWikiMeta(filePath, headerContainer);
     }
 
-    // Fetch and render the content file
+    // Render MD as HTML in page's #entryBody (see the function)
     if (filePath) {
-        fetchMarkdownContent(filePath);
-    }
-
-    if (document.getElementById('blogPreviews')) {
-        loadBlogPreviews();
-    }
+        fetchMarkdownContent(filePath)
+    } 
 
 });
 
+// Toggle meta header for entry
 function toggleEntryHeader() {
     const header = document.getElementById('entryHeader');
     if (!header) return; // Prevents the null error if the element isn't rendered yet
@@ -68,10 +150,10 @@ function toggleEntryHeader() {
     header.classList.toggle('headerHidden');
 }
 
-// Render DOCS metadata
+// Render DOCS metadata header
+// bit scuffed since it just uses most of the blog meta features
 function fetchDocsMeta(filePath, container) {
-    fetch('../data/docsData.json')
-        .then(res => res.json())
+    getData('../data/docsData.json')
         .then(data => {
             // Flatten nested year/category objects to search for the post
             const posts = Object.values(data).flatMap(category => Object.values(category));
@@ -98,11 +180,9 @@ function fetchDocsMeta(filePath, container) {
         });
 }
 
-// Render BLOG metadata
-// bit scuffed since it just uses most of the blog meta features
+// Render BLOG metadata header
 function fetchBlogMeta(filePath, container) {
-    fetch('../data/blogData.json')
-        .then(res => res.json())
+    getData('../data/blogData.json')
         .then(data => {
             // Flatten nested year/category objects to search for the post
             const posts = Object.values(data).flatMap(category => Object.values(category));
@@ -130,10 +210,9 @@ function fetchBlogMeta(filePath, container) {
         });
 }
 
-// Render WB ENTRY metadata
+// Render WB ENTRY metadata header
 function fetchWikiMeta(filePath, container) {
-    fetch('../data/wikiData.json')
-        .then(res => res.json())
+    getData('../data/wikiData.json')
         .then(data => {
             let entry = null;
 
@@ -208,10 +287,14 @@ async function fetchMarkdownContent(filePath) {
 
         const markdownText = await response.text();
 
-        // 1. Convert Markdown to HTML (using own parser function with marked and some link handling)
-        entryBody.innerHTML = parseMarkdown(markdownText, filePath);
+        // Convert Markdown to HTML (using own parser function with marked and some link handling)
+        let renderedHtml = (parseMarkdown(markdownText, filePath));
+        // Add class wiki-missing to links in question
+        renderedHtml = await markMissingMdLinks(renderedHtml, filePath);
+        // Render the html in #entryBody
+        entryBody.innerHTML = renderedHtml
 
-        // 2. Trigger Prism to highlight code blocks in entryBody
+        // Trigger Prism to highlight code blocks in entryBody
         if (typeof Prism !== 'undefined') {
             Prism.highlightAllUnder(entryBody);
         }
@@ -231,6 +314,52 @@ async function fetchMarkdownContent(filePath) {
     }
 }
 
+// Markdown parser (marked.js)
+function parseMarkdown(markdownText, filePath) {
+    // Convert Markdown to HTML
+    const htmlContent = marked.parse(markdownText);
+
+    // load new HTML string into DOM parser
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlContent, 'text/html');
+
+    // re-route md links
+    doc.querySelectorAll('a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href) return;
+
+        // Internal md links
+        if (href.endsWith('.md') && !href.startsWith('http') && !href.startsWith('/')) {
+            const dummyBase = 'https://wiki.local/';
+            
+            // Resolve path relative to current markdown file
+            const resolvedUrl = new URL(href, dummyBase + filePath);
+            const targetPath = resolvedUrl.pathname.substring(1); // Strip leading slash
+
+            // Route through universal reader
+            link.href = `entry.html?file=${encodeURIComponent(targetPath)}`;
+        }
+        else if (href.startsWith('#')) {
+            link.href = href;
+        }
+        // leave absolute and .html paths alone (handled by browser)
+        else if (href.startsWith('/') || href.endsWith('.html')) {
+        }
+        // External links
+        else if (href.startsWith('http://') || href.startsWith('https://')) {
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';         // it's good measure to add _blank as target and noopener noreferrer for external links
+        }
+    });
+
+
+    // IMPORTANT return processed string 
+    return doc.body.innerHTML;
+}
+
+// Heading Handling
+// --------------------
+
 // github style heading handling
 function slugify(text) {
   return text.trim()
@@ -241,6 +370,7 @@ function slugify(text) {
     .replace(/\s+/g, '-');
 }
 
+// Give nice heading IDs to headings so they can easily be linked to from files
 function addHeadingIds() {
   const usedCount = new Map();
   document.querySelectorAll('#entryBody h1, #entryBody h2, #entryBody h3, #entryBody h4, #entryBody h5, #entryBody h6')
@@ -282,6 +412,7 @@ function generateToc() {
         const tag = heading.tagName.toLowerCase();
         const link = `<a href="#${heading.id}">${heading.textContent}</a>`
         
+        // The h1 part usually not added since it's entry title but I wanted it
         if (tag === 'h1') {
             const h1Item = document.createElement('li');
             h1Item.className = 'toc-h1';

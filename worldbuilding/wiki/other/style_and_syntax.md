@@ -35,16 +35,18 @@ Code should now work. Math not at the moment.
 
 ## File Names
 
-I'm getting rid of spaces and capitalised letters in filenames. So something like
-_Style and Syntax_ will be _style_and_syntax_. If you've ever used a command line
-you know exactly why.
+I'm getting rid of spaces and capitalised letters in filenames.
+So something like _Style and Syntax_ will be _style_and_syntax_.
+If you've ever used a command line you know exactly why. No __THE__
+in these filenames or IDs.
 
-It's also to make linking the files to the websites _wikiData.json_ easier.
+It's also to make linking the files to the websites
+_wikiData.json_ easier.
 
 ## Images
 
-All images should be compressed and private metadata removed before they get
-uploaded. Non-compressed files are stored locally.
+All images should be compressed and private metadata removed before
+they get uploaded. Non-compressed files are stored locally.
 
 ## Artificial Intelligence
 
@@ -52,7 +54,42 @@ The use of AI for the project (includes text, images, ideas, etc) is forbidden.
 
 ## Entries
 
-The best way of starting a wiki entry is to add the same description that is found for it in _wikiData.json_. Since the json descriptions don't support links, this makes it easier for the reader to access the entries mentioned in the json description.
+The best way of starting a wiki entry is to add the same description
+that is found for it in _wikiData.json_. Since the Wikipedia style red links
+get the info of a nonexistent entry through _wikiData.json_, an item with an
+entry in _wikiData.json_ should also have at least the description from there
+copied to the markdown article.
 
 > [!IMPORTANT]
-> Every entry must have the entry title as H1 (# Title) on the first line. This is the only H1 of the entry.
+> Every entry must have the entry title as H1 (# Title) on the first line.
+> This is the only H1 of the entry.
+
+## wikiData.json
+
+This is the correct format for entries in wikidata.json (under its respective category):
+
+```json
+// The ID found on the map. If not on the map, use one according to syntax.
+"nexus": {
+    // A clean title you want to be visible.
+    "title": "The Nexus",
+    // Aliases, if none leave just ""
+    "aliases": ["The Emitter Region", "something", "something"],
+    // Type e.g. this is under regions but it's a nebula so "Nebula", if it's just
+    // the group name use it as the type e.g. "Region".
+    "type": "Nebula",
+    // Attributes, you can technically list as many as you want but I'd recommend max 5 to keep it clean.
+    "attributes": {
+        "Danger Level": "Extreme",
+        "Location": "Capricorn's Great Nebula"
+    },
+    // A short, preferably quite a lot longer than this one, summary of the entry.
+    // JS parses Wiki-style links which use [[id|label]] format. The description must be on one line. (Ask json, not me.)
+    "description": "An area of extreme cosmic activity in the eye of [[great_nebula|The Great Nebula]]. Traversing here is thought to be impossible. Hides the [[ajankajo|Ajankajo]] System.",
+    // The relative path to the entries full markdown article.
+    "entryPath": "worldbuilding/wiki/regions/nexus.md",
+    // Set to "true" if entry can be found visually on the map. If not set to "false".
+    "onMap": true
+},
+
+```

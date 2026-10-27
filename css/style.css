@@ -843,6 +843,10 @@ Worldbuilding wiki page
     background-color: var(--color-mantle);
 }
 
+.wiki-missing {
+    color: var(--color-red);
+}
+
 /* || Directory tab */
 
 .directoryItem {

@@ -20,7 +20,7 @@
                 "Danger Level": "Extreme",
                 "Location": "Capricorn's Great Nebula"
             },
-            "description": "An area of extreme cosmic activity in the eye of The Great Nebula. Traversing here is thought to be impossible. Hides the Ajankajo System.",
+            "description": "An area of extreme cosmic activity in the eye of [[great_nebula|The Great Nebula]]. Traversing here is thought to be impossible. Hides the [[ajankajo|Ajankajo]] System.",
             "entryPath": "worldbuilding/wiki/regions/nexus.md",
             "onMap": true
         },
@@ -33,7 +33,7 @@
                 "Location": "Capricorn's Great Nebula",
                 "Control": "Capricorn's Great Union"
             },
-            "description": "A region under the supervision of Capricorn's Great Union. The region holds many mythical places, the best example being Atal'val. Travel to the region is very difficult, caused by the Great Nebula.",
+            "description": "A region under the supervision of [[capricorns_great_union|Capricorn's Great Union]]. The region holds many mythical places, the best example being [[atalval|Atal'val]]. Travel to the region is very difficult, caused by the [[great_nebula|Great Nebula]].",
             "entryPath": "worldbuilding/wiki/regions/val_conjunct.md",
             "onMap": true
         },
@@ -46,7 +46,8 @@
                 "Emitter Activity": "High"
             },
             "description": "A galaxy with highly developed civilisations and an active Emitter. Many proficient in Äen'e. In the Lynx Cluster.",
-            "entryPath": "worldbuilding/wiki/regions/capricorns_galaxy.md"
+            "entryPath": "worldbuilding/wiki/regions/capricorns_galaxy.md",
+            "onMap": false
         },
         "navigators_nebula": {
             "title": "Navigator's Nebula",
@@ -127,7 +128,8 @@
                 "Capital": "Tophu"
             },
             "description": "The most powerful union in the galaxy. The union is made up of lots of smaller independent factions. Tophu acts as the union's administrative capital system.",
-            "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md"
+            "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md",
+            "onMap": false
         },
         "olias_union": {
             "title": "Olia's Union",

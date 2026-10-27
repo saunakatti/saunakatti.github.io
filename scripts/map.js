@@ -6,28 +6,78 @@
 // Wiki functions
 // ------------------
 
-// Display wiki entry in wikiPanel
-function displayWikiEntry(id) {
-    switchTab('mapTab');
+// fetch wiki data
+let wikiDataPromise = null;
+function getWikiData() {
+    if (!wikiDataPromise) {
+        wikiDataPromise = fetch('./data/wikiData.json').then((response) => {
+            if (!response.ok) throw new Error("Failed fetching database");
+            return response.json();
+        });
+    }
+    return wikiDataPromise;
+}
 
-    const wikiContainer = document.getElementById('wikiText');
+const wikiContainer = document.getElementById('wikiText');
+
+wikiContainer.addEventListener('click', (e) => {
+    const focus = e.target.closest('.focus-link');
+    if (focus) {
+        e.preventDefault();
+        focusOnElement(galaxyOverlay, '#' + focus.dataset.target);
+        return;
+    }
+
+    const wiki = e.target.closest('.wiki-link');
+    if (wiki) {
+        e.preventDefault();
+        displayWikiEntry(wiki.dataset.target);
+    }
+
+    const back = e.target.closest('.wiki-back');
+    if (back && entryHistory.length) {
+        e.preventDefault();
+        displayWikiEntry(entryHistory.pop(), false);
+    }
+});
+
+function formatWikiLinks(text, validIds) {
+    return text.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, id, label) => {
+        const cls = validIds.has(id) ? 'wiki-link' : 'wiki-link wiki-missing';
+        return `<a href="#" class="${cls}" data-target="${id}">${label || id}</a>`;
+    });
+}
+
+let currentEntryId = null;
+let entryHistory = [];
+
+// Display wiki entry in wikiPanel
+function displayWikiEntry(id, pushHistory = true) {
+
+    if (pushHistory && currentEntryId) entryHistory.push(currentEntryId);
+    currentEntryId = id;
+
+    switchTab('mapTab');
 
     // Reset animation
     wikiContainer.style.animation = 'none';
     wikiContainer.offsetHeight; // Trigger browser reflow
     wikiContainer.style.animation = 'fadeIn 0.25s ease-in-out';
 
-    fetch('../data/wikiData.json')
-        .then (response => {
-            if (!response.ok) throw new Error("Failed fetching database");
-            return response.json();
-        })
+    getWikiData()
         .then(data => {
             let entry = null;                               // Search all category blocks
             for (const category in data) {
                 if (data[category] && data[category][id]) {
                     entry = data[category][id];
                     break;
+                }
+            }
+
+            const validIds = new Set();
+            for (const category in data) {
+                if (data[category]) {
+                for (const key in data[category]) validIds.add(key);
                 }
             }
 
@@ -88,27 +138,23 @@ function displayWikiEntry(id) {
                         <span class="metaValue">${formattedAliases}</span>
                     </div>
                 </div>
-                
+
                 ${attributesHtml}
                 <hr>
                 <div class="description-content">
-                    <p>${entry.description || ''}</p>
+                    <p>${formatWikiLinks(entry.description || '', validIds)}</p>
                 </div>
                 <hr>
                 ${focusLink}
-                <a href="entry.html?file=${encodeURIComponent(entry.entryPath)}" id="wikiLink" data-path="${entry.entryPath}">
+                <a href="entry.html?file=${encodeURIComponent(entry.entryPath)}" id="entry-link" data-path="${entry.entryPath}">
                     Read &nbsp; <span class="nf-fa-arrow_right"></span>
                 </a>
+                <br>
+                <a href="#" class="wiki-back">
+                    Back &nbsp; <span class="nf-fa-arrow_left">
+                </a>
                 `;
-              
-                if (focusLink) {
-                    wikiContainer.querySelector('.focus-link').addEventListener('click', (e) => {
-                        e.preventDefault();
-                        focusOnElement(galaxyOverlay, '#' + e.currentTarget.dataset.target);
-                    });
-                }
-                
-            
+
             } else {
                 wikiContainer.innerHTML = `
                 <h2><span class="nf-oct-question"></span>&nbsp; Unknown Location</h2>
@@ -117,7 +163,7 @@ function displayWikiEntry(id) {
                 <p>Do not worry, an entry might be on the way.</p>
                 `;
             }
-            
+
         })
         .catch(error => {
             console.error("Error loading entry", error);
@@ -130,8 +176,7 @@ function loadDirectory() {
   const container = document.getElementById('directoryList');
   if (!container) return;
 
-  fetch('./data/wikiData.json')
-    .then(response => response.json())
+  getWikiData()
     .then(data => {
       let html = '';
 

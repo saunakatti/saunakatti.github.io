@@ -128,7 +128,7 @@ My rules with this have been:
 1. Understand what each line does before I write it down.
 2. I make the site design choices.
 3. I invent new ideas for the site myself or look for new ideas on the indie web.
-4. Never give AI direct access to the code ie. link a bot to it on GitHub. (This is an easy way for
+4. Never give AI direct access to the code e.g. link a bot to it on GitHub. (This is an easy way for
    the code to get out of hands.)
 
 > Note: AI has nothing to do with the worldbuilding project. I do not condone the use of AI for creative
