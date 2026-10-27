@@ -45,3 +45,14 @@ It's also to make linking the files to the websites _wikiData.json_ easier.
 
 All images should be compressed and private metadata removed before they get
 uploaded. Non-compressed files are stored locally.
+
+## Artificial Intelligence
+
+The use of AI for the project (includes text, images, ideas, etc) is forbidden.
+
+## Entries
+
+The best way of starting a wiki entry is to add the same description that is found for it in _wikiData.json_. Since the json descriptions don't support links, this makes it easier for the reader to access the entries mentioned in the json description.
+
+> [!IMPORTANT]
+> Every entry must have the entry title as H1 (# Title) on the first line. This is the only H1 of the entry.
