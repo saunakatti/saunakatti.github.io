@@ -84,7 +84,7 @@ In case you're wondering.
     </tr>
     <tr>
         <td><b><span class="nf-cod-debug_restart"></span>&nbsp; Bootloader</b></td>
-        <td><a href="https://www.gnu.org/software/grub/index.html">GRUB</a></td>
+        <td><a href="https://www.gnu.org/software/grub">GRUB</a></td>
     </tr>
     <tr>
         <td><b><span class="nf-fa-windows"></span>&nbsp; Dual Boot OS</b></td>
