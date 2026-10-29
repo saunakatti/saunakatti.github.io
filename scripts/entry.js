@@ -85,7 +85,7 @@ async function markMissingMdLinks(html, currentFilePath) {
         targetPath = targetPath.split(/[?#]/)[0];
 
         // If it's an internal entry link and not found in the valid paths, add your red CSS class
-        if (!href.startsWith('http') && !href.startsWith('#') && !validPaths.has(targetPath)) {
+        if (!href.startsWith('http') && !href.startsWith('#') && !href.endsWith('.html') && !validPaths.has(targetPath)) {
             a.classList.add('wiki-missing');
         }
     });
