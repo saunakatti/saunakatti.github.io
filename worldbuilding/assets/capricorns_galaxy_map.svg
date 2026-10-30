@@ -27,15 +27,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#4a4a4a"
      inkscape:document-units="px"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="1434.5429"
-     inkscape:cy="701.09637"
+     inkscape:zoom="1.32"
+     inkscape:cx="1231.8182"
+     inkscape:cy="553.0303"
      inkscape:window-width="1896"
      inkscape:window-height="1024"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1"
+     inkscape:current-layer="paths"
      showgrid="false"
      showguides="true">
     <inkscape:grid
@@ -339,13 +339,7 @@
        xlink:href="#swatch52"
        id="linearGradient18"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.02317207,0,0,0.02317207,199.01773,97.966442)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#swatch52"
-       id="linearGradient22"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.00408479,0,0,0.00408479,231.15619,114.40586)" />
+       gradientTransform="matrix(0.02317207,0,0,0.02317207,267.17479,130.17015)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#swatch52"
@@ -674,6 +668,12 @@
        x2="416.61953"
        y2="189.13326"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch52"
+       id="linearGradient22"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.00408479,0,0,0.00408479,299.31325,146.60956)" />
   </defs>
   <rect
      style="fill:#030007;fill-opacity:1;stroke:none;stroke-width:0.770001;stroke-opacity:1;paint-order:markers fill stroke"
@@ -721,27 +721,27 @@
          inkscape:label="galaxyInfo"><tspan
            x="39.615234"
            y="49.950022"
-           id="tspan5"><tspan
+           id="tspan61"><tspan
              style="font-size:29.0423px;line-height:1.1;stroke:url(#swatch54);paint-order:stroke fill markers"
-             id="tspan1">Capricorn's Galaxy</tspan><tspan
+             id="tspan24">Capricorn's Galaxy</tspan><tspan
              style="stroke:url(#swatch54);paint-order:stroke fill markers"
-             id="tspan2"> </tspan><tspan
+             id="tspan58"> </tspan><tspan
              style="line-height:1.1"
-             id="tspan3">  SA(s)c</tspan><tspan
+             id="tspan59">  SA(s)c</tspan><tspan
              style="line-height:1.1"
-             id="tspan4">
+             id="tspan60">
 </tspan></tspan><tspan
            x="39.615234"
            y="78.656761"
-           id="tspan8"><tspan
+           id="tspan79"><tspan
              style="line-height:1.1"
-             id="tspan6">Lynx Cluster
+             id="tspan78">Lynx Cluster
 </tspan></tspan><tspan
            x="39.615234"
            y="106.0395"
-           id="tspan10"><tspan
+           id="tspan81"><tspan
              style="line-height:1.1"
-             id="tspan9">(Lynx Foundry // 20.16.25.53.8.4)</tspan></tspan></text>
+             id="tspan80">(Lynx Foundry // 20.16.25.53.8.4)</tspan></tspan></text>
     </g>
     <g
        id="credit"
@@ -755,9 +755,9 @@
          inkscape:label="credit"><tspan
            x="1737.9707"
            y="983.19975"
-           id="tspan12"><tspan
+           id="tspan84"><tspan
              style="stroke:none"
-             id="tspan11">Onni V</tspan></tspan></text>
+             id="tspan82">Onni V</tspan></tspan></text>
     </g>
   </g>
   <g
@@ -1185,7 +1185,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect47);shape-padding:0.0839204;display:inline;fill:#9137ff;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
            x="931.34961"
            y="525.1432"
-           id="tspan13">The Great Nebula </tspan></text>
+           id="tspan85">The Great Nebula </tspan></text>
     </g>
     <g
        id="olias_union"
@@ -1452,8 +1452,9 @@
        inkscape:label="lumonea_gateway">
       <path
          style="fill:none;fill-opacity:1;stroke:url(#linearGradient16);stroke-width:0.0362479;stroke-dasharray:0.434975, 0.434975;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-         d="M 361.95,177.38658 335.73971,157.0054"
-         id="path14" />
+         d="M 363.62018,178.7095 335.73971,157.0054"
+         id="path14"
+         sodipodi:nodetypes="cc" />
       <text
          xml:space="preserve"
          style="font-size:0.649629px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';writing-mode:lr-tb;direction:ltr;fill:url(#swatch16);fill-opacity:1;stroke:none;stroke-width:0.0080908;stroke-dasharray:0.0970897, 0.0970897;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
@@ -1529,18 +1530,18 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect44);shape-padding:6.13765;display:inline;fill:#6519c2;fill-opacity:1;stroke:none;stroke-width:0.536693;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"><tspan
            x="979.79883"
            y="470.29438"
-           id="tspan15"><tspan
+           id="tspan91"><tspan
              style="baseline-shift:baseline"
-             id="tspan14">The Capricorn </tspan></tspan><tspan
+             id="tspan86">The Capricorn </tspan></tspan><tspan
            x="979.79883"
            y="483.49439"
-           id="tspan23"><tspan
+           id="tspan96"><tspan
              style="baseline-shift:baseline"
-             id="tspan20">Emmiter (E</tspan><tspan
+             id="tspan92">Emmiter (E</tspan><tspan
              style="font-size:65%;baseline-shift:sub"
-             id="tspan21">0</tspan><tspan
+             id="tspan93">0</tspan><tspan
              style="baseline-shift:baseline"
-             id="tspan22">)</tspan></tspan></text>
+             id="tspan94">)</tspan></tspan></text>
     </g>
     <g
        id="ethu"
@@ -1658,24 +1659,23 @@
     </g>
     <g
        id="lumonea"
-       inkscape:label="lumonea"
-       transform="translate(66.404195,30.955202)">
+       inkscape:label="lumonea">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.233401px;line-height:1.1;font-family:'NMS Futura Pro Book';-inkscape-font-specification:'NMS Futura Pro Book, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:url(#linearGradient22);fill-opacity:1;stroke:none;stroke-width:0.0110268;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-         x="295.57974"
-         y="146.75485"
+         x="363.73682"
+         y="178.95856"
          id="text72-1"><tspan
            sodipodi:role="line"
            id="tspan72-2"
            style="fill:url(#linearGradient22);stroke-width:0.0110269"
-           x="295.57974"
-           y="146.75485">Lumonea</tspan></text>
+           x="363.73682"
+           y="178.95856">Lumonea</tspan></text>
       <circle
          style="fill:url(#linearGradient18);stroke:none;stroke-width:0.0165504;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
          id="path71-7"
-         cx="295.98544"
-         cy="146.86638"
+         cx="364.14252"
+         cy="179.07008"
          r="0.065798551" />
     </g>
     <g

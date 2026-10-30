@@ -46,8 +46,7 @@
                 "Emitter Activity": "High"
             },
             "description": "A galaxy with highly developed civilisations and an active [[capricorn_emitter|Emitter]]. Many proficient in [[äene|Äen'e]]. In [[lynx_cluster|The Lynx Cluster]].",
-            "entryPath": "worldbuilding/wiki/regions/capricorns_galaxy.md",
-            "onMap": false
+            "entryPath": "worldbuilding/wiki/regions/capricorns_galaxy.md"
         },
         "navigators_nebula": {
             "title": "Navigator's Nebula",
@@ -128,8 +127,7 @@
                 "Capital": "Tophu"
             },
             "description": "The most powerful union in the galaxy. The union is made up of lots of smaller independent factions. [[tophu|Tophu]] acts as the union's administrative capital system.",
-            "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md",
-            "onMap": false
+            "entryPath": "worldbuilding/wiki/factions/capricorns_great_union.md"
         },
         "olias_union": {
             "title": "Olia's Union",
@@ -194,6 +192,31 @@
         }
     },
 
+    "other": {
+        "pol_atal": {
+            "title": "Pol Atal",
+            "aliases": ["The Emitter Path", "The Hidden Path"],
+            "type": "Interregional Path",
+            "attributes": {
+                "Path Type": "Interdimensional Gate"
+            },
+            "description": "An [[space_travel|interdimensional gateway]] between [[lupovaleai|Lupovalea'i]] and [[ethu|Ethu]]. Main route of travel to [[val_conjunct|The Val Conjunct]].",
+            "entryPath": "worldbuilding/wiki/other/pol_atal.md",
+            "onMap": true
+        },
+        "lumonea_gateway": {
+            "title": "Lumonea Gateway",
+            "aliases": "",
+            "type": "Interregional Path",
+            "attributes": {
+                "Path Type": "Wormhole Machine"
+            },
+            "description": "A [[space_travel|Wormhole Machine]] that connects [[lumonea|Lumonea]] to [[lupovaleai|Lupovalea'i]]. This is the main point of entry to the main regions of [[capricorns_great_union|Capricorn's Great Union]] for members in regions near Lumonea, the most notable being [[olias_toopas|Olia's Toopas]] who are the protectors of this gate.",
+            "entryPath": "worldbuilding/wiki/other/lumonea_gateway.md",
+            "onMap": true
+        }
+    },
+
     "unrelated": {
         "welcome": {
             "title": "Welcome",
@@ -201,7 +224,7 @@
             "type": "Unrelated",
             "attributes": {},
             "description": "Welcome to the Ääri.",
-            "entryPath": "worldbuilding/wiki/other/welcome.md"
+            "entryPath": "worldbuilding/wiki/unrelated/welcome.md"
         },
         "authors": {
             "title": "Authors",
@@ -209,7 +232,7 @@
             "type": "Unrelated",
             "attributes": {},
             "description": "Authors of the Ääri Project.",
-            "entryPath": "worldbuilding/wiki/other/authors.md"
+            "entryPath": "worldbuilding/wiki/unrelated/authors.md"
         },
         "style_and_syntax": {
             "title": "Style and Syntax",
@@ -217,14 +240,14 @@
             "type": "Unrelated",
             "attributes": {},
             "description": "Style and syntax for the project.",
-            "entryPath": "worldbuilding/wiki/other/style_and_syntax.md"
+            "entryPath": "worldbuilding/wiki/unrelated/style_and_syntax.md"
         },
         "credit": {
             "title": "Map Credit",
             "aliases": "",
             "type": "Unrelated",
             "description": "This map is being edited by Onni. Uses Leaflet for displaying the map, which is an SVG file. For project authors see below. Map uses \"No Man's Sky Universal Font\" published under SIL Open Font License 1.1.",
-            "entryPath": "worldbuilding/wiki/other/authors.md"
+            "entryPath": "worldbuilding/wiki/unrelated/authors.md"
         }
     }
 }

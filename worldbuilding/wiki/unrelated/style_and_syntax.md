@@ -86,9 +86,9 @@ This is the correct format for entries in wikidata.json (under its respective ca
     // A short, preferably quite a lot longer than this one, summary of the entry.
     // JS parses Wiki-style links which use [[id|label]] format. The description must be on one line. (Ask json, not me.)
     "description": "An area of extreme cosmic activity in the eye of [[great_nebula|The Great Nebula]]. Traversing here is thought to be impossible. Hides the [[ajankajo|Ajankajo]] System.",
-    // The relative path to the entries full markdown article.
+    // The absolute path (without the first "/") to the entries full markdown article. (This is the one that goes to "?entry=...")
     "entryPath": "worldbuilding/wiki/regions/nexus.md",
-    // Set to "true" if entry can be found visually on the map. If not set to "false".
+    // Set to "true" if entry can be found visually on the map. If not, don't use the tag.
     "onMap": true
 },
 

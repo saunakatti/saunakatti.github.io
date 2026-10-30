@@ -826,7 +826,11 @@ Worldbuilding wiki page
 }
 
 #guideTab div {
-    line-height: 1.8;
+    line-height: 1.6rem;
+}
+
+#guideTab div li {
+    margin-bottom: 0.5em;
 }
 
 /* Tab thing styling */
