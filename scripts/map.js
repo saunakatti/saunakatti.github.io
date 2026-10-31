@@ -169,6 +169,7 @@ function displayWikiEntry(id, pushHistory = true) {
             console.error("Error loading entry", error);
             wikiContainer.innerHTML = `<p>Error loading entry.</p>`
         })
+    toggleWbSidebar(true)
 }
 
 // Load worldbuilding directory
@@ -211,7 +212,7 @@ function loadDirectory() {
               <strong>${entry.title}</strong>
             </a>
             <small>(${entry.type})</small>
-            <a href="${entryUrl}" class="directEntryLink">Read <span class="nf-fa-arrow_right"></span></a>
+            <a href="${entryUrl}" class="directEntryLink"><nobr>Read <span class="nf-fa-arrow_right"></nobr></span></a>
           </li>`;
         }
 
@@ -257,6 +258,15 @@ function focusOnElement(overlay, element) {
     const south = bounds.getSouth() + (1 - fraction(bbox.y + bbox.height, 'y')) * (bounds.getNorth() - bounds.getSouth());
 
     map.flyToBounds(L.latLngBounds([[south, west], [north, east]]).pad(0.25));
+}
+
+function toggleWbSidebar(onlyOpen = false) {
+    const sidebar = document.getElementById('wbSidebar');
+    if (sidebar && !onlyOpen) {
+        sidebar.classList.toggle('closed');
+    } else {
+        sidebar.classList.remove('closed')
+    }
 }
 
 // ----------------------------
@@ -305,5 +315,5 @@ fetch('../worldbuilding/assets/capricorns_galaxy_map.svg')
 
 map.fitBounds(bounds)
 
-map.setView([500, 1000], -2);
+map.setView([500, 1000], -1);
 
