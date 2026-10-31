@@ -20,32 +20,23 @@
         crossorigin=""></script>
 </head>
 <body>
-<div class="page-wrapper">
+<!-- Map -->
+    <div class="map-column">
+        <div id="map"></div>
+    </div>
+
     <div class="worldbuilding-layout">
-        <!-- Map -->
-        <div class="map-column">
-            <div id="map"></div>
+
+        <div class="wb-top-buttons">
+            <button class="tabBtn active" onclick="switchTab('mapTab'), toggleWbSidebar(true)">Selection</button>
+            <button class="tabBtn" onclick="switchTab('directoryTab'), toggleWbSidebar(true)">Directory</button>
+            <button class="tabBtn" onclick="switchTab('updatesTab'), toggleWbSidebar(true)">Updates</button>
+            <button class="tabBtn" onclick="switchTab('guideTab'), toggleWbSidebar(true)">Guide</button>
+            <a href="index.html" class="button"><span class="nf-fa-home"></span> &nbsp; Home</a>
         </div>
 
-        <!-- Settings -->
-        <div class="map-settings">
-            <h3><span class="nf-fa-cog"></span>&nbsp; Settings</h3>
-            <div class="map-settings-row">
-                <button class="map-setting" onclick="mapActivate('#galacticRegions')">Galactic Regions</button>
-                <button class="map-setting" onclick="mapActivate('#paths')">Interregional Paths</button>
-            </div>
-        </div>
-
-        <!-- Wiki panel -->
-        <div class="wiki-column">
-            <!-- Navigation tabs -->
-            <div class="wikiTabs">
-                <button class="tabBtn active" onclick="switchTab('mapTab')">Selection</button>
-                <button class="tabBtn" onclick="switchTab('directoryTab')">Directory</button>
-                <button class="tabBtn" onclick="switchTab('updatesTab')">Updates</button>
-                <button class="tabBtn" onclick="switchTab('guideTab')">Guide</button>
-                <a href="index.html" class="button" style="margin-top: 0;"><span class="nf-fa-home"></span> &nbsp; Home</a>
-            </div>
+        <aside id="wbSidebar" class="sidebar closed">
+            <button class="closeBtn" onclick="toggleWbSidebar()"><span class="nf-fa-close"></span></button>
 
             <!-- tab 1: description panel (map and dir selections) -->
             <div id="mapTab" class="tabContent active">
@@ -100,14 +91,24 @@
                 </ul>
                 </div>
             </div>
+
+        </aside>
+
+        <!-- Wiki panel -->
+        <div class="wiki-column">
+            
+            
+            
+        </div>
+        <!-- Settings -->
+        <div class="map-settings">
+            <h3><span class="nf-fa-cog"></span>&nbsp; Settings</h3>
+            <div class="map-settings-row">
+                <button class="map-setting" onclick="mapActivate('#galacticRegions')">Galactic Regions</button>
+                <button class="map-setting" onclick="mapActivate('#paths')">Interregional Paths</button>
+            </div>
         </div>
     </div>
-</div>
-<footer>
-    <t>&copy; 2026 Saunakatti (Onni) &nbsp; </t>
-    <a href="https://github.com/saunakatti" target="_blank" rel="noopener noreferrer"> &nbsp;GitHub</a>
-    <p>made with <span class="nf-fa-heart" style="color: var(--color-red);"></span>
-</footer>
 <script src="scripts/main.js"></script>
 <script src="scripts/map.js"></script>
 <script src="scripts/rss.js" defer></script>

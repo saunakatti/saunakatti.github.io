@@ -7,6 +7,20 @@
         <language>en-us</language>
 
         <item>
+            <title>Features: Visual Redesign, Links in Summaries</title>
+            <link>https://saunakatti.github.io/worldbuilding.html</link>
+            <description>
+                The visual look of the worldbuilding page has been revamped.
+                The map covers the whole screen and information pops up in
+                a sidebar. You can switch between entries by clicking
+                on links found in the summaries. Links to nonexistent
+                articles show up as red. Happy Halloween!
+            </description>
+            <pubDate>Sat, 31 Oct 2026 23:45:00 +0200</pubDate>
+            <guid>tag:saunakatti.github.io,2026:wikiupdates.3</guid>
+        </item>
+
+        <item>
             <title>Feature: View On Map</title>
             <link>https://saunakatti.github.io/worldbuilding.html</link>
             <description>
