@@ -88,6 +88,7 @@ async function markMissingMdLinks(html, currentFilePath) {
         if (!href.startsWith('http') && !href.startsWith('#') && !href.endsWith('.html') && !validPaths.has(targetPath)) {
             a.classList.add('wiki-missing');
         }
+
     });
 
     return doc.body.innerHTML;
@@ -349,6 +350,7 @@ function parseMarkdown(markdownText, filePath) {
         else if (href.startsWith('http://') || href.startsWith('https://')) {
             link.target = '_blank';
             link.rel = 'noopener noreferrer';         // it's good measure to add _blank as target and noopener noreferrer for external links
+            link.classList.add('link-external')
         }
     });
 

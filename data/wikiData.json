@@ -222,15 +222,13 @@
             "title": "Welcome",
             "aliases": "",
             "type": "Unrelated",
-            "attributes": {},
-            "description": "Welcome to the Ääri.",
+            "description": "Welcome to the project!",
             "entryPath": "worldbuilding/wiki/unrelated/welcome.md"
         },
         "authors": {
             "title": "Authors",
             "aliases": "",
             "type": "Unrelated",
-            "attributes": {},
             "description": "Authors of the Ääri Project.",
             "entryPath": "worldbuilding/wiki/unrelated/authors.md"
         },
@@ -238,7 +236,6 @@
             "title": "Style and Syntax",
             "aliases": "",
             "type": "Unrelated",
-            "attributes": {},
             "description": "Style and syntax for the project.",
             "entryPath": "worldbuilding/wiki/unrelated/style_and_syntax.md"
         },

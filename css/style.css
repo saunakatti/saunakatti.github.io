@@ -239,6 +239,12 @@ a {
     color: var(--color-blue);
 }
 
+.link-external::after {
+    content: '󰏌';
+    font-size: 0.85rem;
+    margin-left: 0.4em;
+}
+
 li {
     margin-left: 1em;
 }

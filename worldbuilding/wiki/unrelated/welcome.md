@@ -5,6 +5,8 @@ Welcome to the new wiki!
 Hi! This is a passion project of mine and not meant to be anything to take seriously.
 It's around 10 years old and has changed a lot since the first drawings.
 
+[Worldbuilding on Wikipedia](<https://en.wikipedia.org/wiki/Worldbuilding>)
+
 ## Revamp
 
 The project has been recently rewamped, the website being a newer part of that revamp.
