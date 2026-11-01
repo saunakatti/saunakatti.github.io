@@ -71,6 +71,18 @@
             "description": "A large void in Galactic Region 10, found next to [[arvens_realm|Arven's Realm]]. Small quantity of active stars. Known for sudden local outbursts of energy, earning it its name as \"Half Dead\".",
             "entryPath": "worldbuilding/wiki/regions/half_dead_void.md",
             "onMap": true
+        },
+        "noian": {
+            "title": "Noian",
+            "aliases": ["TD-G"],
+            "type": "Region",
+            "attributes": {
+                "Control": "TD-Group / Noian Freedom Union",
+                "Location": "GR09",
+                "Capital": "TD-00 (TD-Group)"
+            },
+            "description": "A large, inhabited region of space in Galactic Region 9, mostly controlled by [[td-group|TD-Group]]. Parts of the region fall under control of [[noian_freedom_union|Noian Freedom Union]]. Connected to [[olias_union|Olia's Union]] via [[olia-noian_route|a major warp route]].",
+            "onMap": true
         }
     },
 
@@ -97,7 +109,7 @@
                 "Location": "Atal'val",
                 "Control": "Capricorn's Great Union"
             },
-            "description": "Capital system of [[atalval|Atal'val]]. Administrative capital of [[capricorns_great_union|Capricorn's Great Union]]. Houses the biggest ecumonopolis of [[val_conjunct|The Val Conjunct]].",
+            "description": "Capital system of [[atalval|Atal'val]]. Administrative capital of [[capricorns_great_union|Capricorn's Great Union]]. Houses the biggest ecumenopolis of [[val_conjunct|The Val Conjunct]].",
             "entryPath": "worldbuilding/wiki/systems/tophu.md",
             "onMap": true
         },
@@ -112,6 +124,17 @@
             },
             "description": "A hidden system in [[navigators_nebula|Navigator's Nebula]]. The system is an important meeting point for people of [[capricorns_great_union|Capricorn's Great Union]], and the best known way of travelling to the union's main regions in [[val_conjunct|The Val Conjunct]].",
             "entryPath": "worldbuilding/wiki/systems/lupovaleai.md",
+            "onMap": true
+        },
+        "lumonea": {
+            "title": "Lumonea",
+            "aliases": "",
+            "type": "System",
+            "attributes": {
+                "Location": "GR10 / Deep Space",
+                "Control": "Olia's Toopas"
+            },
+            "description": "The central system of [[olias_toopas|Olia's Toopas]], found just outside the regions under official control of [[Olia's Union]]. Travel to Lumonea is usually conducted through the worlds of [[tuulien|Tuulien]] and [[illan|Illan]]. Lumonea system houses the [[lumonea_gateway|Lumonea Gateway]]",
             "onMap": true
         }
     },
@@ -206,7 +229,7 @@
         },
         "lumonea_gateway": {
             "title": "Lumonea Gateway",
-            "aliases": "",
+            "aliases": ["Luona Lumonea"],
             "type": "Interregional Path",
             "attributes": {
                 "Path Type": "Wormhole Machine"
